@@ -3,6 +3,7 @@
 
 digraph G {
 	rankdir=LR
+	nodesep="1.0 equally"
 	node[shape=box, fontname=helvetica]
 	edge[sametail]
 	"R&D" -> "SGBag"
