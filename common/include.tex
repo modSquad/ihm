@@ -7,7 +7,6 @@
 \usepackage[T1]{fontenc} 
 % Meilleurs polices
 %\usepackage{concmath}
-\usepackage{fourier}
 \usepackage[francais]{babel}
 % Insertion d'images
 \usepackage{graphicx}
@@ -23,14 +22,6 @@
 \usepackage{url}
 % Pour les headers et footers
 \usepackage{fancyhdr}
-% Pour le logo en haut a droite
-\usepackage{eso-pic} 
-% Pour l'enroulement du texte autour des figures
-\usepackage{wrapfig}
-% Pour la couverture en PDF pleine page
-\usepackage{pdfpages} 
-% Pour la biblio bibtex
-\usepackage{bibunits}
 % Pour gérer les éléments flottants
 \usepackage{float}
 % Pour les cadres à ombrage du glossaire
@@ -106,6 +97,19 @@
 
 % Couleur des url et des liens internes.
 \hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true}
+
+\newcommand{\kw}[1]{\texttt{#1}}
+
+\newcommand{\DescFonction}[4]{%
+	\texttt{\Large{#1}} % insert horizontal rule here
+	\textbf{Synospis} \\
+	#2 \\
+	\textbf{Description} \\
+	#3 \\
+	\textbf{Valeur de retour} \\
+	#4 \\
+}
+
 
 %headers, footers
 \pagestyle{fancy}

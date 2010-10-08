@@ -5,7 +5,7 @@ Lyon.
 
 ## Guide de style
 Les documents rédigés pour ce projet devront respecter un certain 
-formalisme, décrit dans le fichier "Guide de style.pdf"
+formalisme, décrit dans le fichier "GuideDeStyle.pdf"
 
 ## Compilation des livrables
 Sourcer le fichier set_path avant de faire les make, afin d'initialiser
