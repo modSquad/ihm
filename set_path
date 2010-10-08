@@ -1,0 +1,12 @@
+# This file is intended to be sourced, and no executed directly, hence the lack
+# of #! at the begining.
+# 
+# To do this, issue the following command in the shell you would like to 
+# setup :
+#   source set_path.sh
+#
+# This will read the file, and execute the commands in the same context.
+
+TEXINPUTS="`pwd`/common/:.:"
+export TEXINPUTS
+echo $TEXINPUTS
