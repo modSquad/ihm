@@ -6,46 +6,47 @@ digraph G {
 	nodesep="0.2 equally"
 	node[shape=box, fontname=helvetica]
 	edge[sametail]
-	"R&D" -> "SGBag"
-		"SGBag" -> "Configuration" 
-		"SGBag" -> "Simulation"
-		"SGBag" -> "Maintenance évolutive"
-		"SGBag" -> "Analyse des performances"
+
+	"D10) Administration du SI" -> "D10.1) Maintenance curative"
+	"D10) Administration du SI" -> "D10.2) Gestion du réseau sans fil"
+
+	"D9) Gestion des bagages" -> "D9.1) Acheminement automatisé des bagages"
+	"D9) Gestion des bagages" -> "D9.2) Acheminement manuel des bagages"
 	
-	"Gestion des vols"
+		"D9.1) Acheminement automatisé des bagages" -> "Circulation des chariots";	"Circulation des chariots"[shape=none];
+		"D9.1) Acheminement automatisé des bagages" -> "Gestion de l'énergie";		"Gestion de l'énergie"[shape=none];
+		"D9.1) Acheminement automatisé des bagages" -> "Carrousel";					"Carrousel"[shape=none];
+		"D9.1) Acheminement automatisé des bagages" -> "Supervision";				"Supervision"[shape=none];
 
-	"Gestion des voyageurs" -> "Enregistrement des bagages"
-		"Enregistrement des bagages" -> "Étiquettage"
-		"Enregistrement des bagages" -> "Vérification du poids"
-		"Enregistrement des bagages" -> "Injection dans le SGBag"
+		"D9.2) Acheminement manuel des bagages" -> "Embarquement dans l'avion";		"Embarquement dans l'avion"[shape=none];
+		"D9.2) Acheminement manuel des bagages" -> "Débarquement de l'avion";		"Débarquement de l'avion"[shape=none];
+		"D9.2) Acheminement manuel des bagages" -> "Commande manuelle";				"Commande manuelle"[shape=none];
+		"D9.2) Acheminement manuel des bagages" -> "Supervision";					"Supervision"[shape=none];
 
-	"Gestion des voyageurs" -> "Réclamation"
-		"Réclamation"-> "Interface WEB"
-		"Réclamation"-> "Interface SGBag"
-
-	"Gestion des locaux"
-
-	"Gestion du personnel"
-
-	"Gestion de l'équipement" -> "Réparation"
-	"Réparation"-> "SGBag (rails, chariots, etc.) "
-
-	"Gestion de la sécurité" -> "Contrôle des bagages"
-	"Contrôle des bagages" -> "Bagages à soute"
-
-	"Gestion des bagages" -> "Acheminement automatisé des bagages"
-	"Gestion des bagages" -> "Acheminement manuel des bagages"
+	"D8) Gestion de la sécurité" -> "D8.1) Contrôle des bagages"
+		"D8.1) Contrôle des bagages" -> "Bagages à soute";							"Bagages à soute"[shape=none];
 	
-		"Acheminement automatisé des bagages" -> "Circulation des chariots"
-		"Acheminement automatisé des bagages" -> "Gestion de l'énergie"
-		"Acheminement automatisé des bagages" -> "Carrousel"
-		"Acheminement automatisé des bagages" -> "Supervision"
+	"D7) Gestion de l'équipement" -> "D7.1) Réparation"
+		"D7.1) Réparation"-> "SGBag (rails, chariots, etc.)";						"SGBag (rails, chariots, etc.)"[shape=none];
 
-		"Acheminement manuel des bagages" -> "Embarquement dans l'avion"
-		"Acheminement manuel des bagages" -> "Débarquement de l'avion"
-		"Acheminement manuel des bagages" -> "Commande manuelle"
-		"Acheminement manuel des bagages" -> "Supervision"
+	"D6) Gestion du personnel"
 
-	"Administration du SI" -> "Maintenance curative"
-	"Administration du SI" -> "Gestion du réseau sans fil"
+	"D5) Gestion des locaux"
+
+	"D4) Gestion des voyageurs" -> "D4.1) Réclamation"
+		"D4.1) Réclamation"-> "Interface WEB";										"Interface WEB"[shape=none];
+		"D4.1) Réclamation"-> "Interface SGBag";									"Interface SGBag"[shape=none];
+
+	"D3) Gestion des voyageurs" -> "D3.1) Enregistrement des bagages";
+		"D3.1) Enregistrement des bagages" -> "Étiquettage";						"Étiquettage"[shape=none];
+		"D3.1) Enregistrement des bagages" -> "Vérification du poids";				"Vérification du poids"[shape=none];
+		"D3.1) Enregistrement des bagages" -> "Injection dans le SGBag";			"Injection dans le SGBag"[shape=none];
+
+	"D2) Gestion des vols"
+
+	"D1) R&D" -> "D1.1) SGBag"
+		"D1.1) SGBag" -> "Configuration";											"Configuration"[shape=none];
+		"D1.1) SGBag" -> "Simulation";												"Simulation"[shape=none];
+		"D1.1) SGBag" -> "Maintenance évolutive";									"Maintenance évolutive"[shape=none];
+		"D1.1) SGBag" -> "Analyse des performances";								"Analyse des performances"[shape=none];
 }
