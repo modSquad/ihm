@@ -29,6 +29,28 @@ Lorsque qu'un terme technique est utilisé (type nom de variable, de fonction,
 etc.), utiliser la commande \kw{kw} (pour keyword), ce qui aura pour effet de
 mettre le texte en police à chasse fixe.
 
+\section{Éléments graphiques}
+Les graphiques devront être, le plus souvent, générés avec l'outil GraphViz, ce
+qui nous permettra de séparer données et rendu. Si ce n'est pas possible,
+utiliser un outil qui travail en vectoriel (Inkscape, Illustrator, etc.).
 
+Les fichiers de description des graphes doivent pouvoir se compiler avec un
+\kw{Makefile}, et la règle doit être appelée avant la commande \kw{pdflatex},
+afin de produire les images.
+Les fichiers vectoriels doivent être au format \kw{svg}, afin que tout le monde
+puisse les modifier. Inclure dans le même dossier un rendu rasterisé de
+l'élément graphique, qui doit avoir le même nom.
 
+De manière général, une image rasterisée doit être au moins à 300dpi, pour
+éviter tout problème d'aliasing, exception faite des captures d'écran, qui sont
+à 96dpi.
+
+Les éléments graphiques doivent être légendés et numérotés (utiliser pour cela
+l'environnement \kw{figure} que propos \LaTeX).
+
+\section{Architecture de dossier}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{img/archi.png}
+\caption{Organisation typique des dossiers, avec un livrable.}
+\end{figure}
 \end{document}
