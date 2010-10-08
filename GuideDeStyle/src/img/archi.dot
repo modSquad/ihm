@@ -1,0 +1,33 @@
+graph archi {
+	racine [label="racine"];
+	makeroot [label="Makefile"];
+	makegds [label="Makefile"];
+	log [label="GuideDeStyle.log"];
+	out [label="GuideDeStyle.out"];
+	tex [label="GuideDeStyle.tex"];
+	aux [label="GuideDeStyle.aux"];
+	pdf [label="GuideDeStyle.pdf"];
+	aux2 [label="include.aux"];
+	md [label="README.md"];
+	svg [label="archi.svg"];
+	png [label="archi.png"];
+	dot [label="archi.dot"];
+
+	racine -- GuideDeStyle;
+	GuideDeStyle -- makegds;
+	GuideDeStyle -- pdf;
+	GuideDeStyle -- src;
+	src -- aux;
+	src -- log;
+	src -- out;
+	src -- tex;
+	src -- aux2;
+	src -- img;
+	racine -- makeroot;
+	racine -- md;
+	racine -- common;
+	racine -- set_path;
+	img -- svg;
+	img -- png;
+	img -- dot;
+}
