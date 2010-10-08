@@ -1,0 +1,55 @@
+# prgm ddf
+# ddf ddf.dot -Tsvg -o ddf.svg
+
+digraph G {
+	rankdir=LR
+	nodesep="1.0 equally"
+	node[shape=box, fontname=helvetica]
+	edge[sametail]
+	"R&D" -> "SGBag"
+		"SGBag" -> "Configuration" 
+		"SGBag" -> "Simulation"
+		"SGBag" -> "Maintenance évolutive"
+
+	"Gestion des vols"
+
+	"Gestion des voyageurs" -> "Enregistrement des bagages"
+		"Enregistrement des bagages" -> "Étiquettage"
+		"Enregistrement des bagages" -> "Vérification du poids"
+		"Enregistrement des bagages" -> "Injection dans le SGBag"
+
+	"Gestion des voyageurs" -> "Réclamation"
+		"Réclamation"-> "Interface WEB"
+		"Réclamation"-> "Interface SGBag"
+
+	"Gestion des locaux"
+
+	"Gestion du personnel"
+
+	"Gestion de l'équipement" -> "Réparation"
+	"Réparation"-> "SGBag (rails, chariots, etc.) "
+
+	"Gestion de la sécurité" -> "Controle des bagages"
+	"Controle des bagages" -> "Bagages à soute"
+
+	"Gestion des bagages" -> "Acheminement automatisé des bagages"
+	"Gestion des bagages" -> "Acheminement manuel des bagages"
+	
+		"Acheminement automatisé des bagages" -> "Circulation des chariots"
+		"Acheminement automatisé des bagages" -> "Gestion de l'énergie"
+		"Acheminement automatisé des bagages" -> "Carrousel"
+		"Acheminement automatisé des bagages" -> "Supervision"
+
+		"Acheminement manuel des bagages" -> "Embarquement dans l'avion"
+		"Acheminement manuel des bagages" -> "Débarquement de l'avion"
+		"Acheminement manuel des bagages" -> "Commande manuelle"
+		"Acheminement manuel des bagages" -> "Supervision"
+
+	"Administration du SI" -> "Maintenance currative"
+	"Administration du SI" -> "Gestion du réseau sans fil"
+
+	"Maintenance currative" -> "Analyse des performances"
+	"Maintenance currative" -> "Reconfiguration"
+
+
+}
