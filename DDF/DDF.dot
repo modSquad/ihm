@@ -1,0 +1,24 @@
+# prgm ddf
+# ddf ddf.dot -Tsvg -o ddf.svg
+
+digraph G {
+	node[shape=box, fontname=helvetica]
+	
+	"R&D" -> SGBag
+		SGBag -> "Configuration" 
+		SGBag -> Simulation
+		SGBag -> "Maintenance évolutive"
+
+	"Gestion des vols"
+
+	"Gestion des voyageurs" -> "Enregistrement des bagages"
+		"Enregistrement des bagages" -> "Étiquettage"
+		"Enregistrement des bagages" -> "Vérification du poids"
+		"Enregistrement des bagages" -> "Injection dans le SGBag"
+
+	"Gestion des voyageurs" -> "Réclamation"
+		"Réclamation"-> "Interface WEB"
+		"Réclamation"-> "Interface SGBag"
+
+
+}
