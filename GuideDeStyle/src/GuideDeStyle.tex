@@ -29,6 +29,28 @@ Lorsque qu'un terme technique est utilisé (type nom de variable, de fonction,
 etc.), utiliser la commande \kw{kw} (pour keyword), ce qui aura pour effet de
 mettre le texte en police à chasse fixe.
 
+\section{Conception des documents}
+Comme beaucoup de documents se référencent, il apparait important d'éviter au
+maximum la redondance d'information, telle que celle induite par du copier
+coller, en mettant en pratique le référencement des fichiers à travers le
+projet.
+
+Ainsi, et pour la bonne mise en pratique de cette convention, un document doit
+au moins avoir deux fichiers :
+\begin{enumerate}
+    \item Un fichier qui correspond au corps du document. Pas de balise
+    \kw{documentclass}, pas de préambule dans ce fichier.
+    \item Un fichier, incluant le premier, qui donne le préambule, le titre,
+    etc.
+\end{enumerate}	
+
+De plus, le niveau maximum de titre dans un document qui est susceptible d'être
+inclus est \kw{section}, ce qui permet d'utiliser \kw{part} pour délimiter les
+différents documents inclus dans le document global.
+
+Cela permet d'inclure efficacement les documents les un les autres.
+
+
 \section{Éléments graphiques}
 Les graphiques devront être, le plus souvent, générés avec l'outil GraphViz, ce
 qui nous permettra de séparer données et rendu. Si ce n'est pas possible,
