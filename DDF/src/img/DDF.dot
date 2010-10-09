@@ -4,7 +4,7 @@
 digraph G {
     rankdir=LR
 	nodesep="0.2 equally"
-	node[shape=box, fontname=helvetica]
+	node[shape=box, fontname="FreeSans"]
 	edge[sametail]
 
 	"D10) Administration du SI" -> "D10.1) Maintenance curative"
