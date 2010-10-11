@@ -29,6 +29,28 @@ Lorsque qu'un terme technique est utilisé (type nom de variable, de fonction,
 etc.), utiliser la commande \kw{kw} (pour keyword), ce qui aura pour effet de
 mettre le texte en police à chasse fixe.
 
+\section{Conception des documents}
+Comme beaucoup de documents se référencent, il apparait important d'éviter au
+maximum la redondance d'information, telle que celle induite par du copier
+coller, en mettant en pratique le référencement des fichiers à travers le
+projet.
+
+Ainsi, et pour la bonne mise en pratique de cette convention, un document doit
+au moins avoir deux fichiers :
+\begin{enumerate}
+    \item Un fichier qui correspond au corps du document. Pas de balise
+    \kw{documentclass}, pas de préambule dans ce fichier.
+    \item Un fichier, incluant le premier, qui donne le préambule, le titre,
+    etc.
+\end{enumerate}	
+
+De plus, le niveau maximum de titre dans un document qui est susceptible d'être
+inclus est \kw{section}, ce qui permet d'utiliser \kw{part} pour délimiter les
+différents documents inclus dans le document global.
+
+Cela permet d'inclure efficacement les documents les un les autres.
+
+
 \section{Éléments graphiques}
 Les graphiques devront être, le plus souvent, générés avec l'outil GraphViz, ce
 qui nous permettra de séparer données et rendu. Si ce n'est pas possible,
@@ -41,12 +63,21 @@ Les fichiers vectoriels doivent être au format \kw{svg}, afin que tout le monde
 puisse les modifier. Inclure dans le même dossier un rendu rasterisé de
 l'élément graphique, qui doit avoir le même nom.
 
-De manière général, une image rasterisée doit être au moins à 300dpi, pour
+De manière générale, une image rasterisée doit être au moins à 300dpi, pour
 éviter tout problème d'aliasing, exception faite des captures d'écran, qui sont
 à 96dpi.
 
 Les éléments graphiques doivent être légendés et numérotés (utiliser pour cela
 l'environnement \kw{figure} que propos \LaTeX).
+
+Les fontes à utiliser dans les éléments graphiques doivent être normalisées,
+afin que tout le monde puisse modifier un document sans avoir à vectoriser les
+fontes, ce qui pose des problème lors d'éventuelles corrections orthographiques.
+
+Nous utiliserons pour ce faire la police Nimbus Sans L, sous licence libre, et
+qui a été conçu pour être un clone d'Helvetica, tout en corrigeant les minimes
+défauts qu'avait la fonte d'origine. Le fichier, sous format \kw{ttf} est
+disponible dans le dossier \kw{common}, et s'appelle \kw{FreeSans.ttf}.
 
 \section{Architecture de dossier}
 \begin{figure}[h!]

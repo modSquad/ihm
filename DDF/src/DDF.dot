@@ -16,12 +16,12 @@ digraph G {
 		"D8.1) Acheminement automatisé des bagages" -> "Circulation des chariots";	"Circulation des chariots"[shape=none];
 		"D8.1) Acheminement automatisé des bagages" -> "Gestion de l'énergie";		"Gestion de l'énergie"[shape=none];
 		"D8.1) Acheminement automatisé des bagages" -> "Carrousel";					"Carrousel"[shape=none];
-		"D8.1) Acheminement automatisé des bagages" -> "Supervision";				"Supervision"[shape=none];
+		"D8.1) Acheminement automatisé des bagages" -> s1; s1[label="Supervision", shape=none];
 
 		"D8.2) Acheminement manuel des bagages" -> "Embarquement dans l'avion";		"Embarquement dans l'avion"[shape=none];
 		"D8.2) Acheminement manuel des bagages" -> "Débarquement de l'avion";		"Débarquement de l'avion"[shape=none];
 		"D8.2) Acheminement manuel des bagages" -> "Commande manuelle";				"Commande manuelle"[shape=none];
-		"D8.2) Acheminement manuel des bagages" -> "Supervision";					"Supervision"[shape=none];
+		"D8.1) Acheminement manuel des bagages" -> s2; s2[label="Supervision", shape=none];
 
 	"D7) Gestion de la sécurité" -> "D7.1) Contrôle des bagages"
 		"D7.1) Contrôle des bagages" -> "Bagages à soute";							"Bagages à soute"[shape=none];

@@ -1,0 +1,51 @@
+# prgm ddf
+# ddf ddf.dot -Tsvg -o ddf.svg
+
+digraph G {
+    rankdir=LR
+	nodesep="0.2 equally"
+	node[shape=box, fontname="FreeSans"]
+	edge[sametail]
+
+	"D10) Administration du SI" -> "D10.1) Maintenance curative"
+	"D10) Administration du SI" -> "D10.2) Gestion du réseau sans fil"
+
+	"D9) Gestion des bagages" -> "D9.1) Acheminement automatisé des bagages"
+	"D9) Gestion des bagages" -> "D9.2) Acheminement manuel des bagages"
+
+	"D9.1) Acheminement automatisé des bagages" -> "Circulation des chariots";	"Circulation des chariots"[shape=none];
+    "D9.1) Acheminement automatisé des bagages" -> "Gestion de l'énergie";		"Gestion de l'énergie"[shape=none];
+    "D9.1) Acheminement automatisé des bagages" -> "Carrousel";					"Carrousel"[shape=none];
+    "D9.1) Acheminement automatisé des bagages" -> supervision1; supervision1 [label="Supervision", shape=none];				
+    "D9.2) Acheminement manuel des bagages" -> "Embarquement dans l'avion";		"Embarquement dans l'avion"[shape=none];
+    "D9.2) Acheminement manuel des bagages" -> "Débarquement de l'avion";		"Débarquement de l'avion"[shape=none];
+    "D9.2) Acheminement manuel des bagages" -> "Commande manuelle";				"Commande manuelle"[shape=none];
+    "D9.2) Acheminement manuel des bagages" -> supervision2;  supervision2 [label="Supervision", shape=none];
+
+    "D8) Gestion de la sécurité" -> "D8.1) Contrôle des bagages"
+	"D8.1) Contrôle des bagages" -> "Bagages à soute";							"Bagages à soute"[shape=none];
+
+    "D7) Gestion de l'équipement" -> "D7.1) Réparation"
+	"D7.1) Réparation"-> "SGBag (rails, chariots, etc.)";						"SGBag (rails, chariots, etc.)"[shape=none];
+
+    "D6) Gestion du personnel"
+
+	"D5) Gestion des locaux"
+
+	"D4) Gestion des voyageurs" -> "D4.1) Réclamation"
+	"D4.1) Réclamation"-> "Interface WEB";										"Interface WEB"[shape=none];
+    "D4.1) Réclamation"-> "Interface SGBag";									"Interface SGBag"[shape=none];
+
+    "D3) Gestion des voyageurs" -> "D3.1) Enregistrement des bagages";
+    "D3.1) Enregistrement des bagages" -> "Étiquettage";						"Étiquettage"[shape=none];
+    "D3.1) Enregistrement des bagages" -> "Vérification du poids";				"Vérification du poids"[shape=none];
+    "D3.1) Enregistrement des bagages" -> "Injection dans le SGBag";			"Injection dans le SGBag"[shape=none];
+
+    "D2) Gestion des vols"
+
+	"D1) R&D" -> "D1.1) SGBag"
+	"D1.1) SGBag" -> "Configuration";											"Configuration"[shape=none];
+    "D1.1) SGBag" -> "Simulation";												"Simulation"[shape=none];
+    "D1.1) SGBag" -> "Maintenance évolutive";									"Maintenance évolutive"[shape=none];
+    "D1.1) SGBag" -> "Analyse des performances";								"Analyse des performances"[shape=none];
+}

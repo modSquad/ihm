@@ -10,7 +10,9 @@ init_arch()
 {
     mkdir src
     mkdir src/img
-    echo "
+    cp Makefile ../$1
+    
+    sed "s/XXX/$1/g" Makefile >  
 }
 
 dir_name=$1
