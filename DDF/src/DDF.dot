@@ -7,35 +7,35 @@ digraph G {
 	node[shape=box, fontname=helvetica]
 	edge[sametail]
 
-	"D10) Administration du SI" -> "D10.1) Maintenance curative"
-	"D10) Administration du SI" -> "D10.2) Gestion du réseau sans fil"
+	"D9) Administration du SI" -> "D9.1) Maintenance curative"
+	"D9) Administration du SI" -> "D9.2) Gestion du réseau sans fil"
 
-	"D9) Gestion des bagages" -> "D9.1) Acheminement automatisé des bagages"
-	"D9) Gestion des bagages" -> "D9.2) Acheminement manuel des bagages"
+	"D8) Gestion des bagages" -> "D8.1) Acheminement automatisé des bagages"
+	"D8) Gestion des bagages" -> "D8.2) Acheminement manuel des bagages"
 	
-		"D9.1) Acheminement automatisé des bagages" -> "Circulation des chariots";	"Circulation des chariots"[shape=none];
-		"D9.1) Acheminement automatisé des bagages" -> "Gestion de l'énergie";		"Gestion de l'énergie"[shape=none];
-		"D9.1) Acheminement automatisé des bagages" -> "Carrousel";					"Carrousel"[shape=none];
-		"D9.1) Acheminement automatisé des bagages" -> "Supervision";				"Supervision"[shape=none];
+		"D8.1) Acheminement automatisé des bagages" -> "Circulation des chariots";	"Circulation des chariots"[shape=none];
+		"D8.1) Acheminement automatisé des bagages" -> "Gestion de l'énergie";		"Gestion de l'énergie"[shape=none];
+		"D8.1) Acheminement automatisé des bagages" -> "Carrousel";					"Carrousel"[shape=none];
+		"D8.1) Acheminement automatisé des bagages" -> "Supervision";				"Supervision"[shape=none];
 
-		"D9.2) Acheminement manuel des bagages" -> "Embarquement dans l'avion";		"Embarquement dans l'avion"[shape=none];
-		"D9.2) Acheminement manuel des bagages" -> "Débarquement de l'avion";		"Débarquement de l'avion"[shape=none];
-		"D9.2) Acheminement manuel des bagages" -> "Commande manuelle";				"Commande manuelle"[shape=none];
-		"D9.2) Acheminement manuel des bagages" -> "Supervision";					"Supervision"[shape=none];
+		"D8.2) Acheminement manuel des bagages" -> "Embarquement dans l'avion";		"Embarquement dans l'avion"[shape=none];
+		"D8.2) Acheminement manuel des bagages" -> "Débarquement de l'avion";		"Débarquement de l'avion"[shape=none];
+		"D8.2) Acheminement manuel des bagages" -> "Commande manuelle";				"Commande manuelle"[shape=none];
+		"D8.2) Acheminement manuel des bagages" -> "Supervision";					"Supervision"[shape=none];
 
-	"D8) Gestion de la sécurité" -> "D8.1) Contrôle des bagages"
-		"D8.1) Contrôle des bagages" -> "Bagages à soute";							"Bagages à soute"[shape=none];
+	"D7) Gestion de la sécurité" -> "D7.1) Contrôle des bagages"
+		"D7.1) Contrôle des bagages" -> "Bagages à soute";							"Bagages à soute"[shape=none];
 	
-	"D7) Gestion de l'équipement" -> "D7.1) Réparation"
-		"D7.1) Réparation"-> "SGBag (rails, chariots, etc.)";						"SGBag (rails, chariots, etc.)"[shape=none];
+	"D6) Gestion de l'équipement" -> "D6.1) Réparation"
+		"D6.1) Réparation"-> "SGBag (rails, chariots, etc.)";						"SGBag (rails, chariots, etc.)"[shape=none];
 
-	"D6) Gestion du personnel"
+	"D5) Gestion du personnel"
 
-	"D5) Gestion des locaux"
+	"D4) Gestion des locaux"
 
-	"D4) Gestion des voyageurs" -> "D4.1) Réclamation"
-		"D4.1) Réclamation"-> "Interface WEB";										"Interface WEB"[shape=none];
-		"D4.1) Réclamation"-> "Interface SGBag";									"Interface SGBag"[shape=none];
+	"D3) Gestion des voyageurs" -> "D3.2) Réclamation"
+		"D3.2) Réclamation"-> "Interface WEB";										"Interface WEB"[shape=none];
+		"D3.2) Réclamation"-> "Interface SGBag";									"Interface SGBag"[shape=none];
 
 	"D3) Gestion des voyageurs" -> "D3.1) Enregistrement des bagages";
 		"D3.1) Enregistrement des bagages" -> "Étiquettage";						"Étiquettage"[shape=none];
