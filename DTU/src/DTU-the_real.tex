@@ -1,27 +1,93 @@
-\begin{description}
-\item[U1) Technicien de maintenance] Le technicien de maintenance est appelé en
-cas de problème mécanique ou électronique. Dans ce cas, tout ou partie du
-système sera temporairement à l'arrêt. Le technicien devras avoir accès à des
-commandes simples permettant le test des fonctionnalités en causes. Dans un
-second temps, le technicien devras pouvoir remplir une fiche électronique
-d'intervention.
+U1) Technicien de Maintenance
+
+T1.6 - D6) Gestion de l'Équipement
+
+	T1.6.1 Réparer un problème mécanique ou électronique \bold{SEQ}
+		T1.6.1.1 Receptionner d'une demande d'intervention [système]
+		T1.6.1.2 Intervenir [manuelle]
+		T1.6.1.3 Verifier l'éfficacité de intervention [système]
+		T1.6.1.4 Remplir la fiche électronique d'intervention [système]
+
+
 \item[U2) Conducteur] Le conducteur est chargé de gérer et conduire un train de
 bagages. Il a accès à une fonction permettant d'interrompre le chargement d'un
 wagon de bagages quand il est plein, et de le reprendre lorsqu'il à déplacé le
 train pour remplir le wagon suivant.
-\item[U6) Responsable de maintenance] Le responsable de maintenance reçoit les
-demandes d'entretiens et est chargé de les distribuer parmi ses équipes. Tout
-comme les techniciens de maintenance, il à accès aux commandes de tests et
-soumission de fiches électroniques. Mais il à également un accès privilegié sur
-la base de données des fiches électroniques permettant une validation et une
-gestion simple.
+
+U6) Responsable de maintenance
+
+T6.5 - D5) Gestion du personnel
+
+	T6.5.1 Répartir les demande d'intervention \bold{SEQ}
+		T6.5.1.1 Receptionner les demandes d'intervention [système]
+		T6.5.1.2 Répartir les demandes d'intervention [système]
+		T6.5.1.3 Valider les fiches électronique d'intervention [système]
+	
+T6.6 - D6) Gestion de l'Équipement
+
+	T6.6.1 Remplacer un Technicien de Maintenance \bold{SEQ}
+		T1.6.1.1 Receptionner d'une demande d'intervention [système]
+		T1.6.1.2 Intervenir [manuelle]
+		T1.6.1.3 Verifier l'éfficacité de intervention [système]
+		T1.6.1.4 Remplir la fiche électronique d'intervention [système]
+
 \item[U7) Superviseur] Le superviseur gère tout un secteur du système de
 bagagerie, il à donc accès à toutes les informations disponibles sur le système
 en temps réel. Il doit également pouvoir stopper tout ou partie de système afin
 de prévenir d'une panne, ou de stopper un éléments disfonctionnel. Il doit
 pouvoir avertir le service informatique ou le service maintenance en cas de panne.
+
+U7) Superviseur
+
+T.7.4 - D4) Gestion des Locaux
+
+	T.7.4.1 Surveiller les locaux
+		T.7.4.1.1 Vérifier le bon état des locaux [système]
+		T.7.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+
+T.7.6 - D6) Gestion de l'Équipement
+
+	T.7.6.1 Surveiller l'Équipement
+		T.7.6.1.1 Vérifier le bon état de l'Équipement [système]
+		T.7.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+
+T.7.7 - D7) Gestion de la Sécurité
+
+	T.7.7.1 Surveiller la Sécurité
+		T.7.7.1.1 Vérifier le bon état de la sécurité [système]
+		T.7.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+
 \item[U9) Responsable technique] Le responsable technique est sous les ordres du
 responsable des bagages. Il à acces à toutes les fonctions du superviseur.
+
+U9) Responsable technique
+
+T.9.4 - D4) Gestion des Locaux
+
+	T.9.4.1 Remplacer un Superviseur dans la surveillance des locaux
+		T.9.4.1.1 Vérifier le bon état des locaux [système]
+		T.9.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+	
+	T.9.4.2 Examen des traces
+
+T.9.6 - D6) Gestion de l'Équipement
+
+	T.9.6.1 Remplacer un Superviseur dans la surveillance de l'Équipement
+		T.9.6.1.1 Vérifier le bon état de l'Équipement [système]
+		T.9.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+
+	T.9.6.2 Configurer le système avant la mise en fonctionnement
+
+	T.9.6.3 Examiner les traces
+
+T.9.7 - D7) Gestion de la Sécurité
+
+	T.9.7.1 Remplacer un Superviseur dans la surveillance de la Sécurité
+		T.9.7.1.1 Vérifier le bon état de la sécurité [système]
+		T.9.4.1.2 Si (problème), arrêter les éléments concernés, deposer un demande d'intervention au service concerné [système]
+
+	T.9.7.2 Examiner les traces
+
 \item[U10) Responsable du service bagages] Le responsable du service des bagages
 à pour tâche de diriger les superviseurs. Il pilote l'ensemble des activités du
 services et a donc à sa disposition les outils de contrôle et de maintenance
