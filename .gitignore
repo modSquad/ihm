@@ -22,3 +22,7 @@
 *.out
 *.synctex.gz
 .*.swp
+document.tex
+document.pdf
+.project
+.texlipse
