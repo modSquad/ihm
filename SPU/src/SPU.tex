@@ -1,0 +1,41 @@
+\section{\textbf{JSPU} 1 : Configuration et simulation\footnote{Seul ce \textbf{JSPU} est étudié dans le présent document, à la demande du client}}
+
+%
+
+\subsection{Objectifs à atteindre}
+\begin{itemize}
+	\item Configurer précisément le \kw{SGBag}
+	\item Simuler fidèlement le fonctionnement de \kw{SGBag} pour une configuration donnée
+	\item Permettre un réglage fin de la simulation (notions d'évènements).
+\end{itemize}
+
+\subsection{Utilisation du système}
+Le responsable technique configure le système.
+
+Le cas échéant, il organise et coordonne la simulation et modifie la configuration en fonction des résultats. Lors d'une simulation conséquente, des superviseurs l'assistent dans sa tâche et gèrent chacun une partie de la simulation sur un terminal.
+
+\subsection{Compréhension des messages et symboles}
+Les messages doivent être clairs et très précis. Ils doivent permettre de comprendre à tout moment \og ce qu'il se passe \fg, quitte à nécessiter une réflexion de la part de l'utilisateur.
+
+\subsection{Caractère prévisible des réponses}
+Elles seront peu prévisibles dans le cadre de la simulation (l'outil sert justement à connaître le résultat des commandes), ainsi que dans la simulation (les messages avertissant d'une erreur de saisie ne seront, par exemple, pas attendus par l'utilisateur). Faire au mieux.
+
+\subsection{Récupération en cas d'erreur}
+\begin{itemize}
+	\item Détecter et empêcher au maximum les saisies de configuration incohérente ou dangereuse.
+	\item Enregistrer les problèmes rencontrés durant la simulation.
+\end{itemize}
+
+\subsection{Complexité des opérations}
+Importante. La plus grande partie de l'interface est dédiée à des utilisateurs formés et ayant une bonne expérience du domaine, qui recherchent un contrôle pointu.
+
+\subsection{Temps de réponse}
+\begin{itemize}
+	\item Relativement rapide (quelques secondes) pour le lancement d'une simulation.
+	\item Temps réel (du point de vue d'un utilisateur humain) pour toutes les opérations durant une simulation.
+	\item Peu contraint pour l'application de la configuration au \kw{SGBag} réel (non simulé), l'opération étant très ponctuelle.
+\end{itemize}
+
+\subsection{Coût des erreurs}
+Coût financier potentiellement important (dysfonctionnement du système entraînant le retard d'avions, chariots ou chemins de roulement endommagés, \ldots), voire coût en vies humaines dans les cas extrêmes (mauvaise configuration entraînant un manque de contrôle des bagages).
+

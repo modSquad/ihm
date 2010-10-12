@@ -1,16 +1,6 @@
 \include{include}
 
-% Couleurs utilisées dans le tableau pour colorier les cases correspondantes
-% aux D_JSPU. Doivent donner un bon résultat lorsqu'un texte noir leur est
-% superposé.
-\definecolor{DJSPU1}{gray}{0.6}
-\definecolor{DJSPU2}{gray}{0.7}
-\definecolor{DJSPU3}{gray}{0.8}
-\definecolor{DJSPU4}{gray}{0.9}
-
-% Ne prend qu'un caractère (un chiffre) en paramètre, ce qui permet de
-% l'utiliser de la manière suivante : \DJSPU1 \DJSPU2 etc.
-\newcommand{\DJSPU}[1]{\cellcolor[named]{DJSPU#1}}
+\include{DJSPU}
 
 \title{SPU : Spécifications des Performances d'Usage}
 
@@ -18,13 +8,15 @@
 \maketitle
 
 \begin{figure}[h!]
-\begin{center}
+\centering
 
 \include{../../TTU-DF/src/TTU-DF}
 \include{DJSPU-Legende}
 
-\end{center}
 \caption{\textbf{D\_JSPU} : Domaines des Jeux de Spécifications des Performances d'Usage}
 \end{figure}
+
+\include{SPU}
+
 \end{document}
 
