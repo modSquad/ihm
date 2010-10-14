@@ -1,25 +1,125 @@
-\include{include}
+\section*{U1) Technicien de Maintenance}
+	\subsection*{T1.6 - D6) Gestion de l'Équipement}
+	\begin{description}
+		\item[T1.6.1] Réparation \textbf{SEQ}
+		\begin{description}
+			\item[T1.6.1.1] Résoudre une demande d'intervention \textbf{SEQ}
+			\begin{description}
+				\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
+				\item[T1.6.1.1.2] Intervenir [manuelle]
+				\item[T1.6.1.1.3] Verifier l'efficacité de l'intervention [système]
+				\item[T1.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+			\end{description}
+		\end{description}
+	\end{description}
 
-\title{DTU : Description des tâches utilisateur}
+\section*{U2) Conducteur}
+	\subsection*{T.2.8 - D8) Gestion des bagages}
+	\begin{description}
+		\item[T2.8.1] Charger le train de bagages \textbf{REP}
+		\begin{description}
+			\item[T2.8.1.1] Placer le train à la fin de la chaine [manuelle]
+			\item[T2.8.1.2] Démarrer le chargement [système]
+			\item[T2.8.1.3] Si (wagon plein) Arrêter le chargement [système]
+			\item[T2.8.1.4] Si (train non plein et il reste des bagages) Passer au wagon suivant et tâche T2.8.1.2, Sinon, Partir avec le train [manuelle]
+		\end{description}
+	\end{description}
+	
+\section*{U6) Responsable de maintenance}
+	\subsection*{T6.5 - D5) Gestion du personnel}
+	\begin{description}
+		\item[T6.5.1] Répartir les demande d'intervention \textbf{SEQ}
+		\begin{description}
+			\item[T6.5.1.1] Receptionner les demandes d'intervention [système]
+			\item[T6.5.1.2] Répartir les demandes d'intervention [système]
+			\item[T6.5.1.3] Receptionner et valider les fiches électronique d'intervention [système]
+		\end{description}
+	\end{description}
+	
+	\subsection*{T6.6 - D6) Gestion de l'Équipement}
+	\begin{description}
+		\item[T6.6.1] Réparation\textbf{SEQ}
+		\begin{description}
+			\item[T6.6.1.1] Résoudre une demande d'intervention \textbf{SEQ}
+			\begin{description}
+				\item[T6.6.1.1.1] Receptionner d'une demande d'intervention [système]
+				\item[T6.6.1.1.2] Intervenir [manuelle]
+				\item[T6.6.1.1.3] Verifier l'éfficacité de intervention [système]
+				\item[T6.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+			\end{description}
+		\end{description}
+	\end{description}
 
-\begin{document}
-\maketitle
-\tableofcontents
-\newpage
+\section*{U7) Superviseur}
+	\subsection*{T.7.1 - D1) Développement}
+	\begin{description}
+		\item[T.7.1.1] Prend en charge la simulation sur un terminal.
+	\end{description}
 
-\part{Liste et description des domaines fonctionnels}
-\includegraphics[width=\linewidth]{../../DDF/src/img/DDF.pdf}
+	\subsection*{T.7.6 - D6) Gestion de l'Équipement}
+	\begin{description}
+		\item[T.7.6.1] Surveiller l'Équipement \textbf{SEQ}
+		\begin{description}
+			\item[T.7.6.1.1] Vérifier le bon état de l'Équipement [système]
+			\item[T.7.6.1.2] Si (problème) : arrêter les éléments concernés, deposer une demande d'intervention au service concerné [système]
+		\end{description}
+	\end{description}
 
-\part{Modèles des profils utilisateurs}
-\begin{center}
-    \includegraphics[angle=90, height=24cm]{../../MU/src/img/MU.png}
-\end{center}
-\newpage
-\part{Graphe d'héritage des profils utilisateurs}
-\includegraphics[width=\linewidth]{../../GPU/src/img/GPU.png}
-\newpage
+\section*{U9) Responsable technique}
 
-\part{Description des profils des utilisateurs}
-\input{../../DPU/src/DPU.tex}
-\newpage
-\end{document}
+	\subsection*{T.9.1 - D1) Développement}
+	\begin{description}
+		\item[T.9.1.1] Configurer le système avant la mise en fonctionnement.
+		\item[T.9.1.2] Prend en charge la simulation sur l'ensemble de l'aéroport.
+		\item[T.9.1.3] Examiner les traces pour analyse de performances, pour des statistiques de pannes, et pour initialiser le système dans l'état où il était avant un arrêt.
+	\end{description}
+	
+	\subsection*{T.9.6 - D6) Gestion de l'Équipement}
+	\begin{description}
+		\item[T.9.6.1] Surveiller l'Équipement
+		\begin{description}
+			\item[T.9.6.1.1] Vérifier le bon état de l'Équipement [système]
+			\item[T.9.6.1.2] Si (problème), arrêter les éléments concernés, deposer une demande d'intervention au service concerné, ou contacter le superviseur concerné [système]
+		\end{description}
+	\end{description}
+
+	
+\section*{U10) Responsable du service bagages}
+
+Le responsable du service a, de notre point de vue, les même tâches que le
+superviseur.
+
+\section*{U11) Technicien informatique}
+	\subsection*{T11.1 D1) R et D}
+	\begin{description}
+		\item[T11.1.1] Faire remonter des suggestions d'amélioration \textbf{OPT}
+	\end{description}
+	
+	
+	\begin{description}
+		\item[T11.9.1] Intervenir sur un problème informatique \textbf{SEQ}
+		\begin{description}
+			\item[T11.9.1.1] Receptionner d'une demande d'intervention [système]
+			\item[T11.9.1.2] Intervenir [manuelle]
+			\item[T11.9.1.3] Si (panne matérielle), faire une demande d'intervention par
+			le service maintenance [système]
+			\item[T1.6.1.4] Si (intervention terminée) Remplir la fiche électronique d'intervention [système]
+		\end{description}
+		\item[T11.9.2] Consulter les traces d'exécution \textbf{SEQ}
+		\begin{description}
+			\item[T11.9.2.1] Lors d'une intervention, oenser qu'il y a un besoin d'analyser les opérations effectuées sur le système [manuelle]
+			\item[T11.9.2.2] Accéder aux traces d'exécution [système]
+		\end{description}
+	\end{description} 
+	
+\section*{U12) Responsable informatique}
+	\subsection*{T12.1 D1) R et D}
+	\begin{description}
+		\item[T12.1.1] Faire remonter des suggestions d'amélioration \textbf{OPT}
+	\end{description}
+	
+	\subsection*{T12.9 D9) Administration SI}
+	\begin{description}
+		\item[T12.1.1] Intervenir sur un problème informatique (voir T1.11.1)
+		\item[T12.1.2] Consulter les traces d'exécution (voir T1.11.2)
+	\end{description}

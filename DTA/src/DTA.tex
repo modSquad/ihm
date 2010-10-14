@@ -1,62 +1,148 @@
 \part{Description des tâches d'activités}
 
 \dta
-{3}{X}{Contrôleur}
-{REP}
+{1}{6}{Technicien de Maintenance}
+{SEQ}
 {
 \begin{description}
-	\item [T3.X.1)] Utiliser le service d'alert des bagages suspects
-	\item [T3.X.2)] Effectuer un contrôle visuel à distance
-	\item [T3.X.3)] Orienter le chariot (vers une zone de contrôle manuel, vers la zone de traitement des bagages douteux ou vers le chemin \og normal\fg)
-	\item [T3.X.4)] Effectuer un contrôle manuel
-	\item [T3.X.5)] Enregistrer le passage du bagages ainsi que la décision associée	
+	\item[T1.6.1] Réparation\textbf{SEQ}
+	\begin{description}
+		\item[T1.6.1.1] Résoudre une demande d'intervention\textbf{SEQ}
+		\begin{description}
+			\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
+			\item[T1.6.1.1.2] Intervenir [manuelle]
+			\item[T1.6.1.1.3] Verifier l'efficacité de l'intervention [système]
+			\item[T1.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+		\end{description}
+	\end{description}
 \end{description}
 }
 
 \dta
-{4}{X}{Opérateur de guichet}
+{3}{7}{Contrôleur}
+{ALT, SEQ, REP}
+{
+\begin{description}
+	\item [T3.7.1)] Recoit les alertes de bagages suspects [\textsl{système}]
+	\item [T3.7.2)] Effectuer un contrôle visuel à distance : ALT
+	\begin{description}
+		\item [T3.7.3.1)] Orienter le chariot vers une zone de contrôle manuel [\textsl{système}]
+		\item [T3.7.3.2)] Orienter vers le chemin \og normal\fg) [\textsl{système}]
+	\end{description}
+	\item [T3.7.5)] Enregistrer le passage du bagages ainsi que la décision associée [\textsl{système}]
+\end{description}
+}
+
+\dta
+{4}{3}{Opérateur de guichet}
 {REP, SEQ}
 {
 \begin{description}
-	\item [T4.X.1)] Acceuillir le client
-	\item [T4.X.2)] Utiliser le système de pesée
-		\subitem [T4.X.2.1)] Lancer la pesée
-		\subitem [T4.X.2.1)] Contrôler la pesée
-
-	\item [T4.X.3)] Enregistrer le bagage
-		\subitem [T4.X.3.1] Imprimer l'étiquette \textsl{RFID}
-		\subitem [T4.X.3.1] Attacher l'étiquette au bagage
-		
-	\item [T4.X.4)] Injecter le(s) bagages(s) dans le \textsl{SGBag} 
-\end{description}
-}i
-
-\dta
-{5}{X}{Voyageur}
-{
-\begin{description}
-	\item [T5.X.1)] Enregistrer ses bagages
-	\item [T5.X.2)] Embarquer
-	\item [T5.X.3)] Passer le contrôle de sécurité
-	\item [T5.X.4)] Débarquer
-	\item [T5.X.5)] Récupérer ses bagages sur le carrousel
-	\item [T5.X.6)] Faire appel au service des réclamations
-		\subitem [T5.X.6.1)] Suivre son dossier via INTERNET ou via le téléphone
-	\item [T5.X.7)] Passer la douane et éventuellement le service d'immigration.
+	\item [T4.3.1)] Acceuillir le client [\textsl{manuel}]
+	\item [T4.3.2)] Utiliser le système de pesée
+	\begin{description}
+		\item [T4.3.2.1)] Lancer la pesée [\textsl{système}]
+		\item [T4.3.2.1)] Contrôler la pesée [\textsl{système}]
+	\end{description}
+	\item [T4.3.3)] Enregistrer le bagage [\textsl{système}]
+	\begin{description}
+		\item [T4.3.3.1] Imprimer l'étiquette \textsl{RFID} [\textsl{système}]
+		\item [T4.3.3.1] Attacher l'étiquette au bagage [\textsl{système}]
+	\end{description}
+	\item [T4.3.4)] Injecter le(s) bagages(s) dans le \textsl{SGBag}  [\textsl{système}]
 \end{description}
 }
 
 \dta
-{8}{X}{Préposé aux réclamations}
+{5}{3}{Voyageur (lésé ou pas)}
+{SEQ}
 {
 \begin{description}
-	\item [T8.X.1)] Rechercher la trace d'un bagage égaré
-		\subitem [T8.X.1.2] Visualiser le trajet du bagage
-	\item [T8.X.2)] Traiter un dossier de voyageur
-		\subitem [T8.X.2.1)] Ouvrir un dossier
-		\subitem [T8.X.2.1)] Consulter un dossier
-		\subitem [T8.X.2.1)] Manier le système d'identification un dossier
-			\subsubitem [T8.X.2.1)] Fournir un numéro d'identification et un mot de passe
-	\item [T8.X.3)] Informer le client de l'avancement de son dossier
+	\item [T5.3.1)] Enregistrer ses bagages auprès de l'opérateur de guichet [\textsl{système}]
+	\item [T5.3.2)] Passer le contrôle de sécurité [\textsl{manuel}]
+	\item [T5.3.3)] Embarquer [\textsl{manuel}]
+	\item [T5.3.4)] Débarquer : ALT
+	\begin{description}
+		\item [T5.3.5.1)] Récupérer ses bagages sur le carrousel [\textsl{manuel}]
+		\item [T5.3.6)] Faire appel au service des réclamations [\textsl{manuel}]
+		\item [T5.3.6.1)] Suivre son dossier via INTERNET ou via le téléphone [\textsl{manuel}]
+	\end{description}
+	\item [T5.3.7)] Passer la douane et éventuellement le service d'immigration. [\textsl{manuel}]
+\end{description}
+}
+
+\dta
+{6}{5, 6}{Responsable de Maintenance}
+{SEQ}
+{
+\begin{description}
+	\item[T6.5.1] Répartir les demande d'intervention \textbf{SEQ}
+	\begin{description}
+		\item[T6.5.1.1] Receptionner les demandes d'intervention [système]
+		\item[T6.5.1.2] Répartir les demandes d'intervention [système]
+		\item[T6.5.1.3] Receptionner et valider les fiches électronique d'intervention [système]
+	\end{description}
+
+	\item[T6.6.1] Réparation\textbf{SEQ}
+	\begin{description}
+		\item[T6.6.1.1] Résoudre une demande d'intervention \textbf{SEQ}
+		\begin{description}
+			\item[T6.6.1.1.1] Receptionner d'une demande d'intervention [système]
+			\item[T6.6.1.1.2] Intervenir [manuelle]
+			\item[T6.6.1.1.3] Verifier l'éfficacité de intervention [système]
+			\item[T6.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+		\end{description}
+	\end{description}
+\end{description}
+}
+
+\dta
+{7}{1, 6}{Superviseur}
+{SEQ}
+{
+\begin{description}
+	\item[T.7.1.1] Prend en charge la simulation sur un terminal.
+	
+	\item[T.7.6.1] Surveiller l'Équipement \textbf{SEQ}
+	\begin{description}
+		\item[T.7.6.1.1] Vérifier le bon état de l'Équipement [système]
+		\item[T.7.6.1.2] Si (problème) : arrêter les éléments concernés, deposer une demande d'intervention au service concerné [système]
+	\end{description}
+\end{description}
+}
+
+\dta
+{8}{3, 8}{Préposé aux réclamations}
+{REP}
+{
+\begin{description}
+	\item [T8.3.1)] Recevoir la description du problème depuis le service \og Réclamation\fg. [\textsl{système}]
+	\item [T8.3.2)] Constitution du dossier [\textsl{système}] 
+	\item [T8.3.3)] Fournir un numéro d'identification et un mot de passe [\textsl{système}]
+	\item [T8.3.4)] Informer le client de l'avancement de son dossier [\textsl{manuel}]
+
+	\item [T8.8.1)] Rechercher la trace d'un bagage égaré
+	\begin{description}
+		\item [T8.8.1.1)] Visualiser le trajet du bagage [\textsl{système}]
+		\item [T8.8.1.2)] Détecter l'erreur [\textsl{système}]
+	\end{description}
+\end{description}
+}
+
+\dta
+{9}{1, 6}{Superviseur}
+{SEQ}
+{
+\begin{description}
+	\item[T.9.1.1] Configurer le système avant la mise en fonctionnement.
+	\itme[T.9.1.2] Prend en charge la simulation sur l'ensemble de l'aéroport.
+	\item[T.9.1.3] Examiner les traces pour analyse de performances, pour des statistiques de pannes, et pour initialiser le système dans l'état où il était avant un arrêt.
+
+	\item[T.9.6.1] Surveiller l'Équipement
+	\begin{description}
+		\item[T.9.6.1.1] Vérifier le bon état de l'Équipement [système]
+		\item[T.9.6.1.2] Si (problème), arrêter les éléments concernés, deposer un
+		demande d'intervention au service concerné, ou contacter le superviseur concerné [système]
+	\end{description}
 \end{description}
 }
