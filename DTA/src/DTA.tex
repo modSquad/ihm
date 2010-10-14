@@ -1,62 +1,74 @@
 \part{Description des tâches d'activités}
 
 \dta
-{3}{X}{Contrôleur}
-{REP}
+{3}{7}{Contrôleur}
+{ALT, SEQ, REP}
 {
 \begin{description}
-	\item [T3.X.1)] Utiliser le service d'alert des bagages suspects
-	\item [T3.X.2)] Effectuer un contrôle visuel à distance
-	\item [T3.X.3)] Orienter le chariot (vers une zone de contrôle manuel, vers la zone de traitement des bagages douteux ou vers le chemin \og normal\fg)
-	\item [T3.X.4)] Effectuer un contrôle manuel
-	\item [T3.X.5)] Enregistrer le passage du bagages ainsi que la décision associée	
+	\item [T3.7.1)] Recoit les alertes de bagages suspects
+	\item [T3.7.2)] Effectuer un contrôle visuel à distance : ALT
+	\begin{description}
+		\item [T3.7.3.1)] Orienter le chariot vers une zone de contrôle manuel
+		\item [T3.7.3.2)] Orienter vers le chemin \og normal\fg)
+	\end{description}
+	\item [T3.7.5)] Enregistrer le passage du bagages ainsi que la décision associée	
 \end{description}
 }
 
 \dta
-{4}{X}{Opérateur de guichet}
+{4}{3}{Opérateur de guichet}
 {REP, SEQ}
 {
 \begin{description}
-	\item [T4.X.1)] Acceuillir le client
-	\item [T4.X.2)] Utiliser le système de pesée
-		\subitem [T4.X.2.1)] Lancer la pesée
-		\subitem [T4.X.2.1)] Contrôler la pesée
+	\item [T4.3.1)] Acceuillir le client
+	\item [T4.3.2)] Utiliser le système de pesée
+	\begin{description}
+		\item [T4.3.2.1)] Lancer la pesée
+		\item [T4.3.2.1)] Contrôler la pesée
+	\end{description}
 
-	\item [T4.X.3)] Enregistrer le bagage
-		\subitem [T4.X.3.1] Imprimer l'étiquette \textsl{RFID}
-		\subitem [T4.X.3.1] Attacher l'étiquette au bagage
+	\item [T4.3.3)] Enregistrer le bagage
+	\begin{description}
+		\item [T4.3.3.1] Imprimer l'étiquette \textsl{RFID}
+		\item [T4.3.3.1] Attacher l'étiquette au bagage
+	\end{description}
 		
-	\item [T4.X.4)] Injecter le(s) bagages(s) dans le \textsl{SGBag} 
-\end{description}
-}i
-
-\dta
-{5}{X}{Voyageur}
-{
-\begin{description}
-	\item [T5.X.1)] Enregistrer ses bagages
-	\item [T5.X.2)] Embarquer
-	\item [T5.X.3)] Passer le contrôle de sécurité
-	\item [T5.X.4)] Débarquer
-	\item [T5.X.5)] Récupérer ses bagages sur le carrousel
-	\item [T5.X.6)] Faire appel au service des réclamations
-		\subitem [T5.X.6.1)] Suivre son dossier via INTERNET ou via le téléphone
-	\item [T5.X.7)] Passer la douane et éventuellement le service d'immigration.
+	\item [T4.3.4)] Injecter le(s) bagages(s) dans le \textsl{SGBag} 
 \end{description}
 }
 
 \dta
-{8}{X}{Préposé aux réclamations}
+{5}{3}{Voyageur (lésé ou pas)}
+{SEQ}
 {
 \begin{description}
-	\item [T8.X.1)] Rechercher la trace d'un bagage égaré
-		\subitem [T8.X.1.2] Visualiser le trajet du bagage
-	\item [T8.X.2)] Traiter un dossier de voyageur
-		\subitem [T8.X.2.1)] Ouvrir un dossier
-		\subitem [T8.X.2.1)] Consulter un dossier
-		\subitem [T8.X.2.1)] Manier le système d'identification un dossier
-			\subsubitem [T8.X.2.1)] Fournir un numéro d'identification et un mot de passe
-	\item [T8.X.3)] Informer le client de l'avancement de son dossier
+	\item [T5.3.1)] Enregistrer ses bagages auprès de l'opérateur de guichet
+	\item [T5.3.2)] Passer le contrôle de sécurité
+	\item [T5.3.3)] Embarquer
+	\item [T5.3.4)] Débarquer : ALT
+	\begin{description}
+		\item [T5.3.5.1)] Récupérer ses bagages sur le carrousel
+		\item [T5.3.6)] Faire appel au service des réclamations
+		\item [T5.3.6.1)] Suivre son dossier via INTERNET ou via le téléphone
+	\end{description}
+	\item [T5.3.7)] Passer la douane et éventuellement le service d'immigration.
+\end{description}
+}
+
+\dta
+{8}{3, 8}{Préposé aux réclamations}
+{REP}
+{
+\begin{description}
+	\item [T8.3.1)] Recevoir la description du problème depuis le service \og Réclamation\fg.
+	\item [T8.3.2)] Constitution du dossier 
+	\item [T8.3.3)] Fournir un numéro d'identification et un mot de passe
+	\item [T8.3.4)] Informer le client de l'avancement de son dossier
+
+	\item [T8.8.1)] Rechercher la trace d'un bagage égaré
+	\begin{description}
+		\item [T8.8.1.1)] Visualiser le trajet du bagage
+		\item [T8.8.1.2)] Détecter l'erreur.
+	\end{description}
 \end{description}
 }
