@@ -1,12 +1,14 @@
 \section{U1) Technicien de Maintenance}
 	\subsection{T1.6 - D6) Gestion de l'Équipement}
 	\begin{description}
-	\item[T1.6.1] Réparer un problème mécanique ou électronique \textbf{SEQ}
-		\begin{description}
-		\item[T1.6.1.1] Receptionner d'une demande d'intervention [système]
-		\item[T1.6.1.2] Intervenir [manuelle]
-		\item[T1.6.1.3] Verifier l'efficacité de intervention [système]
-		\item[T1.6.1.4] Remplir la fiche électronique d'intervention [système]
+	\item[T1.6.1] Réparation\textbf{SEQ}
+		\item[T1.6.1.1] Résoudre une demande d'intervention\textbf{SEQ}
+			\begin{description}
+			\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
+			\item[T1.6.1.1.2] Intervenir [manuelle]
+			\item[T1.6.1.1.3] Verifier l'efficacité de l'intervention [système]
+			\item[T1.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+			\end{description}
 		\end{description}
 	\end{description}
 
@@ -36,81 +38,46 @@
 	
 	\subsection{T6.6 - D6) Gestion de l'Équipement}
 	\begin{description}
-		\item[T6.6.1] Remplacer un Technicien de Maintenance \textbf{SEQ}
+	\item[T6.6.1] Réparation\textbf{SEQ}
+		\item[T6.6.1.1] Résoudre une demande d'intervention \textbf{SEQ}
 		\begin{description}
-			\item[T1.6.1.1] Receptionner d'une demande d'intervention [système]
-			\item[T1.6.1.2] Intervenir [manuelle]
-			\item[T1.6.1.3] Verifier l'éfficacité de intervention [système]
-			\item[T1.6.1.4] Remplir la fiche électronique d'intervention [système]
+			\item[T6.6.1.1.1] Receptionner d'une demande d'intervention [système]
+			\item[T6.6.1.1.2] Intervenir [manuelle]
+			\item[T6.6.1.1.3] Verifier l'éfficacité de intervention [système]
+			\item[T6.6.1.1.4] Remplir la fiche électronique d'intervention [système]
 		\end{description}
 	\end{description}
 
 \section{U7) Superviseur}
-	\subsection{T.7.4 - D4) Gestion des Locaux}
-	\begin{description}
-	\item[T.7.4.1] Surveiller les locaux
-		\begin{description}
-		\item[T.7.4.1.1] Vérifier le bon état des locaux [système]
-		\item[T.7.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
-		demande d'intervention au service concerné [système]
-		\end{description}
-	\end{description}
 
 	\subsection{T.7.6 - D6) Gestion de l'Équipement}
 	\begin{description}
 	\item[T.7.6.1] Surveiller l'Équipement
 		\begin{description}
 		\item[T.7.6.1.1] Vérifier le bon état de l'Équipement [système]
-		\item[T.7.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
-		demande d'intervention au service concerné [système]
-		\end{description}
-	\end{description}
-
-	\subsection{T.7.7 - D7) Gestion de la Sécurité}
-	\begin{description}
-	\item[T.7.7.1] Surveiller la Sécurité
-		\begin{description}
-		\item[T.7.7.1.1] Vérifier le bon état de la sécurité [système]
-		\item[T.7.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
+		\item[T.7.6.1.2] Si (problème), arrêter les éléments concernés, deposer un
 		demande d'intervention au service concerné [système]
 		\end{description}
 	\end{description}
 
 \section{U9) Responsable technique}
-	\subsection{T.9.4 - D4) Gestion des Locaux}
+
+	\subsection{T.9.1 - D1) Développement}
 	\begin{description}
-	\item[T.9.4.1] Remplacer un Superviseur dans la surveillance des locaux
-		\begin{description}
-		\item[T.9.4.1.1] Vérifier le bon état des locaux [système]
-		\item[T.9.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
-		demande d'intervention au service concerné [système]
-		\end{description}
-	\item[T.9.4.2] Examen des traces
+	\item[T.9.1.1] Configurer le système avant la mise en fonctionnement
+	\item[T.9.1.2] Examiner les traces pour analyse de performances, pour des statistiques de pannes, et pour initialiser le système dans l'état où il était avant un arrêt.
 	\end{description}
 	
 	\subsection{T.9.6 - D6) Gestion de l'Équipement}
 	\begin{description}
-	\item[T.9.6.1] Remplacer un Superviseur dans la surveillance de l'Équipement
+	\item[T.9.6.1] Surveiller l'Équipement
 		\begin{description}
 		\item[T.9.6.1.1] Vérifier le bon état de l'Équipement [système]
-		\item[T.9.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
-		demande d'intervention au service concerné [système]
+		\item[T.9.6.1.2] Si (problème), arrêter les éléments concernés, deposer un
+		demande d'intervention au service concerné, ou contacter le superviseur concerné [système]
 		\end{description}
-	\item[T.9.6.2] Configurer le système avant la mise en fonctionnement
-
-	\item[T.9.6.3] Examiner les traces
 	\end{description}
 
-	\subsection{T.9.7 - D7) Gestion de la Sécurité}
-	\begin{description}
-	\item[T.9.7.1] Remplacer un Superviseur dans la surveillance de la Sécurité
-		\begin{description}
-		\item[T.9.7.1.1] Vérifier le bon état de la sécurité [système]
-		\item[T.9.4.1.2] Si (problème), arrêter les éléments concernés, deposer un
-		demande d'intervention au service concerné [système]
-		\end{description}
-	\item[T.9.7.2] Examiner les traces
-	\end{description}
 	
 \section{U10) Responsable du service bagages}
 
