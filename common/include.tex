@@ -128,8 +128,22 @@
 	~\\
 }
 
-
-
+\newcommand{\dta}[5]{
+\begin{tabular}{|c|c|c|}
+    \hline
+	TTF/DF #1 \hfill & \hfill #2 & \hfill #3 \\
+    \hline
+    \multicolumn{3}{|l|}{
+	\textbf{\texttt{#4}}
+    }\\
+    \multicolumn{3}{|l|}{
+    \begin{minipage}{16cm}
+    #5
+    \end{minipage}
+    }\\
+    \hline
+\end{tabular}
+}
 
 %headers, footers
 \pagestyle{fancy}
