@@ -1,0 +1,138 @@
+digraph {
+	
+	graph [
+		rankdir = "TB"
+	]
+	
+	node [
+		shape = "box"
+	]
+	
+	SGBag [
+		label = "u-SGBag"
+	]
+	
+	Configuration [
+		label = "u-Configuration"
+	]
+	
+	Simulation [
+		label = "u-Simulation"
+	]
+	
+	Aeroport [
+		label = "u-Aeroport"
+	]
+	Avion [
+		label = "u-Avion"
+	]
+	
+	Terminal [
+		label = "u-Terminal"
+	]
+	
+	connec_hall [
+		label = "u-Chemin de connection entre les halls"
+	]
+	
+	Hall [
+		label = "u-Hall"
+	]
+	
+	Guich_enr [
+		label = "u-Guichet d'enregistrement"
+	]
+	
+	Bagage [
+		label = "u-Bagage"
+	]
+	
+	Chariot [
+		label = "u-Chariot"
+	]
+	
+	Rail [
+		label = "u-Rail"
+	]
+	
+	Zone_controle_Auto [
+		label = "u-Zone contrôle de sécurité Automatique"
+	]
+	
+	Portique [
+		label = "u-Portique"
+	]
+	
+	Zone_controle_Manu [
+		label = "u-Zone de contrôle de sécurité Manuelle"
+	]
+	
+	garage [
+		label = "u-Voie de garage"
+	]
+	
+	Zone_batteries [
+		label = "u-Zone de chargement des batteries"
+	]
+	
+	Zone_embarquement [
+		label = "u-Zone embarquement"
+	]
+	
+	Tapis_roulant [
+		label = "u-Tapis roulant"
+	]
+	
+	Train [
+		label = "u-Train"
+	]
+	
+	Wagonnets [
+		label = "u-Wagonnets"
+	]
+	
+	Containers [
+		label = "u-Containers"
+	]
+	
+	Plateau_elevateur [
+		label = "u-Plateau elevateur"
+	]
+	
+	Zone_déchargement [
+		label = "u-Zone déchargement"
+	]
+	
+	Tobogan [
+		label = "u-Tobogan"
+	]
+	
+	Zone_retrait [
+		label = "u-Zone retrait des bagages"
+	]
+	
+	Carrousel [
+		label = "u-Carrousel"
+	]
+	
+	Zone_maintenance [
+		label = "u-Zone de maintenance"
+	]
+	
+	Aiguillage [
+		label = "u-Aiguillage"
+	]
+	
+	Chemin_roulement [
+		label = "u-Chemin de roulement"
+	]
+	
+	Évènement [
+		label = "u-Évènement"
+	]
+	
+	Données_exploitations [
+		label = "u-Données d'exploitations"
+	]
+
+}
