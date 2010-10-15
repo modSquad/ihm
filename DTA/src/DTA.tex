@@ -1,15 +1,17 @@
 \part{Description des tâches d'activités}
-{1}{6}{Technicien de Maintenance}{~}
-{SEQ}
+
+\newcommand{\stereotype}[1]{\textbf{\texttt{#1}}}
+
+\dta{6}{Technicien de Maintenance}{\stereotype{SEQ}}
 {
 \begin{description}
-	\item[T1.6.1] Réparation\textbf{SEQ}
+	\item[T1.6.1] Réparation \stereotype{SEQ}
 	\begin{description}
-		\item[T1.6.1.1] Résoudre une demande d'intervention\textbf{SEQ}
+		\item[T1.6.1.1] Résoudre une demande d'intervention \stereotype{SEQ}
 		\begin{description}
-			\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
+			\item[T1.6.1.1.1] Réceptionner une demande d'intervention [système]
 			\item[T1.6.1.1.2] Intervenir [manuelle]
-			\item[T1.6.1.1.3] Verifier l'efficacité de l'intervention [système]
+			\item[T1.6.1.1.3] Vérifier l'efficacité de l'intervention [système]
 			\item[T1.6.1.1.4] Remplir la fiche électronique d'intervention [système]
 		\end{description}
 	\end{description}
@@ -17,32 +19,30 @@
 }
 
 \dta
-{2}{8}{Conducteur}
-{ALT}
+{8}{Conducteur}{\stereotype{ALT}}
 {
 \begin{description}
 	\item [T2.8.1)] Gérer l'embarquement des bagages : REP
 	\begin{description}
-		\item [T2.8.1.1)] Vérification visuelle du remplissage des conteneurs [\textsl{manuel}]
-		\item [T2.8.1.2)] Embarquement des bagages [\textsl{manuel}]
-		\item [T2.8.1.3)] Signaler au SGBag l'avancement des opérations. [\textsl{système}]
+		\item [T2.8.1.1)] Vérification visuelle du remplissage des conteneurs [manuel]
+		\item [T2.8.1.2)] Embarquement des bagages [manuel]
+		\item [T2.8.1.3)] Signaler au SGBag l'avancement des opérations. [système]
 	\end{description}
 	\item [T2.8.2)] Gérer le débarquement des bagages
-		\begin{description}
-			\item [T2.8.2.1)] Débarquement des bagages [\textsl{manuel}]
-			\item [T2.8.2.2)] Signaler au SGBag la fin des opérations. [\textsl{système}]
-		\end{description}
+	\begin{description}
+		\item [T2.8.2.1)] Débarquement des bagages [manuel]
+		\item [T2.8.2.2)] Signaler au SGBag la fin des opérations. [système]
+	\end{description}
 \end{description}
 }
 
-
-{1}{6}{Technicien de Maintenance}
-{SEQ}
+\dta
+{6}{Technicien de Maintenance}{\stereotype{SEQ}}
 {
 \begin{description}
-	\item[T1.6.1] Réparation\textbf{SEQ}
+	\item[T1.6.1] Réparation \stereotype{SEQ}
 	\begin{description}
-		\item[T1.6.1.1] Résoudre une demande d'intervention\textbf{SEQ}
+		\item[T1.6.1.1] Résoudre une demande d'intervention \stereotype{SEQ}
 		\begin{description}
 			\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
 			\item[T1.6.1.1.2] Intervenir [manuelle]
@@ -54,71 +54,71 @@
 }
 
 \dta
-{3}{7}{Contrôleur}
-{ALT, SEQ, REP}
+{7}{Contrôleur}
+{\stereotype{ALT}, \stereotype{SEQ}, REP}
 {
 \begin{description}
-	\item [T3.7.1)] Recoit les alertes de bagages suspects [\textsl{système}]
-	\item [T3.7.2)] Effectuer un contrôle visuel à distance : ALT
+	\item [T3.7.1)] Recoit les alertes de bagages suspects [système]
+	\item [T3.7.2)] Effectuer un contrôle visuel à distance : \stereotype{ALT}
 	\begin{description}
-		\item [T3.7.3.1)] Orienter le chariot vers une zone de contrôle manuel [\textsl{système}]
-		\item [T3.7.3.2)] Orienter vers le chemin \og normal\fg) [\textsl{système}]
+		\item [T3.7.3.1)] Orienter le chariot vers une zone de contrôle manuel [système]
+		\item [T3.7.3.2)] Orienter vers le chemin \og normal\fg [système]
 	\end{description}
-	\item [T3.7.5)] Enregistrer le passage du bagages ainsi que la décision associée [\textsl{système}]
+	\item [T3.7.5)] Enregistrer le passage du bagages ainsi que la décision associée [système]
 \end{description}
 }
 
 \dta
-{4}{3}{Opérateur de guichet}
-{REP, SEQ}
+{3}{Opérateur de guichet}
+{REP, \stereotype{SEQ}}
 {
 \begin{description}
-	\item [T4.3.1)] Acceuillir le client [\textsl{manuel}]
+	\item [T4.3.1)] Acceuillir le client [manuel]
 	\item [T4.3.2)] Utiliser le système de pesée
 	\begin{description}
-		\item [T4.3.2.1)] Lancer la pesée [\textsl{système}]
-		\item [T4.3.2.1)] Contrôler la pesée [\textsl{système}]
+		\item [T4.3.2.1)] Lancer la pesée [système]
+		\item [T4.3.2.1)] Contrôler la pesée [système]
 	\end{description}
-	\item [T4.3.3)] Enregistrer le bagage [\textsl{système}]
+	\item [T4.3.3)] Enregistrer le bagage [système]
 	\begin{description}
-		\item [T4.3.3.1] Imprimer l'étiquette \textsl{RFID} [\textsl{système}]
-		\item [T4.3.3.1] Attacher l'étiquette au bagage [\textsl{système}]
+		\item [T4.3.3.1] Imprimer l'étiquette \textsl{RFID} [système]
+		\item [T4.3.3.1] Attacher l'étiquette au bagage [systèm]
 	\end{description}
 	\item [T4.3.4)] Injecter le(s) bagages(s) dans le \textsl{SGBag}  [\textsl{système}]
 \end{description}
 }
 
 \dta
-{5}{3}{Voyageur (lésé ou pas)}
-{SEQ}
+{3}{Voyageur (lésé ou pas)}
+{\stereotype{SEQ}}
 {
 \begin{description}
-	\item [T5.3.1)] Enregistrer ses bagages auprès de l'opérateur de guichet [\textsl{système}]
-	\item [T5.3.2)] Passer le contrôle de sécurité [\textsl{manuel}]
-	\item [T5.3.3)] Embarquer [\textsl{manuel}]
-	\item [T5.3.4)] Débarquer : ALT
+	\item [T5.3.1)] Enregistrer ses bagages auprès de l'opérateur de guichet [système]
+	\item [T5.3.2)] Passer le contrôle de sécurité [manuel]
+	\item [T5.3.3)] Embarquer [manuel]
+	\item [T5.3.4)] Débarquer : \stereotype{ALT}
 	\begin{description}
-		\item [T5.3.5.1)] Récupérer ses bagages sur le carrousel [\textsl{manuel}]
-		\item [T5.3.6)] Faire appel au service des réclamations [\textsl{manuel}]
-		\item [T5.3.6.1)] Suivre son dossier via INTERNET ou via le téléphone [\textsl{manuel}]
+		\item [T5.3.5.1)] Récupérer ses bagages sur le carrousel [manuel]
+		\item [T5.3.6)] Faire appel au service des réclamations [manuel]
+		\item [T5.3.6.1)] Suivre son dossier via INTERNET ou via le téléphone [manuel]
 	\end{description}
-	\item [T5.3.7)] Passer la douane et éventuellement le service d'immigration. [\textsl{manuel}]
+	\item [T5.3.7)] Passer la douane et éventuellement le service d'immigration. [manuel]
 \end{description}
 }
 
 \dta
-{6}{5, 6}{Responsable de Maintenance}{SEQ}
+{5, 6}{Responsable de Maintenance}{\stereotype{SEQ}}
 {
 \begin{description}
-	\item[T6.5.1] Répartir les demande d'intervention \textbf{SEQ}
+	\item[T6.5.1] Répartir les demande d'intervention \stereotype{SEQ}
 	\begin{description}
 		\item[T6.5.1.1] Receptionner les demandes d'intervention [système]
 		\item[T6.5.1.2] Répartir les demandes d'intervention [système]
 		\item[T6.5.1.3] Receptionner et valider les fiches électronique d'intervention [système]
 	\end{description}
-	\item[T6.6.1] Réparation\textbf{SEQ}
+	\item[T6.6.1] Réparation \stereotype{SEQ}
 	\begin{description}
-		\item[T6.6.1.1] Résoudre une demande d'intervention \textbf{SEQ}
+		\item[T6.6.1.1] Résoudre une demande d'intervention \stereotype{SEQ}
 		\begin{description}
 			\item[T6.6.1.1.1] Receptionner d'une demande d'intervention [système]
 			\item[T6.6.1.1.2] Intervenir [manuelle]
@@ -130,12 +130,12 @@
 }
 
 \dta
-{7}{1, 6}{Superviseur}
-{SEQ}
+{1, 6}{Superviseur}
+{\stereotype{SEQ}}
 {
 \begin{description}
 	\item[T.7.1.1] Prend en charge la simulation sur un terminal.
-	\item[T.7.6.1] Surveiller l'Équipement \textbf{SEQ}
+	\item[T.7.6.1] Surveiller l'Équipement \stereotype{SEQ}
 	\begin{description}
 		\item[T.7.6.1.1] Vérifier le bon état de l'Équipement [système]
 		\item[T.7.6.1.2] Si (problème) : arrêter les éléments concernés, deposer une demande d'intervention au service concerné [système]
@@ -144,30 +144,30 @@
 }
 
 \dta
-{8}{3, 8}{Préposé aux réclamations}
+{3, 8}{Préposé aux réclamations}
 {REP}
 {
 \begin{description}
-	\item [T8.3.1)] Recevoir la description du problème depuis le service \og Réclamation\fg. [\textsl{système}]
-	\item [T8.3.2)] Constitution du dossier [\textsl{système}] 
-	\item [T8.3.3)] Fournir un numéro d'identification et un mot de passe [\textsl{système}]
-	\item [T8.3.4)] Informer le client de l'avancement de son dossier [\textsl{manuel}]
+	\item [T8.3.1)] Recevoir la description du problème depuis le service \og Réclamation\fg. [système]
+	\item [T8.3.2)] Constitution du dossier [système] 
+	\item [T8.3.3)] Fournir un numéro d'identification et un mot de passe [système]
+	\item [T8.3.4)] Informer le client de l'avancement de son dossier [manuel]
 	\item [T8.8.1)] Rechercher la trace d'un bagage égaré
 	\begin{description}
-		\item [T8.8.1.1)] Visualiser le trajet du bagage [\textsl{système}]
-		\item [T8.8.1.2)] Détecter l'erreur [\textsl{système}]
+		\item [T8.8.1.1)] Visualiser le trajet du bagage [système]
+		\item [T8.8.1.2)] Détecter l'erreur [système]
 	\end{description}
 \end{description}
 }
 
-{9}{1, 6}{Responsable technique}
-{SEQ}
+\dta
+{1, 6}{Responsable technique}
+{\stereotype{SEQ}}
 {
 \begin{description}
 	\item[T.7.1.1] Configurer le système avant la mise en fonctionnement.
 	\item[T.7.1.2] Prend en charge la simulation sur l'ensemble de l'aéroport.
 	\item[T.7.1.3] Examiner les traces pour analyse de performances, pour des statistiques de pannes, et pour initialiser le système dans l'état où il était avant un arrêt.
-
 	\item[T.7.6.1] Surveiller l'Équipement
 	\begin{description}
 		\item[T.7.6.1.1] Vérifier le bon état de l'équipement [système]
@@ -178,20 +178,20 @@
 }
 
 \dta
-{10}{1, 5}{Responsable du service des bagages}{~}
+{1, 5}{Responsable du service des bagages}{~}
 {
 \begin{description}
-	\item [T10.1.1)] Remplacer le responsable technique : OPT
+	\item [T10.1.1)] Remplacer le responsable technique : \stereotype{OPT}
 	\item [T10.5.1)] Diriger les superviseurs
-	\item [T10.6.1)] Remplacer le responsable technique : OPT
+	\item [T10.6.1)] Remplacer le responsable technique : \stereotype{OPT}
 \end{description}
 }
 
 \dta
-{11}{1, 9}{Technicien informatique}{~}{
+{1, 9}{Technicien informatique}{~}{
 \begin{description}
-	\item [T11.1.1)] Faire remonter des suggestions d'amélioration : OPT	
-	\item [T11.1.2)] Intervenir sur un problème informatique : SEQ
+	\item [T11.1.1)] Faire remonter des suggestions d'amélioration : \stereotype{OPT}	
+	\item [T11.1.2)] Intervenir sur un problème informatique : \stereotype{SEQ}
 	\begin{description}
 		\item [T11.9.1.1)] Receptionner d'une demande d'intervention [système]
 		\item [T11.9.1.2)] Intervenir [manuelle]
@@ -200,14 +200,14 @@
 		\item [T11.9.1.4)] Si (intervention terminée) Remplir la fiche
 		électronique d'intervention [système]
 	\end{description}
-	\item [T11.9.2] Consulter les traces d'exécution : SEQ 
+	\item [T11.9.2] Consulter les traces d'exécution : \stereotype{SEQ} 
 	\begin{description}
 		\item [T11.9.2.1)] Lors d'une intervention, penser qu'il y a un
 		    besoin d'analyser les opération effectuées sur le système [manuelle] 
 		\item [T11.9.2.2)] Accéder aux traces d'exécution [systeme]
 		\item [T11.1.2.1)] Réceptionner une demande d'intervention
 		[systeme]
-		\item [T11.1.2.2)] Intervenir [manuelle] : ALT
+		\item [T11.1.2.2)] Intervenir [manuelle] : \stereotype{ALT}
 	\end{description}
 	\item [T11.1.3)] Si (panne matérielle), faire une demande d'intervention
 	    par le service maintenance [systeme]
@@ -218,13 +218,13 @@
 
 
 \dta
-{12}{1, 9}{Responsable informatique}{~}
+{1, 9}{Responsable informatique}{~}
 {
 \begin{description}
-	\item [T12.5.1)] Faire remonter des suggestions d'amélioration: OPT
+	\item [T12.5.1)] Faire remonter des suggestions d'amélioration: \stereotype{OPT}
 	\item [T12.5.2)] Recevoir les demandes de maintenance
 	\item [T12.5.3)] Repartir les demandes de maintenance auprès des techniciens informatiques
-	\item [T12.1.1)] Remplacer le technicien informatique : OPT 
-	\item [T12.1.9)] Remplacer le technicien informatique : OPT 
+	\item [T12.1.1)] Remplacer le technicien informatique : \stereotype{OPT} 
+	\item [T12.1.9)] Remplacer le technicien informatique : \stereotype{OPT} 
 \end{description}
 }

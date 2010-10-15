@@ -128,17 +128,19 @@
 	~\\
 }
 
-\newcommand{\dta}[5]{
+\newcounter{nttudf}
+\newcommand{\dta}[4]{
+\addtocounter{nttudf}{1}
 \begin{tabular}{|c|c|c|}
     \hline
-	TTF/DF #1 \hfill & \hfill #2 & \hfill #3 \\
+	TTF/DF \thenttudf  \hfill & \hfill #1 & \hfill #2 \\
     \hline
     \multicolumn{3}{|l|}{
-	\textbf{\texttt{#4}}
+	\textbf{\texttt{#3}}
     }\\
     \multicolumn{3}{|l|}{
     \begin{minipage}{16cm}
-    #5
+    #4
     \end{minipage}
     }\\
     \hline
