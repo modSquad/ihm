@@ -15,7 +15,7 @@ digraph{
 		arrowhead = "open"
 		sametail = "true"
 		
-		label = "\"E\""
+		label = "«E»"
 	]
 
 	{	
