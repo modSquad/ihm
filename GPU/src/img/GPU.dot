@@ -1,0 +1,102 @@
+digraph{
+	
+	graph [
+		rankdir = "BT"
+	]
+
+	
+	node [
+		shape = "box"
+		sametail = "true"
+	]
+	
+	edge [
+		style = "dotted"
+		arrowhead = "open"
+		sametail = "true"
+		
+		label = "\"E\""
+	]
+
+	{	
+		{
+			"U1" [
+				label = "U1) Technicien de Maintenance"
+			]
+			
+			"U6" [
+				label = "U6) Responsable Mainteance"
+			]
+		}
+		
+		{
+			"U2" [
+				label = "U2) Conducteur"
+			]
+			
+			"U3" [
+				label = "U3) Contrôleur"
+			]
+			
+			"U7" [
+				label = "U7) Superviseur"
+			]
+			
+			U7 -> U2
+			U7 -> U3
+		}
+		
+		{
+			"U9" [
+				label = "U9) Responsable Technique"
+			]
+			
+			"U10" [
+				label = "U10) Responsable Service Bagages"
+			]
+		}
+	}	
+	
+	{	
+		"U4" [
+			label = "U4) Opérateur de Guichet"
+		]
+		
+		{	
+			"U5" [
+				label = "U5) Voyageurs"
+			]
+			
+			"U8" [
+				label = "U8) Préposé aux Réclamations"
+			]
+		}
+	}
+
+	{
+		"U11" [
+			label = "U11) Technicien Informatique"
+		]
+		
+		"U12" [
+			label = "U12) Responsable Informatique"
+		]
+	}
+	
+	U12 -> U11 -> U10 -> U9 -> U7
+
+	U11 -> U8 -> U5	
+	U11 -> U7
+	U11 -> U4
+	
+	//U7 -> U2
+	//U7 -> U3
+	
+	U9 -> U6 -> U1
+	
+	/*invisible link*/
+
+	U6 -> U4 [ style = "invis" ]
+	U9 -> U8 [ style = "invis" ]
+	
+	}
