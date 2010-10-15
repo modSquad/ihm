@@ -22,17 +22,35 @@
 {
 \begin{description}
 	\item [T2.8.1)] Gérer l'embarquement des bagages : REP
-		\begin{description}
-			\item [T2.8.1.1)] Vérification visuelle du remplissage des conteneurs [\textsl{manuel}]
-			\item [T2.8.1.2)] Embarquement des bagages [\textsl{manuel}]
-			\item [T2.8.1.3)] Signaler au SGBag l'avancement des opérations. [\textsl{système}]
-		\end{description}
-
+	\begin{description}
+		\item [T2.8.1.1)] Vérification visuelle du remplissage des conteneurs [\textsl{manuel}]
+		\item [T2.8.1.2)] Embarquement des bagages [\textsl{manuel}]
+		\item [T2.8.1.3)] Signaler au SGBag l'avancement des opérations. [\textsl{système}]
+	\end{description}
 	\item [T2.8.2)] Gérer le débarquement des bagages
 		\begin{description}
 			\item [T2.8.2.1)] Débarquement des bagages [\textsl{manuel}]
 			\item [T2.8.2.2)] Signaler au SGBag la fin des opérations. [\textsl{système}]
 		\end{description}
+\end{description}
+}
+
+
+{1}{6}{Technicien de Maintenance}
+{SEQ}
+{
+\begin{description}
+	\item[T1.6.1] Réparation\textbf{SEQ}
+	\begin{description}
+		\item[T1.6.1.1] Résoudre une demande d'intervention\textbf{SEQ}
+		\begin{description}
+			\item[T1.6.1.1.1] Receptionner une demande d'intervention [système]
+			\item[T1.6.1.1.2] Intervenir [manuelle]
+			\item[T1.6.1.1.3] Verifier l'efficacité de l'intervention [système]
+			\item[T1.6.1.1.4] Remplir la fiche électronique d'intervention [système]
+		\end{description}
+	\end{description}
+\end{description}
 }
 
 \dta
@@ -168,20 +186,27 @@
 {
 \begin{description}
 	\item [T10.1.1)] Remplacer le responsable technique : OPT
-	
 	\item [T10.5.1)] Diriger les superviseurs
-
 	\item [T10.6.1)] Remplacer le responsable technique : OPT
 \end{description}
 }
 
 \dta
-{11}{1, 9}{Technicien informatique}
+{11}{1, 9}{Technicien informatique}{~}
 {
 \begin{description}
 	\item [T11.1.1)] Faire remonter des suggestions d’amélioration : OPT	
 	\item [T11.1.2)] Intervenir sur un problème informatique : SEQ
 	\begin{description}
+		\item [T11.9.1.1)] Receptionner d’une demande d’intervention [système]
+		\item [T11.9.1.2)] Intervenir [manuelle]
+		\item [T11.9.1.3)] Si (panne matérielle), faire une demande d’intervention par le service maintenance [système]
+		\item [T11.9.1.4)] Si (intervention terminée) Remplir la fiche électronique d’intervention [système]
+	\end{description}
+	\item [T11.9.2 Consulter les traces d’exécution : SEQ 
+	\begin{description}
+		\item [T11.9.2.1)] Lors d’une intervention, oenser qu’il y a un besoin d’analyser les opérations effectuées sur le système [manuelle] 
+		\item [T11.9.2.2)] Accéder aux traces d’exécution [système]
 		\item [T11.1.2.1)] Receptionner une demande d’intervention [système]
 		\item [T11.1.2.2)] Intervenir [manuelle] : ALT
 	\end{description}
@@ -193,7 +218,7 @@
 }
 
 \dta
-{12}{5, 9}{Responsable informatique}
+{12}{1, 9}{Responsable informatique}{~}
 {
 \begin{description}
 	\item [T12.5.1)] Faire remonter des suggestions d’amélioration : OPT
