@@ -1,15 +1,28 @@
 digraph {
 	
 	graph [
-		rankdir = "TB"
+		rankdir = "BT"
 	]
 	
 	node [
 		shape = "box"
 	]
 	
+	edge [
+		arrowhead = "diamond"
+		samehead = "true"
+	]
+	
 	SGBag [
 		label = "u-SGBag"
+	]
+	
+	SGBagua [
+		label = "u-SGBag /Ua"
+	]
+	
+	SGBagub [
+		label = "u-SGBag /Ub"
 	]
 	
 	Configuration [
@@ -134,5 +147,50 @@ digraph {
 	Données_exploitations [
 		label = "u-Données d'exploitations"
 	]
+
+	SGBagua -> SGBag [arrowhead = "normal"]
+	SGBagub -> SGBag [arrowhead = "normal"]
+	SGBagub -> Simulation [constraint = "false", arrowhead = "normal", samehead = "false"]
+	Simulation -> SGBagua
+	Configuration -> SGBagub
+	
+	Terminal -> Configuration
+	
+	Terminal -> Simulation
+	Évènement -> Simulation
+	Données_exploitations -> Simulation
+	
+	Hall -> Terminal
+	connec_hall -> Terminal
+	
+	Guich_enr -> Hall
+	Zone_controle_Auto -> Hall
+	Zone_controle_Manu -> Hall
+	Chemin_roulement -> Hall
+	Zone_batteries -> Hall
+	Zone_embarquement -> Hall
+	Zone_maintenance -> Hall
+	Zone_déchargement -> Hall
+	Zone_retrait -> Hall
+	
+	Portique -> Zone_controle_Auto
+	
+	garage -> Chemin_roulement
+	Aiguillage -> Chemin_roulement
+	
+	Bagage -> Zone_embarquement
+	Chariot -> Zone_embarquement
+	Tapis_roulant -> Zone_embarquement
+	Train -> Zone_embarquement
+	Wagonnets -> Zone_embarquement
+	Containers -> Zone_embarquement
+	Plateau_elevateur -> Zone_embarquement
+	
+	Bagage -> Zone_déchargement
+	Chariot -> Zone_déchargement
+	Tobogan -> Zone_déchargement
+	
+	Carrousel -> Zone_retrait
+	Bagage -> Zone_retrait
 
 }
