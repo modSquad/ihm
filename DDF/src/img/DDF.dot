@@ -44,7 +44,7 @@ digraph G {
 
 	"D2) Gestion des vols"
 
-	"D1) R&D" -> "D1.1) SGBag"
+	"D1) Développement" -> "D1.1) SGBag"
 		"D1.1) SGBag" -> "Configuration";											"Configuration"[shape=none];
 		"D1.1) SGBag" -> "Simulation";												"Simulation"[shape=none];
 		"D1.1) SGBag" -> "Maintenance évolutive";									"Maintenance évolutive"[shape=none];
