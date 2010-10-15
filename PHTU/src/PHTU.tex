@@ -2,70 +2,89 @@
 \part{Planification hiérarchique de la tâche utilisateur}
 
 \phtu
-{XXX}{Responsable technique}{1, 6}
+{X}{XX}{Responsable technique}{1, 6}
 {
 \begin{tabular}
-	\it{} Acceder au système de gestion du SGBag
-		\sit{} S'identifier dans le système
-		\sit{} Se déconnecter du système
-		\sit{} Accéder à l'interface de simulation
-		\sit{} Accéder à l'interface de Configuration
-	\it{} Effectuer une simulation
-		\sit{} Visualiser l'ensemble de l'aéroport
-			\ssit{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.})
-			\ssit{} Visualiser les bagages
-			\ssit{} Visualiser les chariots
-			\ssit{} Visualiser le remplissage d'un conteneur
-		\sit{} Ajouter des événements
-			\ssit{} Choisir son identifiant
-			\ssit{} Choisir sa date d'arrivée
-			\ssit{} Choisir son mode d'arrivé (régulier, ou ponctuel)
-			\ssit{} Éventuellement choisir la fréquence d'un évènement régulier
-		\sit{} Sauvegarder/ Enregistrer sous/ Charger une simulation
-		\sit{} Modifier les paramètres dynamique de simulation
-			\ssit{} Modifier le chemin d'un chariot	
-			\ssit{} Modifier la fréquence des pannes
-			\ssit{} Modifier le flux d'arrivé de bagages
-	\it{} Effectuer la configuration
-		\sit{} Ajouter un éléments 
-			\ssit{} Créer un nouveau type d'élément
-			\ssit{} Choisir un élément
-			\ssit{} Choisir ses dimensions
-			\ssit{} Choisir sa position
-			\ssit{} Créer des liens avec cet élément
-		\sit{} Modifier un élément
-			\ssit{} Modifier le type d'un élément
-			\ssit{} Modifier les dimensions d'un élément
-			\ssit{} Modifier la position d'un élément
-			\ssit{} Ajouter/ Supprimer des liens avec cet éléments
-		\sit{} Sauvegarder/ Enregistrer sous/ Charger une configuration
-	\it{} Analyser les journaux du système en simulation ou en cas réel
-		\sit{} Analyser les statistiques de pannes
-		\sit{} Analyser les performances
-	\it{} Réagir en cas d'urgence 
-		\sit{} Redémarrer le SGBag
-		\sit{} Communiquer avec les superviseurs
+	\itm{} Acceder au système de gestion du SGBag
+		\sitm{} S'identifier dans le système			& log
+		\sitm{} Se deconnecter du système				& unlog
+		\sitm{} Accéder à l'interface de simuation		& inter-simulation
+		\sitm{} Accéder à l'interface de Configuration	& inter-configuration
+
+	\itm{} Effectuer une simulation
+		\sitm{} Visualiser l'ensemble de l'aéroport
+			\ssitm{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.}) 
+			\ssitm{} Visualiser les bagages
+			\ssitm{} Visualiser les chariots
+			\ssitm{} Visualiser le remplissage d'un conteneur
+		\sitm{} Ajouter des événements
+			\ssitm{} Choisir son identifiant
+			\ssitm{} Choisir sa date d'arrivée
+			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel)
+			\ssitm{} Éventuellement choisir la fréquence d'un évènement régulier
+
+		\sitm{} Sauvegarder/ Enregistrer sous/ Charger une simulation
+		\sitm{} Modifier les paramètres dynamique de simulation
+			\ssitm{} Modifier le chemin d'un chariot	
+			\ssitm{} Modifier la fréquence des pannes
+			\ssitm{} Modifier le flux d'arrivé de bagages
+	
+	\itm{} Effectuer la configuration
+		\sitm{} Ajouter un éléments 
+			\ssitm{} Créer un nouveau type d'élément
+			\ssitm{} Choisir un élément
+			\ssitm{} Choisir ses dimensions
+			\ssitm{} Choisir sa position
+			\ssitm{} Créer des liens avec cet élément
+
+		\sitm{} Modifier un élément
+			\ssitm{} Modifier le type d'un élément
+			\ssitm{} Modifier les dimensions d'un élément
+			\ssitm{} Modifier la position d'un élément
+			\ssitm{} Ajouter/ Supprimer des liens avec cet éléments
+		
+		\sitm{} Sauvegarder/ Enregistrer sous/ Charger une configuration
+
+	\itm{} Analyser les journaux du système en simulation ou en cas réel
+		\sitm{} Analyser les statistiques de pannes
+		\sitm{} Analyser les performances
+
+	\itm{} Réagir en cas d'urgence 
+		\sitm{} Redémarrer le SGBag
+		\sitm{} Communiquer avec les superviseurs
+		
 \end{tabular}
 }
 
 \phtu
-{1}{XXX}{Superviseur}{1, 6}
+{1}{XX}{Superviseur}{1, 6}
 {
-	\it{} Effectuer une simulation
-		\sit{} Visualiser l'ensemble de l'aéroport
-			\ssit{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.})
-			\ssit{} Visualiser les bagages
-			\ssit{} Visualiser les chariots
-			\ssit{} Visualiser le remplissage d'un conteneur
-		\sit{} Ajouter des événements
-			\ssit{} Choisir son identifiant
-			\ssit{} Choisir sa date d'arrivée
-			\ssit{} Choisir son mode d'arrivé (régulier, ou ponctuel)
-			\ssit{} Éventuellement choisir la fréquence d'un évènement régulier
+	\itm{} Effectuer une simulation
+		\sitm{} Visualiser l'ensemble de l'aéroport
+			\ssitm{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.})
+			\ssitm{} Visualiser les bagages
+			\ssitm{} Visualiser les chariots
+			\ssitm{} Visualiser le remplissage d'un conteneur
+		\sitm{} Ajouter des événements
+			\ssitm{} Choisir son identifiant
+			\ssitm{} Choisir sa date d'arrivée
+			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel)
+			\ssitm{} Éventuellement choisir la fréquence d'un évènement régulier
 
-		\sit{} Sauvegarder/ Enregistrer sous/ Charger une simulation
-		\sit{} Modifier les paramètres dynamique de simulation
-			\ssit{} Modifier le chemin d'un chariot	
-			\ssit{} Modifier la fréquence des pannes
-			\ssit{} Modifier le flux d'arrivé de bagages
+		\sitm{} Sauvegarder/ Enregistrer sous/ Charger une simulation
+		\sitm{} Modifier les paramètres dynamique de simulation
+			\ssitm{} Modifier le chemin d'un chariot	
+			\ssitm{} Modifier la fréquence des pannes
+			\ssitm{} Modifier le flux d'arrivé de bagages
+
+	\itm{} Surveiller l'équipement
+		\sitm{} Analyser les journaux du système en simulation ou en cas réel
+			\ssitm{} Analyser les statistiques de pannes
+			\ssitm{} Analyser les performances
+
+	\itm{} Réagir en cas de problème
+		\sitm{} Propager l'information aux personnes concernées
+		\sitm{} Déposer une demande d'intervention
+		
+	\itm{} Gérer les conducteurs et les manutentionnaires du terminal	
 }
