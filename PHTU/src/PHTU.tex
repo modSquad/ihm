@@ -5,53 +5,86 @@
 {X}{XX}{Responsable technique}{1, 6}
 {
 \begin{tabular}
-	\itm{} Acceder au système de gestion du SGBag
-		\sitm{} S'identifier dans le système			& log
-		\sitm{} Se deconnecter du système				& unlog
-		\sitm{} Accéder à l'interface de simuation		& inter-simulation
-		\sitm{} Accéder à l'interface de Configuration	& inter-configuration
+	\itm{} Acceder au système de gestion du SGBag : \textsl{SEQ}
+		\sitm{} S'identifier dans le système					& log
+		\sitm{} Se deconnecter du système						& unlog
+		\sitm{} Accéder aux fonctions choisies : \textsl{ALT}
+			\sitm{} Accéder à l'interface de simuation			& ouvrir-inter-simulation
+			\sitm{} Accéder à l'interface de Configuration		& ouvrir-inter-configuration
 
-	\itm{} Effectuer une simulation
+	\itm{} Effectuer la simulation
 		\sitm{} Visualiser l'ensemble de l'aéroport
 			\ssitm{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.}) 
-			\ssitm{} Visualiser les bagages
-			\ssitm{} Visualiser les chariots
-			\ssitm{} Visualiser le remplissage d'un conteneur
-		\sitm{} Ajouter des événements
+			\ssitm{} Visualiser les éléments : \textsl{ALT}
+				\sssitm{} Visualiser les bagages					& afficher-bagages
+				\sssitm{} Visualiser les chariots					& afficher-chariots
+				\sssitm{} Visualiser le remplissage d'un conteneur	& afficher-conteneurs
+		\sitm{} Ajouter des événements : \textsl{SEQ}				& ajouter-evnmt
 			\ssitm{} Choisir son identifiant
 			\ssitm{} Choisir sa date d'arrivée
-			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel)
-			\ssitm{} Éventuellement choisir la fréquence d'un évènement régulier
+			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel) : \textsl{ALT}
+				\sssitm{} Choisir une arrivé ponctuelle et sa date d'arrivée.
+				\sssitm{} Choisir une arrivé régulière, sa date et sa fréquence d'arrivée.
 
-		\sitm{} Sauvegarder/ Enregistrer sous/ Charger une simulation
-		\sitm{} Modifier les paramètres dynamique de simulation
-			\ssitm{} Modifier le chemin d'un chariot	
-			\ssitm{} Modifier la fréquence des pannes
-			\ssitm{} Modifier le flux d'arrivé de bagages
+		\sitm{} Modifier un événement : \textsl{SEQ}				& modifier-evnmt
+			\ssitm{} Visualiser la liste des événements
+			\ssitm{} Choisir l'événement parmis cette liste
+			\ssitm{} Modifier l'événement séléctionné
+
+		\sitm{} Supprimer un événement : \textsl{SEQ}				& supprimer-evnmt
+			\ssitm{} Visualiser la liste des événements
+			\ssitm{} Choisir l'événement parmis cette liste
+			\ssitm{} Supprimer l'événement séléctionné
+
+		\sitm{} Gérer la persistence des données de simulation : \textsl{ALT}
+				\ssitm{} Sauvegarder								& enreg-sim
+				\ssitm{} Enregistrer sous							& enreg-sous-sim
+				\ssitm{} Charger une simulation						& charger-sim
+
+		\sitm{} Modifier les paramètres dynamiques de simulation : \textsl{ALT}
+			\ssitm{} Modifier le chemin d'un chariot				& modif-chemin-chariot
+			\ssitm{} Modifier la fréquence des pannes				& modif-freq-pannes
+			\ssitm{} Modifier le flux d'arrivé de bagages			& modif-flux-bag
 	
-	\itm{} Effectuer la configuration
-		\sitm{} Ajouter un éléments 
+	\itm{} Effectuer la configuration : \textsl{ALT}
+		\sitm{} Ajouter un éléments : \textsl{SEQ}					& ajout-elmt
 			\ssitm{} Créer un nouveau type d'élément
 			\ssitm{} Choisir un élément
 			\ssitm{} Choisir ses dimensions
 			\ssitm{} Choisir sa position
 			\ssitm{} Créer des liens avec cet élément
 
-		\sitm{} Modifier un élément
-			\ssitm{} Modifier le type d'un élément
-			\ssitm{} Modifier les dimensions d'un élément
-			\ssitm{} Modifier la position d'un élément
-			\ssitm{} Ajouter/ Supprimer des liens avec cet éléments
+		\sitm{} Modifier un élément : \textsl{SEQ}					
+			\ssitm{} Sélectionner un élément : \textsl{ALT}
+				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
+				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
+			\ssitm{} Modifier l'élément : \textsl{ALT}	& modif-elmt
+				\sssitm{} Modifier le type d'un élément
+				\sssitm{} Modifier les dimensions d'un élément
+				\sssitm{} Modifier la position d'un élément
+				\sssitm{} Ajouter/ Supprimer des liens avec cet éléments
 		
-		\sitm{} Sauvegarder/ Enregistrer sous/ Charger une configuration
+		\sitm{} Supprimer un élément : \textsl{SEQ}
+			\ssitm{} Sélectionner un élément : \textsl{ALT}
+				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
+				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
+			\ssitm{} Supprimer l'élément sélectionné	& suppri-elmt
 
-	\itm{} Analyser les journaux du système en simulation ou en cas réel
-		\sitm{} Analyser les statistiques de pannes
-		\sitm{} Analyser les performances
 
-	\itm{} Réagir en cas d'urgence 
-		\sitm{} Redémarrer le SGBag
+		\sitm{} Gérer la persistence des données de configurations : \textsl{ALT}
+				\ssitm{} Sauvegarder								& enreg-config
+				\ssitm{} Enregistrer sous							& enreg-sous-config
+				\ssitm{} Charger une simulation						& charger-config
+
+	 \itm{} Analyser les journaux du système en simulation ou en cas réel : \textsl{SEQ}
+		\sitm{} Choisir le document à analyser						& selec-journal
+		\sitm{} Analyser le document sélectionné : \textsl{ALT}
+			\ssitm{} Analyser les statistiques de pannes
+			\ssitm{} Analyser les performances
+
+	\itm{} Réagir en cas d'urgence : \textsl{ALT}
 		\sitm{} Communiquer avec les superviseurs
+		\sitm{} Redémarrer le SGBag : \textsl{OPT}
 		
 \end{tabular}
 }
