@@ -1,0 +1,10 @@
+<user_command_linkage>
+	<users>
+		<user id="resp">Responsable Technique</user>
+		<user id="sup">Superviseur</user> 
+	</users>
+
+	<commands>
+		<command uid="resp,sup">log</command>
+	</commands>
+</user_command_linkage>
