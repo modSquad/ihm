@@ -154,7 +154,9 @@ digraph {
 	Simulation -> SGBagua
 	Configuration -> SGBagub
 	
-	Terminal -> Configuration
+	Aeroport -> Configuration
+	
+	Terminal -> Aeroport
 	
 	Terminal -> Simulation
 	Évènement -> Simulation
@@ -178,14 +180,17 @@ digraph {
 	garage -> Chemin_roulement
 	Aiguillage -> Chemin_roulement
 	
+	Avion -> Zone_embarquement
 	Bagage -> Zone_embarquement
 	Chariot -> Zone_embarquement
 	Tapis_roulant -> Zone_embarquement
+	Rail -> Zone_embarquement
 	Train -> Zone_embarquement
 	Wagonnets -> Zone_embarquement
 	Containers -> Zone_embarquement
 	Plateau_elevateur -> Zone_embarquement
 	
+	Avion -> Zone_déchargement
 	Bagage -> Zone_déchargement
 	Chariot -> Zone_déchargement
 	Tobogan -> Zone_déchargement
