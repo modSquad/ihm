@@ -1,0 +1,517 @@
+% Quelques raccourcis !
+\newcommand\topologie[1]{Ajouter, modifier ou supprimer #1 (configuration de la topologie de l'aéroport)}
+\newcommand\selectionner[1]{Sélectionner #1 (afficher sa configuration)}
+\newcommand\rectetiquette{Rectangle étiquetté}
+\newcommand\transit{Visualizer le transit de bagages dans cette zone}
+\newcommand\etat{Afficher l'état}
+
+\section{u-Aeroport}
+\subsection{Définition}
+Objet unique représentant l'aéroport dans son ensemble. Cet objet regroupe tous les
+composants, c'est la racine du modèle.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône (logo de l'aéroport), accessible à tous les utilisateurs
+	\item Thème standard du système d'exploitation hôte de l'application (SGBag)
+	\item Informations sur l'utilisateur courant
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Lancer l'application (tous, le résultat dépend des droits d'accès de l'utilsateur)
+	\item L'utilisateur s'authentifie
+	\item L'utilisateur peut accéder à l'environnement de travail le concernant (litiges, gestion des bagages, \ldots)
+\end{enumerate}
+
+\section{u-Avion}
+\subsection{Définition}
+	Moyen de transport aérien permettant de transporter les voyageurs et leurs bagages d'un
+	aéroport à un autre (un avion correspond au voyage qu'il parcours selon le contexte).
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant et destination du vol (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Analyser l'état de charge des bagages pour un avion
+	\item Sélectionner l'avion comme destination d'un bagage
+\end{enumerate}
+
+\section{u-Terminal}
+\subsection{Définition}
+	Bâtiment permettant le transfert des passagers entre leur moyen de transport terrestre vers les équipements permettant d'embarquer ou débarquer d'un avion.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Nom du terminal (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le terminal}
+	\item \topologie{un terminal}
+\end{enumerate}
+
+\section{u-Chemin de connexion entre les halls}
+\subsection{Définition}
+	Couloir permettant à une personne de passer d'un hall à l'autre.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant et nom (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le chemin de connexion}
+	\item \topologie{un chemin de connexion}
+\end{enumerate}
+
+\section{u-Hall}
+\subsection{Définition}
+	Espace permettant l'accueil des visiteurs de l'aéroport ou de l'un de ses secteurs.
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant et nom (texte)
+	\item cartographie du terminal (composition d'éléments atomiques)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le hall}
+	\item \topologie{un hall}
+\end{enumerate}
+
+\section{u-Guichet d'enregistrement}
+\subsection{Définition}
+	Guichet permettant à un voyageur de se déclarer avant l'accès au terminal.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant et nom (texte)
+	\item Icône (rectangle rayé dans le sens de circulation des bagages)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le gichet d'enregistrement}
+	\item \topologie{un gichet d'enregistrement}
+\end{enumerate}
+
+\section{u-Bagage}
+\subsection{Définition}
+	Objets (regroupés) qu'un voyageur transporte avec lui. Les bagages peuvent être des bagages à main (qu'il conserve pendant
+	le voyage) ou des bagages transportés dans la soute de l'avion.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant du bagage (d'après la puce RFID passive)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Enregistrer le bagage
+	\item Modifier l'état du bagage manuellement
+	\item Dérouter le bagage (le chariot)
+\end{enumerate}
+
+\section{u-Chariot}
+\subsection{Définition}
+	Conteneur transportant les bagages d'un voyageur sur le circuit de rails.
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône (Cercle plein)
+	\item Identifiant du chariot
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Dérouter un chariot de son circuit
+	\item Dérouter un chariot (vide) vers la zone de chargement des batteries
+	\item \etat
+	\item Création, modification ou suppression de l'objet (configuration)
+\end{enumerate}
+
+\section{u-Rail}
+\subsection{Définition}
+	Composant du circuit empreinté par un train acheminant les bagages de la zone d'embarquement vers un avion.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Analyse du traffic sur les rails
+	\item \etat 
+	\item \topologie{un rail}
+\end{enumerate}
+
+\section{u-Zone de contrôle de sécurité Automatique}
+\subsection{Définition}
+	Zone par laquelle passent les chariots de bagage pour qu'un système automatisé contrôle le contenu des bagages pour y
+	détecter d'éventuels contenus à risque.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Visualiser l'état de la zone de contrôle
+	\item \topologie{une zone de contrôle}
+	\item \transit
+\end{enumerate}
+
+\section{u-Portique}
+\subsection{Définition}
+	Système automatisé permettant la détection de métaux par lequel un voyageur doit passer avant d'embarquer.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône (trait épais)
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item consulter l'objet
+	\item \etat
+\end{enumerate}
+
+\section{u-Zone de contrôle de sécurité Manuelle}
+\subsection{Définition}
+	Zone vers laquelle des bagages ayant échoué au contrôle de sécurité automatique sont acheminés pour qu'un contrôle manuel
+	soit effectué par un contrôleur.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la zone de contrôle de sécurité Manuelle}
+	\item \topologie{une zone de contrôle de sécurité Manuelle}
+	\item \transit
+\end{enumerate}
+
+\section{u-Voie de garage}
+\subsection{Définition}
+	Voie sans issue vers laquelle un chariot est dérouté du circuit pour qu'il subisse un traitement (par exemple, un chariot
+	de bagages ayant échoué au contrôle de sécurité automatique).
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Semblable à un chemin de roulement
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la voie de garage}
+	\item \topologie{une voie de garage}
+	\item Désactiver la voie
+	\item Activer la voie
+	\item \etat
+\end{enumerate}
+
+\section{u-Zone de chargement des batteries}
+\subsection{Définition}
+	Zone dans laquelle les chariots rechargent leurs batteries d'alimentation électrique.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la zone de chargement des batteries}
+	\item \topologie{une zone de chargement des batteries}
+	\item Afficher la liste des chariots en charge
+	\item \transit
+\end{enumerate}
+
+\section{u-Zone embarquement}
+\subsection{Définition}
+	Zone dans laquelle les bagages sont chargés dans des wagonnets en prévision de leur acheminement vers l'avion.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la zone d'embarquement}
+	\item \topologie{une zone d'embarquement}
+	\item Afficher les containers à être transportés
+	\item \transit
+\end{enumerate}
+
+\section{u-Tapis roulant}
+\subsection{Définition}
+	Dispositif automatique permettant le déplacement de bagages d'un point à un autre et pouvant effectuer la pesée d'un
+	bagage.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Rectangle rayé horizontallement, fleché dans le sens de circulation
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le tapis roulant}
+	\item \topologie{un tapis roulant}
+	\item Visualiser le traffic du tapis roulant
+	\item Désactiver le tapis roulant
+	\item Activer le tapis roulant
+	\item \etat
+\end{enumerate}
+
+\section{u-Train}
+\subsection{Définition}
+	Moyen de transport utilisé pour déplacer les containers de bagages de la zone d'embarquement à leur avion.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Débuter le chargement
+	\item Terminer le chargement
+	\item \selectionner{le train}
+	\item Création, modification et suppression d'un train (configuration)
+	\item Mise à jour de la composition d'un train
+	\item \etat
+\end{enumerate}
+
+\section{u-Wagonnets}
+\subsection{Définition}
+	Composant du train dans lequel sont chargés les containers de bagages.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant du wagonnet (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Enregistrer la présence (ou non) d'un container
+	\item Création, modification et suppression d'un wagonnet (configuration)
+	\item \etat
+\end{enumerate}
+
+\section{u-Containers}
+\subsection{Définition}
+	Conteneur de bagages à grand volume dans lequel les bagages sont chargés pour leur déplacement par le train.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Associer un container à un wagonnet
+	\item Charger le container dans l'avion
+	\item Décharger le container de l'avion
+	\item Remplir le container
+	\item Vider le container
+	\item Création, modification et suppression d'un container (configuration)
+	\item \etat
+\end{enumerate}
+
+\section{u-Plateau élévateur}
+\subsection{Définition}
+	Dispositif automatique permettant d'élever un ensemble de bagages.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône : double rectangle plein
+	\item Identifiant de l'objet (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le plateau élévateur}
+	\item \topologie{un plateau élévateur}
+	\item \etat
+	\item Désactiver le plateau
+	\item Activer le plateau
+\end{enumerate}
+
+\section{u-Zone déchargement}
+\subsection{Définition}
+	Zone dans laquelle les bagages arrivés à leurs destinations sont déchargés des containers vers le circuits de rails pour
+	qu'ils soient acheminés vers la zone de retrait des bagages.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la zone de déchargement}
+	\item \topologie{une zone de déchargement}
+	\item \transit
+\end{enumerate}
+
+\section{u-Tobogan}
+\subsection{Définition}
+	Dispositif permettant de faire glisser des bagages du circuits de rails vers un container.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Idenfiant de l'objet (texte)
+	\item Icône : triangle isocèle sans base et sans sommet, repli par une flêche vers la base
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{le tobogan}
+	\item \topologie{tobogan}
+	\item \etat
+	\item Désactiver la circulation par le tobogan
+	\item Activer la circulation par le tobogan
+\end{enumerate}
+
+
+\section{u-Zone retrait des bagages}
+\subsection{Définition}
+	Zone dans laquelle est situé un carrousel permettant au voyageurs ayant débarqués de récuperer les bagages transportés
+	en soute.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Identifiant de l'objet (texte)
+	\item \rectetiquette
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item \selectionner{la zone de retrait des bagages}
+	\item \topologie{une zone de bagages}
+	\item \transit
+\end{enumerate}
+
+\section{u-Carrousel}
+\subsection{Définition}
+	Tapis roulant circulaire sur lequel sont déposés les bagages transportés en soute prêts à être récupérés par les voyageurs
+	ayant débarqué.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône : tube circulaire (rayé horizontallement)
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Création, modification ou suppression d'un carrousel (configuration)
+	\item \etat
+	\item Désactiver le carrousel
+	\item Activer le carrousel
+\end{enumerate}
+
+\section{u-Zone de maintenance}
+\subsection{Définition}
+	Zone dans laquelle des opérations de maintenance sont effectués sur les composants du circuit d'acheminement des bagages
+	(chariots, rails, ...).
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item \rectetiquette
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Visualiser les objets en zone de maintenance
+	\item Consulter l'historique des objets passés en zone de maintenance
+\end{enumerate}
+
+\section{u-Aiguillage}
+\subsection{Définition}
+	Composant du circuit effectuant la jonction entre deux voies.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Séparation de tuyau
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Création, modification ou suppression d'un aiguillage (configuration)
+	\item \etat
+	\item \transit
+	\item Changer l'état de l'aiguillage
+	\item Désactiver la circulation par cet aiguillage
+	\item Activer la circulation par cet aiguillage
+\end{enumerate}
+
+\section{u-Chemin de roulement}
+\subsection{Définition}
+	circuit empreinté par les chariots de bagages, effectuant la liaison entre un hall, les différents points de contrôle
+	et les zones de chargement/déchargement des bagages.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Icône : trait plein épais (ou "tuyau"), contient des flêches indicant le sens de circulation
+	\item Identifiant (texte)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Création, modification ou souppression d'un chemin de roulement (configuration)
+	\item \etat
+	\item \transit
+	\item Désactiver la circulation par ce chemin
+	\item Activer la circulation par ce chemin
+\end{enumerate}
+
+\section{u-Événement}
+\subsection{Définition}
+	Fait remarquable dans le processus d'acheminement des bagages (comme l'enregistrement d'un nouveau bagage, l'arrivée
+	d'un chariot à sa destination, sa déviation ou encore un événement accidentel).
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Texte descriptif
+	\item Item dans une liste
+	\item Icône : symbôle normalisé "attention" (point d'exclamation dans une forme à bordure rouge)
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Visualiser l'événement
+	\item Visualiser les bagages associés au contexte de l'événement
+\end{enumerate}
+
+\section{u-Données d'exploitation}
+\subsection{Définition}
+	Ensemble de données représentant une trace du pilotage du processus d'acheminement des bagages enregistrée par un
+	système automatisé.
+
+\subsection{Présentations}
+\begin{enumerate}
+	\item Item dans une liste
+	\item Idenfiant de l'enregistrement
+	\item Icône : fichier "standard"
+\end{enumerate}
+
+\subsection{Actions}
+\begin{enumerate}
+	\item Visualiser les données d'exploitation
+	\item Purger les données
+	\item Archiver les données
+\end{enumerate}
