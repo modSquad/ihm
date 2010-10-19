@@ -7,4 +7,5 @@ all:
 	cd GPU && make && cd ..
 	cd MU && make && cd ..
 	cd TTU-DF && make && cd ..
-
+	cd DICIHM && make && cd ..
+	cd DPOU && make && cd ..
