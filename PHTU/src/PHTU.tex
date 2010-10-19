@@ -1,174 +1,147 @@
-\newpage
-\part{Planification hiérarchique de la tâche utilisateur}
+\newcommand{\option}[1]{\textbf{\texttt{#1}}}
 
-\phtu
-{X}{XX}{Responsable technique}{1, 6}
+\section{Planification hiérarchique de la tâche utilisateur}
+
+
+\phtu{0}{TOFIX}{Responsable technique}{TOFIX}
 {
-\begin{tabular}
-	\itm{} Acceder au système de gestion du SGBag : \textsl{SEQ}
-		\sitm{} S'identifier dans le système					& log
-		\sitm{} Se deconnecter du système						& unlog
-		\sitm{} Accéder aux fonctions choisies : \textsl{ALT}
-			\sitm{} Accéder à l'interface de simuation			& ouvrir-inter-simulation
-			\sitm{} Accéder à l'interface de Configuration		& ouvrir-inter-configuration
-
-	\itm{} Effectuer la simulation
-		\sitm{} Visualiser l'ensemble de l'aéroport
-			\ssitm{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.}) 
-			\ssitm{} Visualiser les éléments : \textsl{ALT}
-				\sssitm{} Visualiser les bagages					& afficher-bagages
-				\sssitm{} Visualiser les chariots					& afficher-chariots
-				\sssitm{} Visualiser le remplissage d'un conteneur	& afficher-conteneurs
-
-		\sitm{} Ajouter des événements : \textsl{SEQ}				& ajouter-evnmt
-			\ssitm{} Choisir son identifiant
-			\ssitm{} Choisir sa date d'arrivée
-			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel) : \textsl{ALT}
-				\sssitm{} Choisir une arrivé ponctuelle et sa date d'arrivée.
-				\sssitm{} Choisir une arrivé régulière, sa date et sa fréquence d'arrivée.
-
-		\sitm{} Modifier un événement : \textsl{SEQ}				& modifier-evnmt
-			\ssitm{} Visualiser la liste des événements
-			\ssitm{} Choisir l'événement parmis cette liste
-			\ssitm{} Modifier l'événement séléctionné
-
-		\sitm{} Supprimer un événement : \textsl{SEQ}				& supprimer-evnmt
-			\ssitm{} Visualiser la liste des événements
-			\ssitm{} Choisir l'événement parmis cette liste
-			\ssitm{} Supprimer l'événement séléctionné
-
-		\sitm{} Gérer la persistence des données de simulation : \textsl{ALT}
-				\ssitm{} Sauvegarder								& enreg-sim
-				\ssitm{} Enregistrer sous							& enreg-sous-sim
-				\ssitm{} Charger une simulation						& charger-sim
-
-		\sitm{} Modifier les paramètres dynamiques de simulation : \textsl{ALT}
-			\ssitm{} Modifier le chemin d'un chariot				& modif-chemin-chariot
-			\ssitm{} Modifier la fréquence des pannes				& modif-freq-pannes
-			\ssitm{} Modifier le flux d'arrivé de bagages			& modif-flux-bag
-
-		\sitm{} Démarrer un élément : \textsl{SEQ}
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Démarrer l'élément sélectionner				& arret-elmt
-
-		\sitm{} Arrêter un élément : \textsl{SEQ}
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Arrêter l'élément sélectionner					& dem-elmt
-	
-	\itm{} Effectuer la configuration : \textsl{ALT}
-		\sitm{} Ajouter un éléments : \textsl{SEQ}					& ajout-elmt
-			\ssitm{} Créer un nouveau type d'élément
-			\ssitm{} Choisir un élément
-			\ssitm{} Choisir ses dimensions
-			\ssitm{} Choisir sa position
-			\ssitm{} Créer des liens avec cet élément
-
-		\sitm{} Modifier un élément : \textsl{SEQ}					
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Modifier l'élément : \textsl{ALT}	& modif-elmt
-				\sssitm{} Modifier le type d'un élément
-				\sssitm{} Modifier les dimensions d'un élément
-				\sssitm{} Modifier la position d'un élément
-				\sssitm{} Ajouter/ Supprimer des liens avec cet éléments
-		
-		\sitm{} Supprimer un élément : \textsl{SEQ}
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Supprimer l'élément sélectionné	& suppri-elmt
-
-
-		\sitm{} Gérer la persistence des données de configurations : \textsl{ALT}
-				\ssitm{} Sauvegarder								& enreg-config
-				\ssitm{} Enregistrer sous							& enreg-sous-config
-				\ssitm{} Charger une simulation						& charger-config
-
-	 \itm{} Analyser les journaux du système en simulation ou en cas réel : \textsl{SEQ}
-		\sitm{} Choisir le document à analyser						& selec-journal
-		\sitm{} Analyser le document sélectionné : \textsl{ALT}
-			\ssitm{} Analyser les statistiques de pannes
-			\ssitm{} Analyser les performances
-
-	\itm{} Réagir en cas d'urgence : \textsl{ALT}
-		\sitm{} Communiquer avec les superviseurs
-		\sitm{} Redémarrer le SGBag : \textsl{OPT} & redem-sgbag
-		
-\end{tabular}
+\itm{} Acceder au système de gestion du SGBag : \option{SEQ} & TOFIX\\
+	\sitm{S'identifier dans le système} & log\\
+	\sitm{Se deconnecter du système} & unlog\\
+	\sitm{Accéder aux fonctions choisies : \option{ALT}} & TOFIX\\
+		\sitm{Accéder à l'interface de simuation} & ouvrir-inter-simulation\\
+		\sitm{Accéder à l'interface de Configuration} & ouvrir-inter-configuration\\
+\itm{} Effectuer la simulation & TOFIX\\
+	\sitm{Visualiser l'ensemble de l'aéroport} & TOFIX\\
+		\ssitm{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})} & TOFIX\\
+		\ssitm{Visualiser les éléments : \option{ALT}} & TOFIX\\
+			\sssitm{Visualiser les bagages} & afficher-bagages\\
+			\sssitm{Visualiser les chariots} & afficher-chariots\\
+			\sssitm{Visualiser le remplissage d'un conteneur} & afficher-conteneurs\\
+	\sitm{Ajouter des événements : \option{SEQ}} & ajouter-evnmt\\
+		\ssitm{Choisir son identifiant} & TOFIX\\
+		\ssitm{Choisir sa date d'arrivée} & TOFIX\\
+		\ssitm{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}}  & TOFIX\\
+			\sssitm{Choisir une arrivé ponctuelle et sa date d'arrivée.}  & TOFIX\\
+			\sssitm{Choisir une arrivé régulière, sa date et sa fréquence d'arrivée.} & TOFIX\\
+	\sitm{Modifier un événement : \option{SEQ}} & modifier-evnmt\\
+		\ssitm{Visualiser la liste des événements} & TOFIX\\
+		\ssitm{Choisir l'événement parmis cette liste} & TOFIX\\
+		\ssitm{Modifier l'événement séléctionné} & TOFIX\\
+	\sitm{Supprimer un événement : \option{SEQ} } & supprimer-evnmt\\
+		\ssitm{Visualiser la liste des événements} & TOFIX\\
+		\ssitm{Choisir l'événement parmis cette liste} & TOFIX\\
+		\ssitm{Supprimer l'événement séléctionné} & TOFIX\\
+	\sitm{Gérer la persistence des données de simulation : \option{ALT}} & TOFIX\\
+			\ssitm{Sauvegarder} & enreg-sim \\
+			\ssitm{Enregistrer sous }& enreg-sous-sim\\
+			\ssitm{Charger une simulation }& charger-sim\\
+	\sitm{Modifier les paramètres dynamiques de simulation : \option{ALT}} & TOFIX\\
+		\ssitm{Modifier le chemin d'un chariot }& modif-chemin-chariot\\
+		\ssitm{Modifier la fréquence des pannes }& modif-freq-pannes\\
+		\ssitm{Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
+	\sitm{Démarrer un élément : \option{SEQ}} & TOFIX \\
+		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
+			\sssitm{Sélectionner un élément à partir de la liste des éléments}& selec-elmt-liste\\
+			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments}& selec-elmt-graph\\
+		\ssitm{Démarrer l'élément sélectionner }& arret-elmt\\
+	\sitm{Arrêter un élément : \option{SEQ}} & TOFIX\\
+		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
+			\sssitm{Sélectionner un élément à partir de la liste des éléments }& selec-elmt-liste\\
+			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
+		\ssitm{Arrêter l'élément sélectionner }& dem-elmt\\
+\itm{} Effectuer la configuration : \option{ALT} & TOFIX\\
+	\sitm{Ajouter un éléments : \option{SEQ} }& ajout-elmt \\
+		\ssitm{Créer un nouveau type d'élément} & TOFIX\\
+		\ssitm{Choisir un élément} & TOFIX\\
+		\ssitm{Choisir ses dimensions} & TOFIX\\
+		\ssitm{Choisir sa position} & TOFIX\\
+		\ssitm{Créer des liens avec cet élément} & TOFIX\\
+	\sitm{Modifier un élément : \option{SEQ}} & TOFIX\\
+		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
+			\sssitm{Sélectionner un élément à partir de la liste des éléments }& selec-elmt-liste\\
+			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
+		\ssitm{Modifier l'élément : \option{ALT}	}& modif-elmt\\
+			\sssitm{Modifier le type d'un élément} & TOFIX\\
+			\sssitm{Modifier les dimensions d'un élément} & TOFIX\\
+			\sssitm{Modifier la position d'un élément} & TOFIX\\
+			\sssitm{Ajouter/ Supprimer des liens avec cet éléments} & TOFIX\\
+	\sitm{Supprimer un élément : \option{SEQ}} & TOFIX\\
+		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
+			\sssitm{Sélectionner un élément à partir de la liste des éléments &} selec-elmt-liste\\
+			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
+		\ssitm{Supprimer l'élément sélectionné	} & suppri-elmt\\
+	\sitm{Gérer la persistence des données de configurations : \option{ALT}} & TOFIX\\
+			\ssitm{Sauvegarder }& enreg-config\\
+			\ssitm{Enregistrer sous }& enreg-sous-config\\
+			\ssitm{Charger une simulation }& charger-config\\
+ \itm{} Analyser les journaux du système en simulation ou en cas réel : \option{SEQ} & TOFIX\\
+	\sitm{Choisir le document à analyser } & selec-journal\\
+	\sitm{Analyser le document sélectionné : \option{ALT}} & TOFIX\\
+		\ssitm{Analyser les statistiques de pannes} & TOFIX\\
+		\ssitm{Analyser les performances} & TOFIX\\
+\itm{} Réagir en cas d'urgence : \option{ALT} & TOFIX\\
+	\sitm{Communiquer avec les superviseurs} & TOFIX\\
+	\sitm{Redémarrer le SGBag : \option{OPT}} & redem-sgbag\\
 }
 
+
 \phtu
-{1}{XX}{Superviseur}{1, 6}
+{0}{TOFIX}{Superviseur}{TOFIX}
 {
-	\itm{} Acceder au système de gestion du SGBag : \textsl{SEQ}
-		\sitm{} S'identifier dans le système					& log
-		\sitm{} Se deconnecter du système						& unlog
-		\sitm{} Accéder aux fonctions choisies : \textsl{ALT}
-			\sitm{} Accéder à l'interface de simuation			& ouvrir-inter-simulation
-			\sitm{} Accéder à l'interface de Configuration		& ouvrir-inter-configuration
-
-	\itm{} Effectuer la simulation
-		\sitm{} Visualiser l'ensemble de l'aéroport
-			\ssitm{} Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \textsl{etc.}) 
-			\ssitm{} Visualiser les éléments : \textsl{ALT}
-				\sssitm{} Visualiser les bagages					& afficher-bagages
-				\sssitm{} Visualiser les chariots					& afficher-chariots
-				\sssitm{} Visualiser le remplissage d'un conteneur	& afficher-conteneurs
-		\sitm{} Ajouter des événements : \textsl{SEQ}				& ajouter-evnmt
-			\ssitm{} Choisir son identifiant
-			\ssitm{} Choisir sa date d'arrivée
-			\ssitm{} Choisir son mode d'arrivé (régulier, ou ponctuel) : \textsl{ALT}
-				\sssitm{} Choisir une arrivé ponctuelle et sa date d'arrivée.
-				\sssitm{} Choisir une arrivé régulière, sa date et sa fréquence d'arrivée.
-
-		\sitm{} Modifier un événement : \textsl{SEQ}				& modifier-evnmt
-			\ssitm{} Visualiser la liste des événements
-			\ssitm{} Choisir l'événement parmis cette liste
-			\ssitm{} Modifier l'événement séléctionné
-
-		\sitm{} Supprimer un événement : \textsl{SEQ}				& supprimer-evnmt
-			\ssitm{} Visualiser la liste des événements
-			\ssitm{} Choisir l'événement parmis cette liste
-			\ssitm{} Supprimer l'événement séléctionné
-
-		\sitm{} Gérer la persistence des données de simulation : \textsl{ALT}
-				\ssitm{} Sauvegarder								& enreg-sim
-				\ssitm{} Enregistrer sous							& enreg-sous-sim
-				\ssitm{} Charger une simulation						& charger-sim
-
-		\sitm{} Modifier les paramètres dynamiques de simulation : \textsl{ALT}
-			\ssitm{} Modifier le chemin d'un chariot				& modif-chemin-chariot
-			\ssitm{} Modifier la fréquence des pannes				& modif-freq-pannes
-	
-		\sitm{} Démarrer un élément : \textsl{SEQ}
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Démarrer l'élément sélectionner													& arret-elmt
-
-		\sitm{} Arrêter un élément : \textsl{SEQ}
-			\ssitm{} Sélectionner un élément : \textsl{ALT}
-				\sssitm{} Sélectionner un élément à partir de la liste des éléments						& selec-elmt-liste
-				\sssitm{} Sélectionner un élément à partir de la représentation graphique des éléments	& selec-elmt-graph
-			\ssitm{} Arrêter l'élément sélectionner														& dem-elmt
-	
-		\ssitm{} Modifier le flux d'arrivé de bagages								& modif-flux-bag
-	
-	\itm{} Surveiller l'équipement
-		\sitm{} Analyser les journaux du système en simulation ou en cas réel : \textsl{SEQ}
-			\ssitm{} Choisir le document à analyser									& selec-journal
-			\ssitm{} Analyser le document sélectionné : \textsl{ALT}
-				\sssitm{} Analyser les statistiques de pannes
-				\sssitm{} Analyser les performances
-
-	\itm{} Réagir en cas de problème
-		\sitm{} Propager l'information aux personnes concernées
-		\sitm{} Déposer une demande d'intervention									& nvl-demande-interv
-		
-	\itm{} Gérer les conducteurs et les manutentionnaires du terminal	
+	\itm{} Acceder au système de gestion du SGBag : \option{SEQ} & TOFIX\\
+		\sitm{S'identifier dans le système} & log \\
+		\sitm{Se deconnecter du système} & unlog \\
+		\sitm{Accéder aux fonctions choisies : \option{ALT}} & TOFIX \\
+			\sitm{Accéder à l'interface de simuation} & ouvrir-inter-simulation \\
+			\sitm{Accéder à l'interface de Configuration} & ouvrir-inter-configuration \\
+	\itm{} Effectuer la simulation & TOFIX \\
+		\sitm{Visualiser l'ensemble de l'aéroport} & TOFIX \\
+			\ssitm{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})}  & TOFIX \\
+			\ssitm{Visualiser les éléments : \option{ALT}} & TOFIX \\
+				\sssitm{Visualiser les bagages}& afficher-bagages \\
+				\sssitm{Visualiser les chariots}& afficher-chariots \\
+				\sssitm{Visualiser le remplissage d'un conteneur}& afficher-conteneurs \\
+		\sitm{Ajouter des événements : \option{SEQ}} & ajouter-evnmt \\
+			\ssitm{Choisir son identifiant} & TOFIX \\
+			\ssitm{Choisir sa date d'arrivée} & TOFIX \\
+			\ssitm{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & TOFIX \\
+				\sssitm{Choisir une arrivé ponctuelle et sa date d'arrivée} & TOFIX \\
+				\sssitm{Choisir une arrivé régulière, sa date et sa fréquence d'arrivée} & TOFIX \\
+		\sitm{Modifier un événement : \option{SEQ}}& modifier-evnmt \\
+			\ssitm{Visualiser la liste des événements} & TOFIX \\
+			\ssitm{Choisir l'événement parmis cette liste} & TOFIX \\
+			\ssitm{Modifier l'événement séléctionné} & TOFIX \\
+		\sitm{Supprimer un événement : \option{SEQ}}& supprimer-evnmt \\
+			\ssitm{Visualiser la liste des événements} & TOFIX \\
+			\ssitm{Choisir l'événement parmis cette liste} & TOFIX \\
+			\ssitm{Supprimer l'événement séléctionné} & TOFIX \\
+		\sitm{Gérer la persistence des données de simulation : \option{ALT}} & TOFIX \\
+				\ssitm{Sauvegarder} & enreg-sim \\
+				\ssitm{Enregistrer sous} & enreg-sous-sim \\
+				\ssitm{Charger une simulation} & charger-sim \\
+		\sitm{Modifier les paramètres dynamiques de simulation : \option{ALT}} & TOFIX \\
+			\ssitm{Modifier le chemin d'un chariot}& modif-chemin-chariot \\
+			\ssitm{Modifier la fréquence des pannes}& modif-freq-pannes \\
+		\sitm{Démarrer un élément : \option{SEQ}} & TOFIX \\
+			\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX \\
+				\sssitm{Sélectionner un élément à partir de la liste des éléments} & selec-elmt-liste \\
+				\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments} & selec-elmt-graph \\
+			\ssitm{Démarrer l'élément sélectionné}& arret-elmt \\
+		\sitm{Arrêter un élément : \option{SEQ}} & TOFIX \\
+			\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX \\
+				\sssitm{Sélectionner un élément à partir de la liste des éléments}& selec-elmt-liste \\
+				\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments}& selec-elmt-graph \\
+			\ssitm{Arrêter l'élément sélectionner}& dem-elmt \\
+		\ssitm{Modifier le flux d'arrivé de bagages} & modif-flux-bag \\
+	\itm{} Surveiller l'équipement & TOFIX \\
+		\sitm{Analyser les journaux du système en simulation ou en cas réel : \option{SEQ}} & TOFIX \\
+			\ssitm{Choisir le document à analyser}& selec-journal \\
+			\ssitm{Analyser le document sélectionné : \option{ALT}} & TOFIX \\
+				\sssitm{Analyser les statistiques de pannes} & TOFIX \\
+				\sssitm{Analyser les performances} & TOFIX \\
+	\itm{} Réagir en cas de problème & TOFIX \\
+		\sitm{Propager l'information aux personnes concernées} & TOFIX \\
+		\sitm{Déposer une demande d'intervention} & nvl-demande-interv \\
+	\itm{} Gérer les conducteurs et les manutentionnaires du terminal & TOFIX \\
 }
