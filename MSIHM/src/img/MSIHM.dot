@@ -1,0 +1,196 @@
+digraph {
+	
+	graph [
+		rankdir = "BT"
+	]
+	
+	node [
+		shape = "box"
+	]
+	
+	edge [
+		arrowhead = "diamond"
+		samehead = "true"
+	]
+	
+	SGBag [
+		label = "u-SGBag"
+	]
+	
+	SGBagua [
+		label = "u-SGBag /Ua"
+	]
+	
+	SGBagub [
+		label = "u-SGBag /Ub"
+	]
+	
+	Configuration [
+		label = "u-Configuration"
+	]
+	
+	Simulation [
+		label = "u-Simulation"
+	]
+	
+	Aeroport [
+		label = "u-Aeroport"
+	]
+	Avion [
+		label = "u-Avion"
+	]
+	
+	Terminal [
+		label = "u-Terminal"
+	]
+	
+	connec_hall [
+		label = "u-Chemin de connection entre les halls"
+	]
+	
+	Hall [
+		label = "u-Hall"
+	]
+	
+	Guich_enr [
+		label = "u-Guichet d'enregistrement"
+	]
+	
+	Bagage [
+		label = "u-Bagage"
+	]
+	
+	Chariot [
+		label = "u-Chariot"
+	]
+	
+	Rail [
+		label = "u-Rail"
+	]
+	
+	Zone_controle_Auto [
+		label = "u-Zone contrôle de sécurité Automatique"
+	]
+	
+	Portique [
+		label = "u-Portique"
+	]
+	
+	Zone_controle_Manu [
+		label = "u-Zone de contrôle de sécurité Manuelle"
+	]
+	
+	garage [
+		label = "u-Voie de garage"
+	]
+	
+	Zone_batteries [
+		label = "u-Zone de chargement des batteries"
+	]
+	
+	Zone_embarquement [
+		label = "u-Zone embarquement"
+	]
+	
+	Tapis_roulant [
+		label = "u-Tapis roulant"
+	]
+	
+	Train [
+		label = "u-Train"
+	]
+	
+	Wagonnets [
+		label = "u-Wagonnets"
+	]
+	
+	Containers [
+		label = "u-Containers"
+	]
+	
+	Plateau_elevateur [
+		label = "u-Plateau elevateur"
+	]
+	
+	Zone_déchargement [
+		label = "u-Zone déchargement"
+	]
+	
+	Tobogan [
+		label = "u-Tobogan"
+	]
+	
+	Zone_retrait [
+		label = "u-Zone retrait des bagages"
+	]
+	
+	Carrousel [
+		label = "u-Carrousel"
+	]
+	
+	Zone_maintenance [
+		label = "u-Zone de maintenance"
+	]
+	
+	Aiguillage [
+		label = "u-Aiguillage"
+	]
+	
+	Chemin_roulement [
+		label = "u-Chemin de roulement"
+	]
+	
+	Évènement [
+		label = "u-Évènement"
+	]
+	
+	Données_exploitations [
+		label = "u-Données d'exploitations"
+	]
+
+	SGBagua -> SGBag [arrowhead = "normal"]
+	SGBagub -> SGBag [arrowhead = "normal"]
+	SGBagub -> Simulation [constraint = "false", arrowhead = "normal", samehead = "false"]
+	Simulation -> SGBagua
+	Configuration -> SGBagub
+	
+	Terminal -> Configuration
+	
+	Terminal -> Simulation
+	Évènement -> Simulation
+	Données_exploitations -> Simulation
+	
+	Hall -> Terminal
+	connec_hall -> Terminal
+	
+	Guich_enr -> Hall
+	Zone_controle_Auto -> Hall
+	Zone_controle_Manu -> Hall
+	Chemin_roulement -> Hall
+	Zone_batteries -> Hall
+	Zone_embarquement -> Hall
+	Zone_maintenance -> Hall
+	Zone_déchargement -> Hall
+	Zone_retrait -> Hall
+	
+	Portique -> Zone_controle_Auto
+	
+	garage -> Chemin_roulement
+	Aiguillage -> Chemin_roulement
+	
+	Bagage -> Zone_embarquement
+	Chariot -> Zone_embarquement
+	Tapis_roulant -> Zone_embarquement
+	Train -> Zone_embarquement
+	Wagonnets -> Zone_embarquement
+	Containers -> Zone_embarquement
+	Plateau_elevateur -> Zone_embarquement
+	
+	Bagage -> Zone_déchargement
+	Chariot -> Zone_déchargement
+	Tobogan -> Zone_déchargement
+	
+	Carrousel -> Zone_retrait
+	Bagage -> Zone_retrait
+
+}
