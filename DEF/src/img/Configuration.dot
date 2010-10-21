@@ -15,19 +15,39 @@ digraph {
 		label = "G/Configuration"
 		
 		begin [
-			shape = "point"
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
 		]
 
 		end [
-			shape = "point"
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
 		]
 				
 		up [
-			shape = "point"
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
 		]
 	
 		down [
-			shape = "point"
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
 		]
 		
 		AccueilConfiguration [

@@ -30,11 +30,23 @@ digraph {
 	]
 
 	up [
-		shape = "point"
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
 	]
 
 	down [
-		shape = "point"
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
 	]
 	
 	login -> up
