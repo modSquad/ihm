@@ -1,0 +1,27 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterLegende {
+	label = "légende"
+	
+		Elementaire[
+			label = "Noeud\nélémentaire"
+		]
+		
+		Composé [
+			label = "Noeud\ncomposé"
+			penwidth = 2.0
+		]
+	}
+	
+}

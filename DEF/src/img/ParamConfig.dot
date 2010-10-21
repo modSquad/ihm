@@ -1,0 +1,46 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterParamètres {
+		label = "G/Paramètres"
+		
+		begin [
+			shape = "point"
+		]
+
+		end [
+			shape = "point"
+		]
+				
+		up [
+			shape = "point"
+		]
+	
+		down [
+			shape = "point"
+		]
+		
+		Paramètres [
+			label = "{F/Paramètres|- Vitesse tapis roulant\n- Durée contrôle\l}"
+		]
+		
+	}
+
+	begin -> up
+	
+	up -> Paramètres -> down
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}

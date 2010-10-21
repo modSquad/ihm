@@ -1,0 +1,57 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterRespTechnique {
+		label = "G/Responsable Technique : Graphe pour le Responsable technique (U9)"
+		
+		begin [
+			shape = "point"
+		]
+
+		end [
+			shape = "point"
+		]
+				
+		up [
+			shape = "point"
+		]
+	
+		down [
+			shape = "point"
+		]
+		
+		AccueilRespTechnique [
+			label = "{F/accueil Responsable Technique|Fenêtre accueil du\nResponsable Technique}"
+		]
+		
+		Configuration [
+			label = "{G/Configuration|Graphe de U9 dans\nD1.1.1 (Configuration) }"
+			penwidth = 2.0
+		]	
+		
+		Simulation [
+			label = "{G/Simulation|Graphe de U9 dans\nD1.1.2 (Simulation)}"
+			penwidth = 2.0
+		]
+		begin -> AccueilRespTechnique [ constraint = false ]
+		
+		AccueilRespTechnique -> up
+		
+		up -> Configuration -> down
+		up -> Simulation -> down
+		
+		down -> up [ constraint = false ]
+		down -> end
+	}
+	
+}

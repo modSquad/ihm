@@ -1,7 +1,7 @@
 digraph {
 	
 	fontname = "Bitstream Vera Sans"
-	
+		
 	node [
 		fontname = "Bitstream Vera Sans"
 		shape = "record"
@@ -10,18 +10,7 @@ digraph {
 	edge [
 		fontname = "Bitstream Vera Sans"
 	]
-subgraph clusterLegende {
-	label = "légende"
 	
-		Elementaire[
-			label = "Noeud\nélémentaire"
-		]
-		
-		Composé [
-			label = "Noeud\ncomposé"
-			penwidth = 2.0
-		]
-	}
 	login [
 		label = "{F/login|Identification\nde l'utilisateur}"
 	]
@@ -40,21 +29,6 @@ subgraph clusterLegende {
 		penwidth = 2.0
 	]
 
-
-	subgraph clusterRespTechnique {
-		label = "G/Responsable Technique : Graphe pour le Responsable technique"
-		
-		begin [
-			shape = "point"
-		]
-		
-		AccueilRespTechnique [
-			label = "{F/accueil Responsable Technique|Fenêtre accueil du\nResponsable Technique}"
-		]
-		
-		begin -> AccueilRespTechnique [ constraint = false ]
-	}
-
 	up [
 		shape = "point"
 	]
@@ -65,11 +39,12 @@ subgraph clusterLegende {
 	
 	login -> up
 	
-	up -> Superviseur
-	up -> RespTechnique
+	up -> Superviseur [ label = "(1)" ]
+	up -> RespTechnique [ label = "(1,2)" ]
 	
 	Superviseur -> down
 	RespTechnique -> down
 	
 	down -> logout
+	down -> up [ constraint = False ]
 }

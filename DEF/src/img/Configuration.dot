@@ -1,0 +1,46 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterConfiguration {
+		label = "G/Configuration"
+		
+		begin [
+			shape = "point"
+		]
+
+		end [
+			shape = "point"
+		]
+				
+		up [
+			shape = "point"
+		]
+	
+		down [
+			shape = "point"
+		]
+		
+		AccueilConfiguration [
+			label = "{F/Accueil dans la Configuration|- F/Définition topologique de l'aéroport\l- F/Définition/Configuration système des chariots\l- F/Paramètrage d'équipements\l}"
+		]
+		
+	}
+
+	begin -> up
+	
+	up -> AccueilConfiguration -> down
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}

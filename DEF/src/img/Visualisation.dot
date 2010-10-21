@@ -1,0 +1,46 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterVisualisation {
+		label = "G/Visualisation"
+		
+		begin [
+			shape = "point"
+		]
+
+		end [
+			shape = "point"
+		]
+				
+		up [
+			shape = "point"
+		]
+	
+		down [
+			shape = "point"
+		]
+		
+		Visualisation [
+			label = "{F/Visualisation|- Vue d'un secteur\l- Vue d'ensemble\l}"
+		]
+		
+	}
+
+	begin -> up
+	
+	up -> Visualisation -> down
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}
