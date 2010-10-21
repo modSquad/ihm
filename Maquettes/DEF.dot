@@ -1,0 +1,75 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+subgraph clusterLegende {
+	label = "légende"
+	
+		Elementaire[
+			label = "Noeud\nélémentaire"
+		]
+		
+		Composé [
+			label = "Noeud\ncomposé"
+			penwidth = 2.0
+		]
+	}
+	login [
+		label = "{F/login|Identification\nde l'utilisateur}"
+	]
+	
+	logout [
+		label = "{F/logout|Sortie}"
+	]
+	
+	Superviseur [
+		label = "{G/Superviseur|Graphe pour\nle Superviseur}"
+		penwidth = 2.0
+	]
+	
+	RespTechnique [
+		label = "{G/Responsable Technique|Graphe pour le\nResponsable technique}"
+		penwidth = 2.0
+	]
+
+
+	subgraph clusterRespTechnique {
+		label = "G/Responsable Technique : Graphe pour le Responsable technique"
+		
+		begin [
+			shape = "point"
+		]
+		
+		AccueilRespTechnique [
+			label = "{F/accueil Responsable Technique|Fenêtre accueil du\nResponsable Technique}"
+		]
+		
+		begin -> AccueilRespTechnique [ constraint = false ]
+	}
+
+	up [
+		shape = "point"
+	]
+
+	down [
+		shape = "point"
+	]
+	
+	login -> up
+	
+	up -> Superviseur
+	up -> RespTechnique
+	
+	Superviseur -> down
+	RespTechnique -> down
+	
+	down -> logout
+}
