@@ -2,10 +2,10 @@
 \newcommand\topologie[1]{Ajouter, modifier ou supprimer #1 (configuration de la topologie de l'aéroport)}
 \newcommand\selectionner[1]{Sélectionner #1 (afficher sa configuration)}
 \newcommand\rectetiquette{Rectangle étiquetté}
-\newcommand\transit{Visualizer le transit de bagages dans cette zone}
+\newcommand\transit{Visualiser le transit de bagages dans cette zone}
 \newcommand\etat{Afficher l'état}
 
-\section{u-Aeroport}
+\section{u-Aéroport}
 \subsection{Définition}
 Objet unique représentant l'aéroport dans son ensemble. Cet objet regroupe tous les
 composants, c'est la racine du modèle.
@@ -19,8 +19,8 @@ composants, c'est la racine du modèle.
 
 \subsection{Actions}
 \begin{enumerate}
-	\item Lancer l'application (tous, le résultat dépend des droits d'accès de l'utilsateur)
-	\item L'utilisateur s'authentifie
+	\item Lancer l'application (tous, le résultat dépend des droits d'accès de l'utilisateur)
+	\item L'utilisateur s'authentifie.
 	\item L'utilisateur peut accéder à l'environnement de travail le concernant (litiges, gestion des bagages, \ldots)
 \end{enumerate}
 
@@ -97,8 +97,8 @@ composants, c'est la racine du modèle.
 
 \subsection{Actions}
 \begin{enumerate}
-	\item \selectionner{le gichet d'enregistrement}
-	\item \topologie{un gichet d'enregistrement}
+	\item \selectionner{le guichet d'enregistrement}
+	\item \topologie{un guichet d'enregistrement}
 \end{enumerate}
 
 \section{u-Bagage}
@@ -146,14 +146,14 @@ composants, c'est la racine du modèle.
 
 \subsection{Actions}
 \begin{enumerate}
-	\item Analyse du traffic sur les rails
+	\item Analyse du trafic sur les rails
 	\item \etat 
 	\item \topologie{un rail}
 \end{enumerate}
 
 \section{u-Zone de contrôle de sécurité Automatique}
 \subsection{Définition}
-	Zone par laquelle passent les chariots de bagage pour qu'un système automatisé contrôle le contenu des bagages pour y
+	Zone par laquelle passent les chariots de bagages pour qu'un système automatisé contrôle le contenu des bagages pour y
 	détecter d'éventuels contenus à risque.
 
 \subsection{Présentations}
@@ -261,14 +261,15 @@ composants, c'est la racine du modèle.
 
 \subsection{Présentations}
 \begin{enumerate}
-	\item Rectangle rayé horizontallement, fleché dans le sens de circulation
+	\item Rectangle rayé horizontalement, fléché dans le sens de
+	circulation.
 \end{enumerate}
 
 \subsection{Actions}
 \begin{enumerate}
 	\item \selectionner{le tapis roulant}
 	\item \topologie{un tapis roulant}
-	\item Visualiser le traffic du tapis roulant
+	\item Visualiser le trafic du tapis roulant
 	\item Désactiver le tapis roulant
 	\item Activer le tapis roulant
 	\item \etat
@@ -387,7 +388,7 @@ composants, c'est la racine du modèle.
 
 \section{u-Zone retrait des bagages}
 \subsection{Définition}
-	Zone dans laquelle est situé un carrousel permettant au voyageurs ayant débarqués de récuperer les bagages transportés
+	Zone dans laquelle est situé un carrousel permettant au voyageurs ayant débarqués de récupérer les bagages transportés
 	en soute.
 
 \subsection{Présentations}
@@ -410,7 +411,7 @@ composants, c'est la racine du modèle.
 
 \subsection{Présentations}
 \begin{enumerate}
-	\item Icône : tube circulaire (rayé horizontallement)
+	\item Icône : tube circulaire (rayé horizontalement)
 	\item Identifiant (texte)
 \end{enumerate}
 
@@ -461,18 +462,18 @@ composants, c'est la racine du modèle.
 
 \section{u-Chemin de roulement}
 \subsection{Définition}
-	circuit empreinté par les chariots de bagages, effectuant la liaison entre un hall, les différents points de contrôle
+	Circuit empreinté par les chariots de bagages, effectuant la liaison entre un hall, les différents points de contrôle
 	et les zones de chargement/déchargement des bagages.
 
 \subsection{Présentations}
 \begin{enumerate}
-	\item Icône : trait plein épais (ou "tuyau"), contient des flêches indicant le sens de circulation
+	\item Icône : trait plein épais (ou "tuyau"), contient des flèches indiquant le sens de circulation
 	\item Identifiant (texte)
 \end{enumerate}
 
 \subsection{Actions}
 \begin{enumerate}
-	\item Création, modification ou souppression d'un chemin de roulement (configuration)
+	\item Création, modification ou suppression d'un chemin de roulement (configuration)
 	\item \etat
 	\item \transit
 	\item Désactiver la circulation par ce chemin
@@ -488,7 +489,7 @@ composants, c'est la racine du modèle.
 \begin{enumerate}
 	\item Texte descriptif
 	\item Item dans une liste
-	\item Icône : symbôle normalisé "attention" (point d'exclamation dans une forme à bordure rouge)
+	\item Icône : symbole normalisé «attention» (point d'exclamation dans une forme à bordure rouge)
 \end{enumerate}
 
 \subsection{Actions}
@@ -505,7 +506,7 @@ composants, c'est la racine du modèle.
 \subsection{Présentations}
 \begin{enumerate}
 	\item Item dans une liste
-	\item Idenfiant de l'enregistrement
+	\item Identifiant de l'enregistrement
 	\item Icône : fichier "standard"
 \end{enumerate}
 
