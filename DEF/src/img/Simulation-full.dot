@@ -1,0 +1,77 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterSimulation {
+		label = "G/Simulation"
+		
+		begin [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		end [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		up [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		down [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		AccueilSimulation [
+			label = "{F/Accueil dans la Simulation|- F/Paramètres\l- Demarrage/Arrêt\l- Ajouter des évènements\l- Etudes\l- F/Visualisation\l}"
+		]
+		
+	}
+
+	Paramètres [
+		label = "{F/Paramètres|- Comportement des évènements\l	(lieu, arrivée, durée, ordre …)\l}"
+	]
+	
+	Visualisation [
+		label = "{F/Visualisation|- Vue d'un secteur\l- Vue d'ensemble\l}"
+	]
+
+	begin -> up
+	
+	up -> AccueilSimulation -> down
+	
+	AccueilSimulation -> Paramètres [ constraint = false ]
+	AccueilSimulation -> Visualisation [ constraint = false ]
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}
