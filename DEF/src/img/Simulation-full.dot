@@ -51,17 +51,29 @@ digraph {
 		]
 		
 		AccueilSimulation [
-			label = "{F/Accueil dans la Simulation|- F/Paramètres\l- Demarrage/Arrêt\l- Ajouter des évènements\l- Etudes\l- F/Visualisation\l}"
+			label = "{F/Accueil dans la Simulation|- F/Paramètres\l- Demarrage/Arrêt\l- F/Ajouter des évènements\l- F/Analyse\l- F/Visualisation\l- F/Details évènement\l}"
 		]
 		
 	}
 
 	Paramètres [
-		label = "{F/Paramètres|- Comportement des évènements\l	(lieu, arrivée, durée, ordre …)\l}"
+		label = "{F/Paramètres|- Vitesse tapis roulant\n- Durée contrôle\l}"
 	]
 	
 	Visualisation [
-		label = "{F/Visualisation|- Vue d'un secteur\l- Vue d'ensemble\l}"
+		label = "{F/Visualisation|- Vue Terminal :\l	- Hall\l	- Circuit des bagages\l	- ...\l}"
+	]
+
+	Analyse [
+		label = "{F/Analyse|- Analyse des statistiques\l- Analyse des performances\l}"
+	]
+
+	CreerEvt [
+		label = "{F/Créer évènement|- Créer\l- Modifier\l- Supprimer\l}"
+	]
+
+	DetailsEvt [
+		label = "{F/Détails évènement|\l}"
 	]
 
 	begin -> up
@@ -70,6 +82,9 @@ digraph {
 	
 	AccueilSimulation -> Paramètres [ constraint = false ]
 	AccueilSimulation -> Visualisation [ constraint = false ]
+	AccueilSimulation -> Analyse [ constraint = false ]
+	AccueilSimulation -> CreerEvt [ constraint = false ]
+	AccueilSimulation -> DetailsEvt [ constraint = false ]
 	
 	down -> up [ constraint = false ]
 	down -> end

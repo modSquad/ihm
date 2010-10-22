@@ -51,7 +51,7 @@ digraph {
 		]
 		
 		AccueilConfiguration [
-			label = "{F/Accueil dans la Configuration|- F/Définition topologique de l'aéroport\l- F/Définition/Configuration système des chariots\l- F/Paramètrage d'équipements\l}"
+			label = "{F/Accueil dans la Configuration|- Définition topologique de l'aéroport\l- Définition/Configuration système des chariots\l- Paramètrage d'équipements\l- G/Simulation\l}"
 		]
 	}
 
@@ -67,6 +67,11 @@ digraph {
 		label = "{F/Paramètres|- Vitesse tapis roulant\n- Durée contrôle\l}"
 	]
 
+	Simulation [
+		label = "{G/Simulation|}"
+		penwidth = 2.0
+	]
+
 	begin -> up
 	
 	up -> AccueilConfiguration -> down
@@ -74,6 +79,7 @@ digraph {
 	AccueilConfiguration -> TopologieAeroport [ constraint = false ]
 	AccueilConfiguration -> ConfSystChar [ constraint = false ]
 	AccueilConfiguration -> Paramètres [ constraint = false ]
+	AccueilConfiguration -> Simulation [ constraint = false ]
 	
 	down -> up [ constraint = false ]
 	down -> end
