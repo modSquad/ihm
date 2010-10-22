@@ -124,8 +124,10 @@
 
 \newcommand{\plex}[2]{%
     \vspace{0.3em}
-    \shadowbox{#1} \\
-    #2 ~ \\ 
+	\begin{minipage}{\linewidth}
+		\shadowbox{#1}\\*
+		#2 ~ \\*
+	\end{minipage}
     ~\\
 }
 
