@@ -1,0 +1,189 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+		
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+	
+	login [
+		label = "{F/login|Identification\nde l'utilisateur}"
+	]
+	
+	logout [
+		label = "{F/logout|Sortie}"
+	]
+	
+	Superviseur [
+		label = "{G/Superviseur|Graphe pour\nle Superviseur}"
+		penwidth = 2.0
+	]
+	
+	RespTechnique [
+		label = "{G/Responsable Technique|Graphe pour le\nResponsable technique}"
+		penwidth = 2.0
+	]
+
+	up [
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
+	]
+
+	down [
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
+	]
+
+subgraph clusterRespTechnique {
+		label = "G/Responsable Technique : Graphe pour le Responsable technique (U9)"
+		
+		beginRT [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		endRT [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		upRT [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		downRT [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		AccueilRespTechnique [
+			label = "{F/accueil Responsable Technique|Fenêtre accueil du\nResponsable Technique}"
+		]
+		
+		ConfigurationRT [
+			label = "{G/Configuration|Graphe de U9 dans\nD1.1.1 (Configuration) }"
+			penwidth = 2.0
+		]	
+		
+		SimulationRT [
+			label = "{G/Simulation|Graphe de U9 dans\nD1.1.2 (Simulation)}"
+			penwidth = 2.0
+		]
+		beginRT -> AccueilRespTechnique [ constraint = false ]
+		
+		AccueilRespTechnique -> upRT
+		
+		upRT -> ConfigurationRT -> downRT
+		upRT -> SimulationRT -> downRT
+		
+		downRT -> upRT [ constraint = false ]
+		downRT -> endRT
+	}
+
+	subgraph clusterSuperviseur {
+		label = "G/Superviseur : Graphe pour le Supervisuer (U7)"
+		
+		beginS [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		endS [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		upS [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		downS [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		AccueilSuperviseur [
+			label = "{F/accueil Superviseur|Fenêtre accueil du\nSuperviseur}"
+		]	
+		
+		SimulationS [
+			label = "{G/Simulation|Graphe de U7 dans\nD1.1.2 (Simulation)}"
+			penwidth = 2.0
+		]
+		beginS -> AccueilSuperviseur [ constraint = false ]
+		
+		AccueilSuperviseur -> upS
+		
+		upS -> SimulationS -> downS
+		
+		downS -> upS [ constraint = false ]
+		downS -> endS
+	}
+	
+	login -> up
+	
+	up -> Superviseur [ label = "(1)" ]
+	up -> RespTechnique [ label = "(1,2)" ]
+	
+	Superviseur -> down
+	Superviseur -> beginS
+	
+	RespTechnique -> down
+	RespTechnique -> beginRT
+	
+	down -> logout
+	down -> up [ constraint = False ]
+	
+	logout -> beginRT [ style = "invis" ]
+	logout -> AccueilSuperviseur  [ style = "invis" ]
+	
+}

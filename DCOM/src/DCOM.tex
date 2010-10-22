@@ -1,0 +1,745 @@
+\newcommand\fatal{(Erreur fatale)}
+\newcommand\warning{(message d'avertissement)}
+\newcommand\event{u-Événement}
+\newcommand\syslog{u-Données d'exploitation}
+\newcommand\urt{Responsable technique}
+\newcommand\us{Superviseur}
+\newcommand\allobjs{u-Aéroport, u-Avion, u-Terminal, u-Hall, u-Chemin de connexion entre les halls, u-Gichet d'enregistrement,
+u-Bagage, u-Chariot, u-Rail, u-Zone de contrôle de sécurité automatique, u-Zone de contrôle de sécurité
+manuelle, u-Portique, u-Voie de garage, u-Zone de chargement des batteries, u-Zone embarquement, u-Tapis roulant,
+u-Train, u-Wagonnet, u-Container, u-Plateau élévateur, u-Zone de déchargement, u-Tobogan, u-Zone de retrait des bagages,
+u-Carrousel, u-Zone de maintenance, u-Aiguillage, u-Chemin de roulement, u-Événement, u-Données d'exploitation}
+\newcommand\circobjs{u-Zone*, u-Bagage, u-Chariot, u-Voie de garage, u-Tapis roulant, u-Train, u-Rail, u-Wagonnet, u-Container,
+u-Plateau Élévateur, u-Tobogan, u-Carrousel, u-Aiguillage, u-Chemin de roulement}
+\newcommand\autobjs{u-Guichet d'enregistrement, u-Chariot, u-Portique, u-Tapis roulant, u-Train, u-Plateau élévateur, u-Tobogan,
+u-Carrousel, u-Chemin de roulement, \event}
+
+\section{log}
+	\textbf{Qui:} Tous les utilisateurs
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Permet à l'utilisateur de s'authentifier auprès du système
+		\item Déclenche l'évaluation des droits de l'utilisateur
+		\item Charge l'environnement de travail de l'utilisateur
+	\end{itemize}
+
+	\subsection{Entrées}
+		login, password
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item confirmation de l'authentification
+		\item identifiant de session de travail (sessid)
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item cpoule (login, password) incorrect, inexistant dans le
+		système ou ne disposant pas de droits suffisants \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Aéroport, \event, \syslog
+
+\section{unlog}
+	\textbf{Qui:} Tous les utilisateurs
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Déconnecte l'utilisateur
+		\item Termine la session de travail
+		\item Ferme les fenêtres de l'environnement de travail
+	\end{itemize}
+
+	\subsection{Entrées}
+		sessid
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Message de confirmation
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item sessid incorrect \fatal 
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Aéroport, \event, \syslog
+
+\section{ouvrir-inter-simulation}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélectionne les éléments par défaut
+		\item Charge l'environnement de simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		N/A
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de simulation
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Droits insuffisants (fatal)
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{ouvr-inter-configuration}
+	\textbf{Qui:} \us, \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélectionne les éléments par défaut
+		\item Charge l'environnement de confiuration
+	\end{itemize}
+
+	\subsection{Entrées}
+		N/A
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de configuration
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Droits insuffisants \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{afficher-bagages}
+	\textbf{Qui:} \us, \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Affiche l'interface de visualisation des bagages pour la zone choisie
+	\end{itemize}
+
+	\subsection{Entrées}
+		Zone choisie pour la visualisation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de visualisation des bagages pour la zone choisie
+		\item Liste et volume des bagages en transit dans la zone
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Zone incorrecte \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\circobjs
+
+\section{afficher-chariots}
+	\textbf{Qui:} \us, \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Affiche l'interface de visualisation des chariots pour la zone choisie
+	\end{itemize}
+
+	\subsection{Entrées}
+		Zone choisie pour la visualisation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de visualisation des chariots pour la zone choisie
+		\item Liste les chariots en transit dans la zone
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Zone incorrecte \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\circobjs
+
+\section{afficher-containers}
+	\textbf{Qui:} \us, \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Affiche l'interface de visualisation des containers pour la zone choisie
+	\end{itemize}
+
+	\subsection{Entrées}
+		Zone choisie pour la visualisation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de visualisation des containers pour la zone choisie
+		\item Liste les containers et leur état en transit dans la zone
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Zone incorrecte \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\circobjs
+
+\section{ajouter-evnmt}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Enregistre un nouvel événement
+	\end{itemize}
+
+	\subsection{Entrées}
+		pour l'événement : identifiant, date, régularité, fréquence
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Nouvel événément enregistré dans le système
+		\item Mise à jour des listes d'événements proches
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Données en entrée incorrectes \fatal
+		\item Identifiant déjà attribué \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Événement
+
+\section{modifier-evnmt}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Met à jour un nouvel événement
+	\end{itemize}
+
+	\subsection{Entrées}
+		pour l'événement : identifiant, date, régularité, fréquence
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Événément modifié enregistré dans le système
+		\item Mise à jour des listes d'événements proches
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Données en entrée incorrectes \fatal
+		\item identifiant inconnu \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Événement
+
+\section{supprimer-evnmnt}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Supprime un événement
+	\end{itemize}
+
+	\subsection{Entrées}
+		identifiant de l'événement
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation de suppression
+		\item Mise à jour des listes d'événements
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Mauvais identifiant \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Événement
+
+\section{enregistrer-sim}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Collecte l'ensemble des paramètres de la simulation
+		\item Suspend une simulation en cours
+		\item Enregistre une simulation dans le système
+	\end{itemize}
+
+	\subsection{Entrées}
+		Nom de la simulation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation
+		\item Simulation ajoutée à la base des simulations
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Paramètres des objets incomplets (seuls les objets correctement décrits sont sauvegardés)
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{enreg-sous-sim}
+	Voir enreg-sim
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Nom de simulation existante \fatal
+	\end{itemize}
+
+\section{charger-sim}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Affiche la liste des simulations sauvegardées
+		\item Charge la simulation sélectionnée
+		\item Restaure les objets de la simulation
+		\item Restaure l'état d'avancement de la simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Nom de la simulation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affichage de l'interface de simulation
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Simulation inconnue \fatal
+		\item Simulation incomplète \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{modif-chemin-chariot}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélectionne un chariot
+		\item Modifie la trajectoire du chariot selectionné
+		\item Met à jour la simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Chariot, nouveau chemin
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation
+		\item Mise à jour de l'interface
+		\item Mise à jour de la simulation
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Chemin innaccessible \warning
+		\item Chariot inconnu \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Chariot, u-Chemin de roulement
+
+\section{modif-freq-pannes}
+	\textbf{Qui:} \urt, \us 
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Modifie la probabilité de déclencher des pannes dans la simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		valeur de la frequence
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation
+		\item Mise à jour le la liste des événements
+		\item Mise à jour de la simulation
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Valeur incorrecte : la modification est annulée \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\circobjs, \event
+
+\section{modif-flux-bag}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Modifie le volume de bagages traités par la simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		valeur du paramètre
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation
+		\item Mise à jour de la simulation
+		\item Mise à jour de l'interface
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Valeur incorrecte : la modification est annulée \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Bagage, u-Guichet d'enregistrement
+
+\section{selec-elmt-liste}
+	\textbf{Qui:} Tous les utilisateurs (pour les éléments qui leur sont accessibles)
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélectionne un élément dans la liste des éléments
+	\end{itemize}
+
+	\subsection{Entrées}
+		Identifiant de l'élément
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item L'élément est en surbrillance et apparait sélectionné dans la liste
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item N/A
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{selec-elmt-graph}
+	\textbf{Qui:} Tous les utilisateurs (pour les éléments qui leur sont accessibles)
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélectionne un élément dans le graphe représentant le système
+	\end{itemize}
+
+	\subsection{Entrées}
+		Identifiant de l'élément
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item L'élément est en surbrillance et apparait sélectionné sur le graphe
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item N/A
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{dem-elmt}
+	\textbf{Qui:} Tous les utilisateurs (pour les éléments qui leur sont accessibles)
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Arrêter l'élément sélectionné
+	\end{itemize}
+
+	\subsection{Entrées}
+		Élément sélectionné
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Arrête l'élément sélectionné (il est désactivé)
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item L'élément n'est pas concerné par cette action \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\autobjs
+
+\section{ajout-elmt}
+	\textbf{Qui:} Tous les utilisateurs (pour les éléments qui leurs sont accessibles)
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Ajoute à la simulation un élément configuré
+	\end{itemize}
+
+	\subsection{Entrées}
+		Type de l'élément, dimensions de l'élément, position de l'élément, liens entre les éléments existant et celui
+		nouvellement créé, paramètres spécifiques au type de l'élément.
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item L'élément est créé
+		\item Confirmation à l'utilisateur
+		\item Mise à jour de la liste des éléments et du graphe
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Mauvaise valeur pour l'un des paramètres en entrée \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{modif-elmt}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Met à jour un élément de la simulation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Type de l'élément, dimensions de l'élément, position de l'élément, liens entre les éléments existant et celui
+		nouvellement créé, paramètres spécifiques au type de l'élément.
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item L'élément est mis à jour
+		\item Confirmation à l'utilisateur
+		\item Mise à jour de la liste des éléments et du graphe
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Mauvaise valeur pour l'un des paramètres en entrée \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{suppri-elmt}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Supprime l'élément sélectionné
+	\end{itemize}
+
+	\subsection{Entrées}
+		Identifiant de l'élément
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Supprime l'élément de la simulation
+		\item Confirmation à l'utilisateur
+		\item Mise à jour de la liste des éléments et du graphe 
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item L'action empêche le bon déroulement de la simulation \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{enreg-config}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Collecte l'ensemble des paramètres de la configuration
+		\item Sauvegarde la configuration
+	\end{itemize}
+
+	\subsection{Entrées}
+		Nom de la simulation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation
+		\item Configuration ajoutée à la base des configurations
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Paramètre des objets incomplets (seuls les objets correctement décrits sont sauvegardés)
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{enreg-sous-config}
+	Voir enreg-config
+
+\section{charger-config}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Affiche la liste des configurations sauvegardées
+		\item Charge la configuration sélectionnée
+		\item Restaure les objets de la configuration
+	\end{itemize}
+
+	\subsection{Entrées}
+		Nom de la configuration
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Affiche l'interface de configuration
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Configuration inconnue \fatal
+		\item Configuration incomplète \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{select-journal}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélection un journal des données d'exploitation
+		\item Affiche les données d'exploitation les plus récentes
+		\item Affiche les statistiques calculées d'après ces données d'exploitation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Nom du journal, contexte (configuration ou simulation)
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Données d'exploitation récentes
+		\item Statistiques
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Journal corrompu \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\logs
+
+\section{redem-sgbag}
+	\textbf{Qui:} Tous les utilisateurs
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sauvegarde le contexte de l'application
+		\item Termine la session de travail de l'utilisateur
+		\item Quitte l'application
+		\item Démarre à nouveau l'application
+	\end{itemize}
+
+	\subsection{Entrées}
+		sessid
+		
+	\subsection{Retours}
+	\begin{itemize}
+		\item Quitte et redémarre l'application
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\u-Aéroport, \logs, \event
+
+\section{}
+	\textbf{Qui:} Tous les utilisateurs
+
+	\subsection{Description}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+	\subsection{Entrées}
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+
+	\subsection{Objet(s)}
+
+\section{nvl-demande-interv}
+	\textbf{Qui:} \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Enregistre la nouvelle demande d'intervention
+		\item Transmet la demande d'intervention au responsable technique et au technicien informatique
+		\item Enregistre la demande dans les données d'exploitation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Demande d'intervention, incident
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation à l'utilisateur
+		\item Création de demande d'intervention affichées aux utilisateurs concernés
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Données en entrée incomplètes \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\logs, \event
+
+%%%  tpl %%%
+%\section{}
+%	\textbf{Qui:} Tous les utilisateurs
+%
+%	\subsection{Description}
+%	\begin{itemize}
+%		\item 
+%	\end{itemize}
+%
+%	\subsection{Entrées}
+%
+%	\subsection{Retours}
+%	\begin{itemize}
+%		\item 
+%	\end{itemize}
+%
+%	\subsection{Erreurs}
+%	\begin{itemize}
+%		\item 
+%	\end{itemize}
+%
+%	\subsection{Objet(s)}
+%%%

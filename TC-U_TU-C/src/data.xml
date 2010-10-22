@@ -5,47 +5,47 @@
 	</users>
 
 	<commands>
-		<command uid="resp">ouvrir-inter-configuration</command>
-		<command uid="resp">ajout-elmt</command>
-		<command uid="resp">modif-elmt</command>
-		<command uid="resp">suppri-elmt</command>
+		<command uid="resp" df="1">ouvrir-inter-configuration</command>
+		<command uid="resp" df="1">ajout-elmt</command>
+		<command uid="resp" df="1">modif-elmt</command>
+		<command uid="resp" df="1">suppri-elmt</command>
 
-		<command uid="resp">enreg-config</command>
-		<command uid="resp">enreg-sous-config</command>
-		<command uid="resp">charger-config</command>
+		<command uid="resp" df="1">enreg-config</command>
+		<command uid="resp" df="1">enreg-sous-config</command>
+		<command uid="resp" df="1">charger-config</command>
 
-		<command uid="resp">redem-sgbag</command>
+		<command uid="resp" df="1">redem-sgbag</command>
 
-		<command uid="sup">nvl-demande-interv</command>
+		<command uid="sup" df="6">nvl-demande-interv</command>
 
-		<command uid="resp,sup">log</command>
-		<command uid="resp,sup">unlog</command>
+		<command uid="resp,sup" df="1">log</command>
+		<command uid="resp,sup" df="1">unlog</command>
 
-		<command uid="resp,sup">ouvrir-inter-simultation</command>
+		<command uid="resp,sup" df="1">ouvrir-inter-simultation</command>
 
-		<command uid="resp,sup">afficher-bagages</command>
-		<command uid="resp,sup">afficher-chariots</command>
-		<command uid="resp,sup">afficher-conteneurs</command>
+		<command uid="resp,sup" df="1">afficher-bagages</command>
+		<command uid="resp,sup" df="1">afficher-chariots</command>
+		<command uid="resp,sup" df="1">afficher-conteneurs</command>
 
-		<command uid="resp,sup">ajouter-evnmt</command>
-		<command uid="resp,sup">modifier-evnmt</command>
-		<command uid="resp,sup">supprimer-evnmt</command>
+		<command uid="resp,sup" df="1">ajouter-evnmt</command>
+		<command uid="resp,sup" df="1">modifier-evnmt</command>
+		<command uid="resp,sup" df="1">supprimer-evnmt</command>
 
-		<command uid="resp,sup">enreg-sim</command>
-		<command uid="resp,sup">enreg-sous-sim</command>
-		<command uid="resp,sup">charger-sim</command>
+		<command uid="resp,sup" df="1">enreg-sim</command>
+		<command uid="resp,sup" df="1">enreg-sous-sim</command>
+		<command uid="resp,sup" df="1">charger-sim</command>
 
-		<command uid="resp,sup">modif-chemin-chariot</command>
-		<command uid="resp,sup">modif-freq-pannes</command>
-		<command uid="resp,sup">modif-flux-bag</command>
+		<command uid="resp,sup" df="1">modif-chemin-chariot</command>
+		<command uid="resp,sup" df="1">modif-freq-pannes</command>
+		<command uid="resp,sup" df="1">modif-flux-bag</command>
 
-		<command uid="resp,sup">select-elmt-liste</command>
-		<command uid="resp,sup">selec-elmt-graph</command>
+		<command uid="resp,sup" df="1">select-elmt-liste</command>
+		<command uid="resp,sup" df="1">selec-elmt-graph</command>
 
-		<command uid="resp,sup">arret-elmt</command>
-		<command uid="resp,sup">dem-elmt</command>
+		<command uid="resp,sup" df="1">arret-elmt</command>
+		<command uid="resp,sup" df="1">dem-elmt</command>
 
-		<command uid="resp,sup">selec-journal</command>
+		<command uid="resp,sup" df="1">selec-journal</command>
 		
 	</commands>
 </user_command_linkage>

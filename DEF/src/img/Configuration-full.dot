@@ -1,0 +1,87 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterConfiguration {
+		label = "G/Configuration"
+		
+		begin [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		end [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		up [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		down [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		AccueilConfiguration [
+			label = "{F/Accueil dans la Configuration|- Définition topologique de l'aéroport\l- Définition/Configuration système des chariots\l- Paramètrage d'équipements\l- G/Simulation\l}"
+		]
+	}
+
+	TopologieAeroport [
+		label = "{F/Topologie Aeroport|- Définition du nombre et des enmplacements des :\l	- Terminaux\l	- Halls\l	- Guichets\l	- Caroussels\l	- Zones\l	- ... \l}"
+	]
+
+	ConfSystChar [
+		label = "{F/Configuration du système de chariots|- Circuits\l- Nombre de chariots\l- Déplacement\l}"
+	]
+
+	Paramètres [
+		label = "{F/Paramètres|- Vitesse tapis roulant\n- Durée contrôle\l}"
+	]
+
+	Simulation [
+		label = "{G/Simulation|}"
+		penwidth = 2.0
+	]
+
+	begin -> up
+	
+	up -> AccueilConfiguration -> down
+	
+	AccueilConfiguration -> TopologieAeroport [ constraint = false ]
+	AccueilConfiguration -> ConfSystChar [ constraint = false ]
+	AccueilConfiguration -> Paramètres [ constraint = false ]
+	AccueilConfiguration -> Simulation [ constraint = false ]
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}

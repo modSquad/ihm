@@ -16,6 +16,6 @@ print "\\begin{tabular}{|c{11cm}|c|}"
 print "\t \\textbf{Commandes} & \\textbf{Liste des utilisateurs} \\hline"
 
 for currentCommand in commands:
-	print "\t", currentCommand.getAttribute("uid"), " & ",  currentCommand.childNodes[0].data, "\\hline"
+	print "\t", currentCommand.getAttribute("uid"), " & ",  currentCommand.childNodes[0].data, "\\hline \\"
 
 print "\\end{tabular}"
