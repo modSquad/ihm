@@ -8,9 +8,6 @@ users = dom.getElementsByTagName('user')
 commands = dom.getElementsByTagName('command')
 
 
-for i in users:
-	print i.getAttribute('id')
-
 TCU = dict()
 
 for i in commands:
@@ -21,4 +18,18 @@ for i in commands:
 
 	TCU[j].append(i.childNodes[0].nodeValue)
 
-print TCU
+print '\\begin{tabular}{|l|c|c|}'
+print 'Profil utilsateur & DF & Liste des commandes\\\\'
+
+mod = 0
+temp = str()
+header = 0
+
+
+for i in TCU.keys():
+    print i,' & DF & '
+    header = 1
+    for j in TCU[i]:
+	print  '& ',j
+
+print '\\end{tabular}'
