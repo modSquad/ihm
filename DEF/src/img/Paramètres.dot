@@ -1,0 +1,66 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterParamètres {
+		label = "G/Paramètres"
+		
+		begin [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		end [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		up [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		down [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		Paramètres [
+			label = "{F/Paramètres|- Comportement des évènements\l	(lieu, arrivée, durée, ordre …)\l}"
+		]
+		
+	}
+
+	begin -> up
+	
+	up -> Paramètres -> down
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}

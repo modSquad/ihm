@@ -1,0 +1,62 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+		
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+	
+	login [
+		label = "{F/login|Identification\nde l'utilisateur}"
+	]
+	
+	logout [
+		label = "{F/logout|Sortie}"
+	]
+	
+	Superviseur [
+		label = "{G/Superviseur|Graphe pour\nle Superviseur}"
+		penwidth = 2.0
+	]
+	
+	RespTechnique [
+		label = "{G/Responsable Technique|Graphe pour le\nResponsable technique}"
+		penwidth = 2.0
+	]
+
+	up [
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
+	]
+
+	down [
+		label = ""
+		shape = rectangle
+		style = filled
+		fillcolor = "#000000"
+		fixedsize = true
+		width = 1
+		height = 0.1
+	]
+	
+	login -> up
+	
+	up -> Superviseur [ label = "(1)" ]
+	up -> RespTechnique [ label = "(1,2)" ]
+	
+	Superviseur -> down
+	RespTechnique -> down
+	
+	down -> logout
+	down -> up [ constraint = False ]
+}

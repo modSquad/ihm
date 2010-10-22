@@ -1,0 +1,71 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterSuperviseur {
+		label = "G/Superviseur : Graphe pour le Supervisuer (U7)"
+		
+		begin [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		end [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		up [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		down [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		AccueilSuperviseur [
+			label = "{F/accueil Superviseur|Fenêtre accueil du\nSuperviseur}"
+		]	
+		
+		Simulation [
+			label = "{G/Simulation|Graphe de U7 dans\nD1.1.2 (Simulation)}"
+			penwidth = 2.0
+		]
+		begin -> AccueilSuperviseur [ constraint = false ]
+		
+		AccueilSuperviseur -> up
+		
+		up -> Simulation -> down
+		
+		down -> up [ constraint = false ]
+		down -> end
+	}
+	
+}

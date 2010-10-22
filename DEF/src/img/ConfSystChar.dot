@@ -1,0 +1,66 @@
+digraph {
+	
+	fontname = "Bitstream Vera Sans"
+	
+	node [
+		fontname = "Bitstream Vera Sans"
+		shape = "record"
+	]
+	
+	edge [
+		fontname = "Bitstream Vera Sans"
+	]
+
+	subgraph clusterConfSystChar {
+		label = "G/Configuration du système de chariots"
+		
+		begin [
+			label = ""
+			shape = circle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 0.3
+		]
+
+		end [
+			label = ""
+			shape = circle
+			fixedsize = true
+			width = 0.3
+		]
+				
+		up [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+	
+		down [
+			label = ""
+			shape = rectangle
+			style = filled
+			fillcolor = "#000000"
+			fixedsize = true
+			width = 1
+			height = 0.1
+		]
+		
+		ConfSystChar [
+			label = "{F/Configuration du système de chariots|- Circuits\l- Nombre de chariots\l- Déplacement\l}"
+		]
+		
+	}
+
+	begin -> up
+	
+	up -> ConfSystChar -> down
+	
+	down -> up [ constraint = false ]
+	down -> end
+	
+}
