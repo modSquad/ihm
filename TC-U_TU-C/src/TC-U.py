@@ -8,14 +8,24 @@ dom = parse('data.xml')
 users = dom.getElementsByTagName('user')
 commands = dom.getElementsByTagName('command')
 
-TCU = []
+TCU = dict()
 
-# Génération du TU/C
-
+# Génération du TC/U
 print "\\begin{tabular}{|c{11cm}|c|}"
 print "\t \\textbf{Commandes} & \\textbf{Liste des utilisateurs} \\hline"
 
 for currentCommand in commands:
-	print "\t", currentCommand.getAttribute("uid"), " & ",  currentCommand.childNodes[0].data, "\\hline"
+	users = currentCommand.getAttribute("uid").split(',')
+	command = currentCommand.childNodes[0].data
+	df = currentCommand.getAttribute("df")
+
+	for user in users:
+		if user not in TCU:	TCU[user] = []
+		TCU[user].append((df, command))
+	    
+for key in TCU:
+	for t in TCU[key]:
+		print "\t ", key, " & ", t[0], " & ", t[1], "\\hline \\\\"
 
 print "\\end{tabular}"
+
