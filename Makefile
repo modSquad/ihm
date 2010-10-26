@@ -13,3 +13,4 @@ all:
 	cd DCIHM/ && make && cd ..
 	cd DEF/ && make && cd ..
 	cd DCOM/ && make && cd ..
+	cd TC-U_TU-C/ && make && cd ..
