@@ -9,23 +9,34 @@ users = dom.getElementsByTagName('user')
 commands = dom.getElementsByTagName('command')
 
 TCU = dict()
+Usernames = dict()
+
+for u in users:
+	    Usernames[u.getAttribute("id")] = u.childNodes[0].data
+
+lastUser = ""
+lastDF = -1
 
 # Génération du TC/U
-print "\\begin{tabular}{|c{11cm}|c|}"
-print "\t \\textbf{Commandes} & \\textbf{Liste des utilisateurs} \\hline"
+print "\\begin{center}"
+print "\\begin{tabular}{|c|c|c|}"
+print "\t \\hline \\textbf{Utilisateur} & \\textbf{DF} & \\textbf{Liste des commandes} \\\\"
 
 for currentCommand in commands:
-	users = currentCommand.getAttribute("uid").split(',')
-	command = currentCommand.childNodes[0].data
-	df = currentCommand.getAttribute("df")
+	User = Usernames[currentCommand.getAttribute("uid")]
+	DF = currentCommand.getAttribute("df")
+	Command = currentCommand.childNodes[0].data
 
-	for user in users:
-		if user not in TCU:	TCU[user] = []
-		TCU[user].append((df, command))
-	    
-for key in TCU:
-	for t in TCU[key]:
-		print "\t ", key, " & ", t[0], " & ", t[1], "\\hline \\\\"
+	if lastUser == User: User = ""
+	else: lastUser = User
 
+	if lastDF == DF: DF = ""
+	else: lastDF = DF
+
+	if User != "": print "\\hline"
+	print "\t", User, "~& ", DF, "~&", Command, "\\\\ "
+
+print "\\hline"
 print "\\end{tabular}"
+print "\\end{center}"
 

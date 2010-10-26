@@ -2,6 +2,7 @@
 	<users>
 		<user id="resp">Responsable Technique</user>
 		<user id="sup">Superviseur</user> 
+		<user id="resp,sup">Responsable Technique, Superviseur</user> 
 	</users>
 
 	<commands>
