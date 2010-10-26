@@ -2,146 +2,335 @@
 
 \section{Planification hiérarchique de la tâche utilisateur}
 
+\newcounter{ndtudf}
+\newcounter{nitma}
+\newcounter{nitmaa}
 
-\phtu{0}{TOFIX}{Responsable technique}{TOFIX}
+% Numéro d'acteur
+% Numero de DF
+% Nom de DF
+% Nom d'acteur
+% Data
+\newcommand{\dtudf}[5]
 {
-\itm{} Acceder au système de gestion du SGBag : \option{SEQ} & \\
-	\sitm{S'identifier dans le système} & log\\
-	\sitm{Se deconnecter du système} & unlog\\
-	\sitm{Accéder aux fonctions choisies : \option{ALT}} & \\
-		\sitm{Accéder à l'interface de simuation} & ouvrir-inter-simulation\\
-		\sitm{Accéder à l'interface de Configuration} & ouvrir-inter-configuration\\
-\itm{} Effectuer la simulation & \\
-	\sitm{Visualiser l'ensemble de l'aéroport} & \\
-		\ssitm{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})} & \\
-		\ssitm{Visualiser les éléments : \option{ALT}} & \\
-			\sssitm{Visualiser les bagages} & afficher-bagages\\
-			\sssitm{Visualiser les chariots} & afficher-chariots\\
-			\sssitm{Visualiser le remplissage d'un conteneur} & afficher-conteneurs\\
-	\sitm{Ajouter des événements : \option{SEQ}} & ajouter-evnmt\\
-		\ssitm{Choisir son identifiant} & \\
-		\ssitm{Choisir sa date d'arrivée} & \\
-		\ssitm{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}}  & \\
-			\sssitm{Choisir une arrivé ponctuelle et sa date d'arrivée.}  & TOFIX\\
-			\sssitm{Choisir une arrivé régulière, sa date et sa fréquence d'arrivée.} & TOFIX\\
-	\sitm{Modifier un événement : \option{SEQ}} & modifier-evnmt\\
-		\ssitm{Visualiser la liste des événements} & TOFIX\\
-		\ssitm{Choisir l'événement parmis cette liste} & TOFIX\\
-		\ssitm{Modifier l'événement séléctionné} & TOFIX\\
-	\sitm{Supprimer un événement : \option{SEQ} } & supprimer-evnmt\\
-		\ssitm{Visualiser la liste des événements} & TOFIX\\
-		\ssitm{Choisir l'événement parmis cette liste} & TOFIX\\
-		\ssitm{Supprimer l'événement séléctionné} & TOFIX\\
-	\sitm{Gérer la persistence des données de simulation : \option{ALT}} & TOFIX\\
-			\ssitm{Sauvegarder} & enreg-sim \\
-			\ssitm{Enregistrer sous }& enreg-sous-sim\\
-			\ssitm{Charger une simulation }& charger-sim\\
-	\sitm{Modifier les paramètres dynamiques de simulation : \option{ALT}} & TOFIX\\
-		\ssitm{Modifier le chemin d'un chariot }& modif-chemin-chariot\\
-		\ssitm{Modifier la fréquence des pannes }& modif-freq-pannes\\
-		\ssitm{Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
-	\sitm{Démarrer un élément : \option{SEQ}} & TOFIX \\
-		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
-			\sssitm{Sélectionner un élément à partir de la liste des éléments}& selec-elmt-liste\\
-			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments}& selec-elmt-graph\\
-		\ssitm{Démarrer l'élément sélectionner }& arret-elmt\\
-	\sitm{Arrêter un élément : \option{SEQ}} & TOFIX\\
-		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
-			\sssitm{Sélectionner un élément à partir de la liste des éléments }& selec-elmt-liste\\
-			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
-		\ssitm{Arrêter l'élément sélectionner }& dem-elmt\\
-\itm{} Effectuer la configuration : \option{ALT} & TOFIX\\
-	\sitm{Ajouter un éléments : \option{SEQ} }& ajout-elmt \\
-		\ssitm{Créer un nouveau type d'élément} & TOFIX\\
-		\ssitm{Choisir un élément} & TOFIX\\
-		\ssitm{Choisir ses dimensions} & TOFIX\\
-		\ssitm{Choisir sa position} & TOFIX\\
-		\ssitm{Créer des liens avec cet élément} & TOFIX\\
-	\sitm{Modifier un élément : \option{SEQ}} & TOFIX\\
-		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
-			\sssitm{Sélectionner un élément à partir de la liste des éléments }& selec-elmt-liste\\
-			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
-		\ssitm{Modifier l'élément : \option{ALT}	}& modif-elmt\\
-			\sssitm{Modifier le type d'un élément} & TOFIX\\
-			\sssitm{Modifier les dimensions d'un élément} & TOFIX\\
-			\sssitm{Modifier la position d'un élément} & TOFIX\\
-			\sssitm{Ajouter/ Supprimer des liens avec cet éléments} & TOFIX\\
-	\sitm{Supprimer un élément : \option{SEQ}} & TOFIX\\
-		\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX\\
-			\sssitm{Sélectionner un élément à partir de la liste des éléments &} selec-elmt-liste\\
-			\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments	}& selec-elmt-graph\\
-		\ssitm{Supprimer l'élément sélectionné	} & suppri-elmt\\
-	\sitm{Gérer la persistence des données de configurations : \option{ALT}} & TOFIX\\
-			\ssitm{Sauvegarder }& enreg-config\\
-			\ssitm{Enregistrer sous }& enreg-sous-config\\
-			\ssitm{Charger une simulation }& charger-config\\
- \itm{} Analyser les journaux du système en simulation ou en cas réel : \option{SEQ} & TOFIX\\
-	\sitm{Choisir le document à analyser } & selec-journal\\
-	\sitm{Analyser le document sélectionné : \option{ALT}} & TOFIX\\
-		\ssitm{Analyser les statistiques de pannes} & TOFIX\\
-		\ssitm{Analyser les performances} & TOFIX\\
-\itm{} Réagir en cas d'urgence : \option{ALT} & TOFIX\\
-	\sitm{Communiquer avec les superviseurs} & TOFIX\\
-	\sitm{Redémarrer le SGBag : \option{OPT}} & redem-sgbag\\
+    \addtocounter{ndtudf}{1}
+    \setcounter{nacteur}{#1}
+    \setcounter{nitma}{0}
+    \begin{center}
+	\begin{longtable}{|p{11cm}|c|}
+	    \hline
+		\multicolumn{2}{|l|}{DTU/DF \thendtudf} \\
+	    \hline
+		\multicolumn{2}{|l|}{U#1 -- #3} \\
+	    \hline
+		\multicolumn{2}{|l|}{DF #2 -- #4} \\
+	    \hline
+		#5 
+	    \hline
+	\end{longtable}
+    \end{center}
+}
+
+\newcommand{\itmasup}[1]{T.\thenacteur.\thendtudf)~#1 \dotfill{}}
+\newcommand{\itma}[1]{\setcounter{nitmaa}{0}\addtocounter{nitma}{1}{}T.\thenacteur.\thendtudf.\thenitma{})~#1 \dotfill{}}
+\newcommand{\itmaa}[1]{\addtocounter{nitmaa}{1}{}~~~~T.\thenacteur.\thendtudf.\thenitma{}.\thenitmaa{})~#1 \dotfill{}}
+
+\newcounter{ndau}
+% Num DTU/DF parent
+% Num acteur
+% Nom acteur
+% Num DF
+% Nom DF
+% Contenu
+\newcommand{\sdau}[5]
+{
+    \begin{center}
+
+	\addtocounter{ndau}{1}
+
+	\begin{tabular}{|p{11cm}|c|}
+	\hline
+	    \multicolumn{2}{|l|}{DAU \thendau} \\
+	\hline
+	    \multicolumn{2}{|l|}{DTU/DF #1} \\
+	\hline
+	    \multicolumn{2}{|l|}{U#2 -- #3} \\
+	\hline
+	    \multicolumn{2}{|l|}{DF#4 -- #5} \\
+	\hline
+	    #6
+	\end{tabular}
+    \end{center}
+}
+    
+\dtudf{9}{1}{Responsable technique}{Développement}
+{
+    \itma{Accéder au système de gestion du SGBag} & DAU(1)\\
+    \itma{Effectuer la simulation} & DAU(3)\\
+    \itma{Effectuer la configuration} & DAU(12)\\
+    \itma{Réagir en cas d'urgence} & DAU(17)\\
+}
+
+\sdau{1}{9}{Responsable technique}{1}{Développement}
+{
+    {Accéder au système de gestion} &
+	{S'identifier dans le système} & C : log\\
+	{Se déconnecter du système} & C : unlog\\
+	{Accéder aux fonctions choisies :} & DAU(2)\\
+}
+
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Accéder aux fonctions choisies : \option{ALT}} &  \\
+	{Accéder à l'interface de simulation} & C : ouvrir-inter-simulation\\
+	{Accéder à l'interface de Configuration} & C : ouvrir-inter-configuration\\
+}
+
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Effectuer la simulation} & DAU(3)\\
+	{Visualiser l'ensemble de l'aéroport} & DAU(4)\\
+	{Ajouter des événements : } & DAU(5)\\
+	{Modifier un événement : } & DAU(6)\\
+	{Supprimer un événement :  } & DAU(7)\\
+	{Gérer la persistance des données de simulation : } & DAU(8)\\
+	{Modifier les paramètres dynamiques de simulation : } & DAU(9)\\
+	{Démarrer un élément : } & DAU(10) \\
+	{Arrêter un élément : } & DAU(11)\\
+}
+
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Visualiser l'ensemble de l'aéroport : \option{SEQ}} & DAU(4)\\
+	{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})} & C : niveau-zoom\\
+	{Visualiser les éléments : \option{ALT}} & C : afficher-element\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Ajouter des événements : \option{SEQ}} & DAU(5)\\
+	{Choisir son identifiant} & choix-id\\
+	{Choisir sa date d'arrivée} & choix-date\\
+	{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & choix-mode\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Modifier un événement : \option{SEQ}} & DAU(6)\\
+	{Visualiser la liste des événements} & visu-evenement\\
+	{Choisir l'événement parmis cette liste} & choix-evenement\\
+	{Modifier l'événement séléctionné} & modif-evenement\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Supprimer un événement : \option{SEQ} } & DAU(7)\\
+          {Visualiser la liste des événements} & visu-evenement\\
+          {Choisir l'événement parmis cette liste} & choix-evenement\\
+          {Supprimer l'événement séléctionné} & suppr-evenement\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Gérer la persistance des données de simulation : \option{ALT}} & DAU(8)\\
+          {Sauvegarder} & enreg-sim \\
+          {Enregistrer sous} & enreg-sous-sim\\
+          {Charger une simulation} & charger-sim\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Modifier les paramètres dynamiques de simulation : \option{ALT}} & DAU(9)\\
+          {Modifier le chemin d'un chariot }& modif-chemin-chariot\\
+          {Modifier la fréquence des pannes }& modif-freq-pannes\\
+          {Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Démarrer un élément : \option{SEQ}} & DAU(10) \\
+          {Sélectionner un élément : \option{ALT}} & select-element\\
+          {Démarrer l'élément sélectionner }& demarrer-element\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {Arrêter un élément : \option{SEQ}} & DAU(11)\\
+          {Sélectionner un élément : \option{ALT}} & select-element\\
+          {Arrêter l'élément sélectionner }& arreter-element\\
+}
+
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+{
+         {Effectuer la configuration} & DAU(12)\\
+	     {Ajouter un éléments : \option{SEQ} }& DAU(13) \\
+	     {Modifier un élément : \option{SEQ}} & DAU(14)\\
+	     {Supprimer un élément : \option{SEQ}} & DAU(15)\\
+	     {Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
+}
+
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+
+{
+         {Ajouter un éléments : \option{SEQ} }& DAU(13) \\
+	          {Créer un nouveau type d'élément} & creer-type\\
+	          {Choisir un élément} & choisir-element\\
+	          {Choisir ses dimensions} & choisir-dim\\
+	          {Choisir sa position} & choisir-position\\
+	          {Créer des liens avec cet élément} & choisir-liens\\
+}
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+
+{
+         {Modifier un élément : \option{SEQ}} & DAU(14)\\
+	      {Sélectionner un élément : \option{ALT}} & select-element\\
+	      {Modifier l'élément : \option{ALT}}& modifier-element\\
+}
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+
+{
+	     {Supprimer un élément : \option{SEQ}} & DAU(15)\\
+	          {Sélectionner un élément : \option{ALT}} & select-element \\
+	          {Supprimer l'élément sélectionné} & suppr-element \\
+}
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+
+{
+	     {Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
+	          {Sauvegarder} & enreg-config\\
+	          {Enregistrer sous }& enreg-sous-config\\
+	          {Charger une simulation }& charger-config\\
+}
+
+\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
+
+{
+         {Redémarrer le SGBag :} & redem-sgbag\\
+}
+
+\dtudf{1}{1}{Responsable technique}{1}{Développement}{Développement}
+
+{
+     \itma{Analyser les journaux du système en simulation ou en cas réel : \option{SEQ}} & \\
+	\itmaa{Choisir le document à analyser } & selec-journal\\
+	\itmaa{Analyser le document sélectionné : \option{ALT}} & DAU(18) \\
+}
+
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+
+{
+    \sitm{Analyser le document sélectionné : \option{ALT}} & analyse-doc\\
+	\ssitm{Analyser les statistiques de pannes} & analyse-stats \\
+	\ssitm{Analyser les performances} & analyse-perf \\
+}
+
+\dtudf{1}{7}{Superviseur}{1}{Développement}
+
+{
+    \itma{Accéder au système de gestion du SGBag} & DAU(1)\\
+    \itma{Effectuer la simulation} & DAU(2) \\
+    \itma{Analyser les journaux du système en simulation} & DAU(12) \\
+    \itma{Réagir en cas de problème} & DAU(13) \\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+
+{
+    {Accéder au système de gestion du SGBag : \option{SEQ}} & \\
+         {S'identifier dans le système} & C : log\\
+         {Se déconnecter du système} & C : unlog\\
+         {Accéder à l'interface de simulation :} & acceder-simul\\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    \itm Effectuer la simulation & \\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+     {Effectuer la simulation} & DAU(3)\\
+        {Visualiser l'ensemble de l'aéroport} & DAU(4)\\
+        {Ajouter des événements : } & DAU(5)\\
+        {Modifier un événement : } & DAU(6)\\
+        {Supprimer un événement :  } & DAU(7)\\
+        {Gérer la persistance des données de simulation : } & DAU(8)\\
+        {Modifier les paramètres dynamiques de simulation : } & DAU(9)\\
+        {Démarrer un élément : } & DAU(10) \\
+        {Arrêter un élément : } & DAU(11)\\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Visualiser l'ensemble de l'aéroport : \option{SEQ}} & DAU(4)\\
+          {Choisir un terminal} & C : choix-terminal \\
+          {Visualiser les éléments : \option{ALT}} & C : afficher-element\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+        {Ajouter des événements : \option{SEQ}} & DAU(5)\\
+	      {Choisir son identifiant} & choix-id\\
+	      {Choisir sa date d'arrivée} & choix-date\\
+	      {Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & choix-mode\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Modifier un événement : \option{SEQ}} & DAU(6)\\
+          {Visualiser la liste des événements} & visu-evenement\\
+          {Choisir l'événement parmis cette liste} & choix-evenement\\
+          {Modifier l'événement séléctionné} & modif-evenement\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Supprimer un événement : \option{SEQ} } & DAU(7)\\
+          {Visualiser la liste des événements} & visu-evenement\\
+          {Choisir l'événement parmis cette liste} & choix-evenement\\
+          {Supprimer l'événement séléctionné} & suppr-evenement\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Gérer la persistance des données de simulation : \option{ALT}} & DAU(8)\\
+          {Sauvegarder} & enreg-sim \\
+          {Enregistrer sous} & enreg-sous-sim\\
+          {Charger une simulation} & charger-sim\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Modifier les paramètres dynamiques de simulation : \option{ALT}} & DAU(9)\\
+	{Modifier le chemin d'un chariot }& modif-chemin-chariot\\
+	{Modifier la fréquence des pannes }& modif-freq-pannes\\
+	{Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Démarrer un élément : \option{SEQ}} & DAU(10) \\
+          {Sélectionner un élément : \option{ALT}} & select-element\\
+          {Démarrer l'élément sélectionner }& demarrer-element\\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Arrêter un élément : \option{SEQ}} & DAU(11)\\
+          {Sélectionner un élément : \option{ALT}} & select-element\\
+          {Arrêter l'élément sélectionner }& arreter-element\\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Analyser les journaux du système en simulation} & DAU(X) \\
+	{Choisir le document à analyser } & selec-journal\\
+	{Analyser le document sélectionné : \option{ALT}} & DAU(18) \\
 }
 
 
-\phtu
-{0}{TOFIX}{Superviseur}{TOFIX}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
 {
-	\itm{} Acceder au système de gestion du SGBag : \option{SEQ} & TOFIX\\
-		\sitm{S'identifier dans le système} & log \\
-		\sitm{Se deconnecter du système} & unlog \\
-		\sitm{Accéder aux fonctions choisies : \option{ALT}} & TOFIX \\
-			\sitm{Accéder à l'interface de simuation} & ouvrir-inter-simulation \\
-			\sitm{Accéder à l'interface de Configuration} & ouvrir-inter-configuration \\
-	\itm{} Effectuer la simulation & TOFIX \\
-		\sitm{Visualiser l'ensemble de l'aéroport} & TOFIX \\
-			\ssitm{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})}  & TOFIX \\
-			\ssitm{Visualiser les éléments : \option{ALT}} & TOFIX \\
-				\sssitm{Visualiser les bagages}& afficher-bagages \\
-				\sssitm{Visualiser les chariots}& afficher-chariots \\
-				\sssitm{Visualiser le remplissage d'un conteneur}& afficher-conteneurs \\
-		\sitm{Ajouter des événements : \option{SEQ}} & ajouter-evnmt \\
-			\ssitm{Choisir son identifiant} & TOFIX \\
-			\ssitm{Choisir sa date d'arrivée} & TOFIX \\
-			\ssitm{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & TOFIX \\
-				\sssitm{Choisir une arrivé ponctuelle et sa date d'arrivée} & TOFIX \\
-				\sssitm{Choisir une arrivé régulière, sa date et sa fréquence d'arrivée} & TOFIX \\
-		\sitm{Modifier un événement : \option{SEQ}}& modifier-evnmt \\
-			\ssitm{Visualiser la liste des événements} & TOFIX \\
-			\ssitm{Choisir l'événement parmis cette liste} & TOFIX \\
-			\ssitm{Modifier l'événement séléctionné} & TOFIX \\
-		\sitm{Supprimer un événement : \option{SEQ}}& supprimer-evnmt \\
-			\ssitm{Visualiser la liste des événements} & TOFIX \\
-			\ssitm{Choisir l'événement parmis cette liste} & TOFIX \\
-			\ssitm{Supprimer l'événement séléctionné} & TOFIX \\
-		\sitm{Gérer la persistence des données de simulation : \option{ALT}} & TOFIX \\
-				\ssitm{Sauvegarder} & enreg-sim \\
-				\ssitm{Enregistrer sous} & enreg-sous-sim \\
-				\ssitm{Charger une simulation} & charger-sim \\
-		\sitm{Modifier les paramètres dynamiques de simulation : \option{ALT}} & TOFIX \\
-			\ssitm{Modifier le chemin d'un chariot}& modif-chemin-chariot \\
-			\ssitm{Modifier la fréquence des pannes}& modif-freq-pannes \\
-		\sitm{Démarrer un élément : \option{SEQ}} & TOFIX \\
-			\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX \\
-				\sssitm{Sélectionner un élément à partir de la liste des éléments} & selec-elmt-liste \\
-				\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments} & selec-elmt-graph \\
-			\ssitm{Démarrer l'élément sélectionné}& arret-elmt \\
-		\sitm{Arrêter un élément : \option{SEQ}} & TOFIX \\
-			\ssitm{Sélectionner un élément : \option{ALT}} & TOFIX \\
-				\sssitm{Sélectionner un élément à partir de la liste des éléments}& selec-elmt-liste \\
-				\sssitm{Sélectionner un élément à partir de la représentation graphique des éléments}& selec-elmt-graph \\
-			\ssitm{Arrêter l'élément sélectionner}& dem-elmt \\
-		\ssitm{Modifier le flux d'arrivé de bagages} & modif-flux-bag \\
-	\itm{} Surveiller l'équipement & TOFIX \\
-		\sitm{Analyser les journaux du système en simulation ou en cas réel : \option{SEQ}} & TOFIX \\
-			\ssitm{Choisir le document à analyser}& selec-journal \\
-			\ssitm{Analyser le document sélectionné : \option{ALT}} & TOFIX \\
-				\sssitm{Analyser les statistiques de pannes} & TOFIX \\
-				\sssitm{Analyser les performances} & TOFIX \\
-	\itm{} Réagir en cas de problème & TOFIX \\
-		\sitm{Propager l'information aux personnes concernées} & TOFIX \\
-		\sitm{Déposer une demande d'intervention} & nvl-demande-interv \\
-	\itm{} Gérer les conducteurs et les manutentionnaires du terminal & TOFIX \\
+    {Surveiller l'équipement} & \\
 }
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Réagir en cas de problème} & \\
+}
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Gérer les conducteurs et les manutentionnaires du terminal} &  \\
+}
+
+\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
+{
+    {Réagir en cas de problème} & DAU(13) \\
+	{Déposer une demande d'intervention.} & demande-inter \\
+}
+

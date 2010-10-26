@@ -1,0 +1,187 @@
+% Shortcuts !
+\newcommand\urt{Responsable technique}
+\newcommand\us{Superviseur}
+\newcommand\fatal{(Erreur fatale)}
+\newcommand\warning{(message d'avertissement)}
+\newcommand\event{u-Événement}
+\newcommand\syslog{u-Données d'exploitation}
+\newcommand\allobjs{u-Aéroport, u-Avion, u-Terminal, u-Hall, u-Chemin de connexion entre les halls, u-Gichet d'enregistrement,
+u-Bagage, u-Chariot, u-Rail, u-Zone de contrôle de sécurité automatique, u-Zone de contrôle de sécurité
+manuelle, u-Portique, u-Voie de garage, u-Zone de chargement des batteries, u-Zone embarquement, u-Tapis roulant,
+u-Train, u-Wagonnet, u-Container, u-Plateau élévateur, u-Zone de déchargement, u-Tobogan, u-Zone de retrait des bagages,
+u-Carrousel, u-Zone de maintenance, u-Aiguillage, u-Chemin de roulement, u-Événement, u-Données d'exploitation}
+\newcommand\circobjs{u-Zone*, u-Bagage, u-Chariot, u-Voie de garage, u-Tapis roulant, u-Train, u-Rail, u-Wagonnet, u-Container,
+u-Plateau Élévateur, u-Tobogan, u-Carrousel, u-Aiguillage, u-Chemin de roulement}
+\newcommand\autobjs{u-Guichet d'enregistrement, u-Chariot, u-Portique, u-Tapis roulant, u-Train, u-Plateau élévateur, u-Tobogan,
+u-Carrousel, u-Chemin de roulement, \event}
+
+% Content...
+\section{DAU(1) Accéder au système de gestion du SGBag}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Authentification de l'utilisateur au système SGBag
+		\item Déclenche l'évaluation des droits de l'utilisateurs
+		\item Charge l'environnement de travail de l'utilisateur
+	\end{itemize}
+
+	\subsection{Entrées}
+		login, password
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item confirmation de l'authentification
+		\item identifiant de session de travail (sessid)
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item cpoule (login, password) incorrect, inexistant dans le
+		système ou ne disposant pas de droits suffisants \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		u-Aéroport, \event, \syslog
+
+\section{DAU(2) Effectuer la simulation}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Enregistre la configuration de la simulation
+		\item Vérifie la validité de la simulation
+		\item Effectue la simulation :
+			\begin{itemize}
+				\item Mise à jour des paramètre de simulation par l'utilisateur
+				\item Mise à jour de l'interface utilisateur,
+				\item Ajout de données dans l'interface de visualisation de la simulation
+			\end{itemize}
+	\end{itemize}
+
+	\subsection{Entrées}
+		Paramètres de la simulation
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Activation de la simulation
+		\item Mise à jour de l'interface de visualisation (déplacement des chariots, etc)
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Paramètres invalides \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{DAU(12) Effectuer la configuration}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Configuration du circuit
+		\item Test de validité de la configuration
+		\item Mise à jour de la configuration
+		\item Sauvegarde de la configuration
+		\item Test de réponse des éléments du système
+		\item Enregistrement des modifications dans les données d'exploitation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Configuration du circuit
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Mise à jour de l'interface
+		\item Confirmation des tests
+		\item État de la configuration
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Paramètres invalides \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\allobjs
+
+\section{DAU(17) Réagir en cas d'urgence}
+	\textbf{Qui:} \urt, \us
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Enregistrement de l'alerte
+		\item Demande d'intervention aux service concerné
+		\item Arrêt des systèmes défaillants
+		\item Mise en place de l'itinéraire de secours
+		\item Enregistrement les actions dans les données d'exploitation
+	\end{itemize}
+
+	\subsection{Entrées}
+		Description de l'urgence, personnel à contacter
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Confirmation de la demande d'intervention (avec données de suivi)
+		\item Mise à jour de l'état du circuit sur l'interface
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\event, \syslog
+
+\section{selec-journal}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Sélection du journal a étudier
+		\item Chargement du journal
+		\item affichage du journal
+	\end{itemize}
+
+	\subsection{Entrées}
+		Idenfiant du journal
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Contenu du journal
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Mauvais identifiant du journal \fatal
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\syslog
+
+\section{DAU(18) Analyser le document sélectionné}
+	\textbf{Qui:} \urt
+
+	\subsection{Description}
+	\begin{itemize}
+		\item Tri/Filtre des entrées
+		\item Calcul des statistiques
+		\item Affichage des résultats
+	\end{itemize}
+
+	\subsection{Entrées}
+		Ordres de tri, Ordres de recherche, Ordres de calcul
+
+	\subsection{Retours}
+	\begin{itemize}
+		\item Données d'exploitation triées
+		\item Données d'exploitation filtrées
+		\item Statistiques
+	\end{itemize}
+
+	\subsection{Erreurs}
+	\begin{itemize}
+		\item Mauvais paramètre \warning
+	\end{itemize}
+
+	\subsection{Objet(s)}
+		\syslog
+
