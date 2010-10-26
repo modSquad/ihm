@@ -9,3 +9,5 @@ all:
 	cd TTU-DF && make && cd ..
 	cd DICIHM && make && cd ..
 	cd DPOU && make && cd ..
+	cd DSIHM/ && make && cd ..
+	cd DCIHM/ && make && cd ..
