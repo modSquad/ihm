@@ -11,3 +11,5 @@ all:
 	cd DPOU && make && cd ..
 	cd DSIHM/ && make && cd ..
 	cd DCIHM/ && make && cd ..
+	cd DEF/ && make && cd ..
+	cd DCOM/ && make && cd ..
