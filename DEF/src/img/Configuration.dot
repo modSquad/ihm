@@ -25,7 +25,9 @@ digraph {
 
 		end [
 			label = ""
-			shape = circle
+			shape = doublecircle
+			style = filled
+			fillcolor = "#000000"
 			fixedsize = true
 			width = 0.3
 		]
