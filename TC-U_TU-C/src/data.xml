@@ -7,6 +7,7 @@
 
 	<commands>
 		<command uid="resp" df="1">ouvrir-inter-configuration</command>
+
 		<command uid="resp" df="1">ajout-elmt</command>
 		<command uid="resp" df="1">modif-elmt</command>
 		<command uid="resp" df="1">suppri-elmt</command>
@@ -15,10 +16,22 @@
 		<command uid="resp" df="1">enreg-sous-config</command>
 		<command uid="resp" df="1">charger-config</command>
 
+		<command uid="resp" df="1">niveau-zoom</command>
 		<command uid="resp" df="1">redem-sgbag</command>
-
+	
+		<command uid="resp" df="1">creer-type</command>
+		<command uid="resp" df="1">choisir-type</command>
+		<command uid="resp" df="1">choisir-element</command>
+		<command uid="resp" df="1">choisir-dim</command>
+		<command uid="resp" df="1">choisir-position</command>
+		<command uid="resp" df="1">choisir-liens</command>
+	
 		<command uid="sup" df="6">nvl-demande-interv</command>
 
+		<command uid="resp,sup" df="1">choix-id</command>
+		<command uid="resp,sup" df="1">choix-date</command>
+		<command uid="resp,sup" df="1">choix-mode</command>
+		
 		<command uid="resp,sup" df="1">log</command>
 		<command uid="resp,sup" df="1">unlog</command>
 
@@ -28,9 +41,14 @@
 		<command uid="resp,sup" df="1">afficher-chariots</command>
 		<command uid="resp,sup" df="1">afficher-conteneurs</command>
 
-		<command uid="resp,sup" df="1">ajouter-evnmt</command>
-		<command uid="resp,sup" df="1">modifier-evnmt</command>
-		<command uid="resp,sup" df="1">supprimer-evnmt</command>
+		<command uid="resp,sup" df="1">ajouter-evenement</command>
+		<command uid="resp,sup" df="1">visu-evenement</command>
+		<command uid="resp,sup" df="1">modifier-evenement</command>
+		<command uid="resp,sup" df="1">supprimer-evenement</command>
+
+		<command uid="resp,sup" df="1">choix-id</command>
+		<command uid="resp,sup" df="1">choix-date</command>
+		<command uid="resp,sup" df="1">choix-mode</command>
 
 		<command uid="resp,sup" df="1">enreg-sim</command>
 		<command uid="resp,sup" df="1">enreg-sous-sim</command>
@@ -40,13 +58,14 @@
 		<command uid="resp,sup" df="1">modif-freq-pannes</command>
 		<command uid="resp,sup" df="1">modif-flux-bag</command>
 
-		<command uid="resp,sup" df="1">select-elmt-liste</command>
-		<command uid="resp,sup" df="1">selec-elmt-graph</command>
-
 		<command uid="resp,sup" df="1">arret-elmt</command>
 		<command uid="resp,sup" df="1">dem-elmt</command>
+		<command uid="resp,sup" df="1">selectionner-elmt</command>
+		<command uid="resp,sup" df="1">supprimer-elmt</command>
 
 		<command uid="resp,sup" df="1">selec-journal</command>
-		
+		<command uid="resp,sup" df="1">analyse-stats</command>
+		<command uid="resp,sup" df="1">analyse-perf</command>
+
 	</commands>
 </user_command_linkage>
