@@ -155,37 +155,36 @@
 }
 
 % Numéro du tableau
-\newcounter{ndau}
 \newcounter{nacteur}
 \newcounter{nitm}
 \newcounter{nsitm}[nitm]
 \newcounter{nssitm}[nsitm]
 \newcounter{nsssitm}[nssitm]
 
-% On place le DF sur la ligne du dessous, sinon, on ne passe
-% pas en largeur
-% Num acteur
-% DTU/DF (numéro)
-% Nom acteur
-% Nom et numéro du DF
-% Contenu
-\newcommand{\phtu}[5]{
-    \addtocounter{ndau}{1}
-    \setcounter{nacteur}{#1}
-    \begin{center}
-    \begin{longtable}{|p{11cm}|c|}
-	\hline
-	    DAU \thendau & DTU/DF #2 \\
-	\hline
-	    \multicolumn{2}{|l|}{U#1 -- #3} \\
-	\hline
-	    \multicolumn{2}{|l|}{#4}\\
-	\hline
-	    #5 
-    \hline
-\end{longtable}
-\end{center}
-}
+%%% On place le DF sur la ligne du dessous, sinon, on ne passe
+%% pas en largeur
+%% Num acteur
+%% DTU/DF (numéro)
+%% Nom acteur
+%% Nom et numéro du DF
+%% Contenu
+%\newcommand{\phtu}[5]{
+%    \addtocounter{ndau}{1}
+%    \setcounter{nacteur}{#1}
+%    \begin{center}
+%    \begin{longtable}{|p{11cm}|c|}
+%	\hline
+%	    DAU \thendau & DTU/DF #2 \\
+%	\hline
+%	    \multicolumn{2}{|l|}{U#1 -- #3} \\
+%	\hline
+%	    \multicolumn{2}{|l|}{#4}\\
+%	\hline
+%	    #5 
+%    \hline
+%\end{longtable}
+%\end{center}
+%}
 
 \newcommand{\itm}{\setcounter{nsitm}{0}\setcounter{nssitm}{0}\addtocounter{nitm}{1}T.\thenacteur.\thendau.\thenitm)~}
 \newcommand{\sitm}[1]{\setcounter{nssitm}{0}\addtocounter{nsitm}{1}~~T.\thenacteur.\thendau.\thenitm.\thensitm)~#1 \dotfill{}} 
