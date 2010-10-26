@@ -34,6 +34,7 @@
 \newcommand{\itmasup}[1]{T.\thenacteur.\thendtudf)~#1 \dotfill{}}
 \newcommand{\itma}[1]{\setcounter{nitmaa}{0}\addtocounter{nitma}{1}{}T.\thenacteur.\thendtudf.\thenitma{})~#1 \dotfill{}}
 \newcommand{\itmaa}[1]{\addtocounter{nitmaa}{1}{}~~~~T.\thenacteur.\thendtudf.\thenitma{}.\thenitmaa{})~#1 \dotfill{}}
+\newcommand{\asub}[1]{~~~~a.#1\dotfill}
 
 \newcounter{ndau}
 % Num DTU/DF parent
@@ -42,7 +43,7 @@
 % Num DF
 % Nom DF
 % Contenu
-\newcommand{\sdau}[5]
+\newcommand{\sdau}[6]
 {
     \begin{center}
 
@@ -59,6 +60,7 @@
 	    \multicolumn{2}{|l|}{DF#4 -- #5} \\
 	\hline
 	    #6
+	\hline
 	\end{tabular}
     \end{center}
 }
@@ -73,152 +75,145 @@
 
 \sdau{1}{9}{Responsable technique}{1}{Développement}
 {
-    {Accéder au système de gestion} &
-	{S'identifier dans le système} & C : log\\
-	{Se déconnecter du système} & C : unlog\\
-	{Accéder aux fonctions choisies :} & DAU(2)\\
+    T.9.1.1){Accéder au système de gestion} & \\
+   \asub{9.1.1.1) S'identifier dans le système} & C : log\\
+   \asub{9.1.1.2) Se déconnecter du système} & C : unlog\\
+   \asub{9.1.1.3) Accéder aux fonctions choisies :} & DAU(2)\\
 }
 
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Accéder aux fonctions choisies : \option{ALT}} &  \\
-	{Accéder à l'interface de simulation} & C : ouvrir-inter-simulation\\
-	{Accéder à l'interface de Configuration} & C : ouvrir-inter-configuration\\
+    T.9.1.1.3){Accéder aux fonctions choisies : \option{ALT}} &  \\
+	\asub{9.1.1.3.1) Accéder à l'interface de simulation} & C : ouvrir-inter-simulation\\
+	\asub{9.1.1.3.1) Accéder à l'interface de Configuration} & C : ouvrir-inter-configuration\\
 }
 
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Effectuer la simulation} & DAU(3)\\
-	{Visualiser l'ensemble de l'aéroport} & DAU(4)\\
-	{Ajouter des événements : } & DAU(5)\\
-	{Modifier un événement : } & DAU(6)\\
-	{Supprimer un événement :  } & DAU(7)\\
-	{Gérer la persistance des données de simulation : } & DAU(8)\\
-	{Modifier les paramètres dynamiques de simulation : } & DAU(9)\\
-	{Démarrer un élément : } & DAU(10) \\
-	{Arrêter un élément : } & DAU(11)\\
+    T.9.1.2) {Effectuer la simulation} & DAU(3)\\
+	\asub{9.1.2.1) Visualiser l'ensemble de l'aéroport} & DAU(4)\\
+	\asub{9.1.2.2) Ajouter des événements : } & DAU(5)\\
+	\asub{9.1.2.3) Modifier un événement : } & DAU(6)\\
+	\asub{9.1.2.4) Supprimer un événement :  } & DAU(7)\\
+	\asub{9.1.2.5) Gérer la persistance des données de simulation : } & DAU(8)\\
+	\asub{9.1.2.6) Modifier les paramètres dynamiques de simulation : } & DAU(9)\\
+	\asub{9.1.2.7) Démarrer un élément : } & DAU(10) \\
+	\asub{9.1.2.8) Arrêter un élément : } & DAU(11)\\
 }
 
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Visualiser l'ensemble de l'aéroport : \option{SEQ}} & DAU(4)\\
-	{Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})} & C : niveau-zoom\\
-	{Visualiser les éléments : \option{ALT}} & C : afficher-element\\
+    {T.9.1.2.1) Visualiser l'ensemble de l'aéroport : \option{SEQ}} & DAU(4)\\
+	\asub{9.1.2.1.1) Naviguer au travers des différents niveaux de granularité (Aéroport, terminal, hall, \option{etc.})} & C : niveau-zoom\\
+	\asub{9.1.2.1.2) Visualiser les éléments : \option{ALT}} & C : afficher-element\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Ajouter des événements : \option{SEQ}} & DAU(5)\\
-	{Choisir son identifiant} & choix-id\\
-	{Choisir sa date d'arrivée} & choix-date\\
-	{Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & choix-mode\\
+    {T.9.1.2.2) Ajouter des événements : \option{SEQ}} & DAU(5)\\
+	\asub{9.1.2.2.1) Choisir son identifiant} & choix-id\\
+	\asub{9.1.2.2.2) Choisir sa date d'arrivée} & choix-date\\
+	\asub{9.1.2.2.3) Choisir son mode d'arrivé (régulier, ou ponctuel) : \option{ALT}} & choix-mode\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Modifier un événement : \option{SEQ}} & DAU(6)\\
-	{Visualiser la liste des événements} & visu-evenement\\
-	{Choisir l'événement parmis cette liste} & choix-evenement\\
-	{Modifier l'événement séléctionné} & modif-evenement\\
+    {T.9.1.2.3) Modifier un événement : \option{SEQ}} & DAU(6)\\
+	\asub{9.1.2.3.1) Visualiser la liste des événements} & visu-evenement\\
+	\asub{9.1.2.3.2) Choisir l'événement parmis cette liste} & choix-evenement\\
+	\asub{9.1.2.3.3) Modifier l'événement séléctionné} & modif-evenement\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Supprimer un événement : \option{SEQ} } & DAU(7)\\
-          {Visualiser la liste des événements} & visu-evenement\\
-          {Choisir l'événement parmis cette liste} & choix-evenement\\
-          {Supprimer l'événement séléctionné} & suppr-evenement\\
+    {T.9.2.1.4) Supprimer un événement : \option{SEQ} } & DAU(7)\\
+          \asub{9.2.1.4.1) Visualiser la liste des événements} & visu-evenement\\
+          \asub{9.2.1.4.2) Choisir l'événement parmis cette liste} & choix-evenement\\
+          \asub{9.2.1.4.3) Supprimer l'événement séléctionné} & suppr-evenement\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Gérer la persistance des données de simulation : \option{ALT}} & DAU(8)\\
-          {Sauvegarder} & enreg-sim \\
-          {Enregistrer sous} & enreg-sous-sim\\
-          {Charger une simulation} & charger-sim\\
+    {T.9.2.1.5) Gérer la persistance des données de simulation : \option{ALT}} & DAU(8)\\
+          \asub{9.2.1.5.1) Sauvegarder} & enreg-sim \\
+          \asub{9.2.1.5.2) Enregistrer sous} & enreg-sous-sim\\
+          \asub{9.2.1.5.3) Charger une simulation} & charger-sim\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Modifier les paramètres dynamiques de simulation : \option{ALT}} & DAU(9)\\
-          {Modifier le chemin d'un chariot }& modif-chemin-chariot\\
-          {Modifier la fréquence des pannes }& modif-freq-pannes\\
-          {Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
+    {T.9.2.1.6) Modifier les paramètres dynamiques de simulation : \option{ALT}} & DAU(9)\\
+          \asub{9.2.1.6.1) Modifier le chemin d'un chariot }& modif-chemin-chariot\\
+          \asub{9.2.1.6.2) Modifier la fréquence des pannes }& modif-freq-pannes\\
+          \asub{9.2.1.6.3) Modifier le flux d'arrivé de bagages }& modif-flux-bag\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Démarrer un élément : \option{SEQ}} & DAU(10) \\
-          {Sélectionner un élément : \option{ALT}} & select-element\\
-          {Démarrer l'élément sélectionner }& demarrer-element\\
+    {T.9.2.1.7) Démarrer un élément : \option{SEQ}} & DAU(10) \\
+          \asub{9.2.1.7.1) Sélectionner un élément : \option{ALT}} & select-element\\
+          \asub{9.2.1.7.2) Démarrer l'élément sélectionner }& demarrer-element\\
 }
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
 {
-    {Arrêter un élément : \option{SEQ}} & DAU(11)\\
-          {Sélectionner un élément : \option{ALT}} & select-element\\
-          {Arrêter l'élément sélectionner }& arreter-element\\
-}
-
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-{
-         {Effectuer la configuration} & DAU(12)\\
-	     {Ajouter un éléments : \option{SEQ} }& DAU(13) \\
-	     {Modifier un élément : \option{SEQ}} & DAU(14)\\
-	     {Supprimer un élément : \option{SEQ}} & DAU(15)\\
-	     {Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
-}
-
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-
-{
-         {Ajouter un éléments : \option{SEQ} }& DAU(13) \\
-	          {Créer un nouveau type d'élément} & creer-type\\
-	          {Choisir un élément} & choisir-element\\
-	          {Choisir ses dimensions} & choisir-dim\\
-	          {Choisir sa position} & choisir-position\\
-	          {Créer des liens avec cet élément} & choisir-liens\\
-}
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-
-{
-         {Modifier un élément : \option{SEQ}} & DAU(14)\\
-	      {Sélectionner un élément : \option{ALT}} & select-element\\
-	      {Modifier l'élément : \option{ALT}}& modifier-element\\
-}
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-
-{
-	     {Supprimer un élément : \option{SEQ}} & DAU(15)\\
-	          {Sélectionner un élément : \option{ALT}} & select-element \\
-	          {Supprimer l'élément sélectionné} & suppr-element \\
-}
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-
-{
-	     {Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
-	          {Sauvegarder} & enreg-config\\
-	          {Enregistrer sous }& enreg-sous-config\\
-	          {Charger une simulation }& charger-config\\
-}
-
-\sdau{1}{0}{U9 -- Responsable technique}{1}{Développement}
-
-{
-         {Redémarrer le SGBag :} & redem-sgbag\\
-}
-
-\dtudf{1}{1}{Responsable technique}{1}{Développement}{Développement}
-
-{
-     \itma{Analyser les journaux du système en simulation ou en cas réel : \option{SEQ}} & \\
-	\itmaa{Choisir le document à analyser } & selec-journal\\
-	\itmaa{Analyser le document sélectionné : \option{ALT}} & DAU(18) \\
+    {T.9.2.1.8) Arrêter un élément : \option{SEQ}} & DAU(11)\\
+          \asub{9.2.1.8.1) Sélectionner un élément : \option{ALT}} & select-element\\
+          \asub{9.2.1.8.2) Arrêter l'élément sélectionner }& arreter-element\\
 }
 
 \sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
-
 {
-    \sitm{Analyser le document sélectionné : \option{ALT}} & analyse-doc\\
-	\ssitm{Analyser les statistiques de pannes} & analyse-stats \\
-	\ssitm{Analyser les performances} & analyse-perf \\
+         {T.9.1.3) Effectuer la configuration} & DAU(12)\\
+	     \asub{9.1.3.1) Ajouter un élément : \option{SEQ} }& DAU(13) \\
+	     \asub{9.1.3.2) Modifier un élément : \option{SEQ}} & DAU(14)\\
+	     \asub{9.1.3.3) Supprimer un élément : \option{SEQ}} & DAU(15)\\
+	     \asub{9.1.3.4) Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
 }
 
-\dtudf{1}{7}{Superviseur}{1}{Développement}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+         {T.9.1.3.1) Ajouter un élément : \option{SEQ}} & DAU(13) \\
+	      \asub{9.1.3.1.1) Créer un nouveau type d'élément} & creer-type\\
+	      \asub{9.1.3.1.2) Choisir un élément} & choisir-element\\
+	      \asub{9.1.3.1.3) Choisir ses dimensions} & choisir-dim\\
+	      \asub{9.1.3.1.4) Choisir sa position} & choisir-position\\
+	      \asub{9.1.3.1.5) Créer des liens avec cet élément} & choisir-liens\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+         {T.9.1.3.2) Modifier un élément : \option{SEQ}} & DAU(14)\\
+	      \asub{9.1.3.2.1) Sélectionner un élément : \option{ALT}} & select-element\\
+	      \asub{9.1.3.2.2) Modifier l'élément : \option{ALT}}& modifier-element\\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+	 {T.9.1.3.3) Supprimer un élément : \option{SEQ}} & DAU(15)\\
+	      \asub{9.1.3.3.1) Sélectionner un élément : \option{ALT}} & select-element \\
+	      \asub{9.1.3.3.2) Supprimer l'élément sélectionné} & suppr-element \\
+}
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+	     {T.9.1.3.4) Gérer la persistence des données de configurations : \option{ALT}} & DAU(16)\\
+	          \asub{9.1.3.4.1) Sauvegarder} & enreg-config\\
+	          \asub{9.1.3.4.2) Enregistrer sous }& enreg-sous-config\\
+	          \asub{9.1.3.4.3) Charger une simulation }& charger-config\\
+}
 
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {T.9.1.4) Réagir en cas d’urgence } & DAU(17)\\
+         \asub{9.1.4.1) Redémarrer le SGBag :} & redem-sgbag\\
+}
+
+\dtudf{9}{1}{Responsable technique}{Développement}
+{
+    \itma{Analyser les journaux du système en simulation ou en cas réel : \option{SEQ}} & \\
+    \itma{Choisir le document à analyser } & selec-journal\\
+    \itma{Analyser le document sélectionné : \option{ALT}} & DAU(18) \\
+}
+
+\sdau{1}{9}{U9 -- Responsable technique}{1}{Développement}
+{
+    {T.9.2.3) Analyser le document sélectionné : \option{ALT}} & DAU(18) \\
+	\asub{9.2.3.1) Analyser les statistiques de pannes} & analyse-stats \\
+	\asub{9.2.3.2) Analyser les performances} & analyse-perf \\
+}
+%%% TODO
+\dtudf{1}{7}{Superviseur}{Développement}
 {
     \itma{Accéder au système de gestion du SGBag} & DAU(1)\\
     \itma{Effectuer la simulation} & DAU(2) \\
@@ -227,7 +222,6 @@
 }
 
 \sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
-
 {
     {Accéder au système de gestion du SGBag : \option{SEQ}} & \\
          {S'identifier dans le système} & C : log\\
@@ -235,10 +229,6 @@
          {Accéder à l'interface de simulation :} & acceder-simul\\
 }
 
-\sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
-{
-    \itm Effectuer la simulation & \\
-}
 
 \sdau{1}{7}{U7 -- Superviseur}{1}{Développement}
 {
