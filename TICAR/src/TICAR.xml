@@ -23,7 +23,7 @@
 		<r>
 			\begin{itemize}
 			\item Lance la procédure d'identification (interrogation de la base de donnée).\\ 
-			Si valide : Affiche l'interfacte de configuration ou de simulation.\\ 
+			Si valide : Affiche l'interface de sélection des configurations.\\ 
 			Sinon : Affiche "Identifiant/Mot de passe incorrect. Réesayez."
 			\end{itemize}
 		</r>
@@ -108,22 +108,21 @@
 	</icar>
 
 	<icar>
-		<i>Valider un renommage, une création, une suppression ou une duplication<i>
-				<controls>
-					<c>btn-valider</c>
-					<c>tab-config</c>
-				</controls>
-				<a>Clic</a>
-				<r>
-					\begin{itemize}
-					\item Si création : Effectue et enregistre la création
-					\item Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée
-					\item Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée
-					\item Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée
-					\item Grise le bouton Valider
-					\item Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer
-					\end{itemize{
-				</r>
-			</icar>
-		</ticar>
+		<i>Valider un renommage, une création, une suppression ou une duplication</i>
+		<controls>
+			<c>btn-valider</c>
+			<c>tab-config</c>
+		</controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Si création : Effectue et enregistre la création
+			\item Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée
+			\item Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée
+			\item Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée
+			\item Grise le bouton Valider
+			\item Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer
+			\end{itemize{
+		</r>
+	</icar>
 </ticar>
