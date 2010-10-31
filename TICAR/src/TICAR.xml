@@ -1,32 +1,129 @@
 <ticar>
-		<icar>
-			<i>Saisir des informations utilisateur</i>
-			<c>
-				\begin{itemize}
-					\item txt-identifiant
-					\item txt-password
-				\end{enumerate}
-			</c>
-			<a>Saisie clavier</a>
-			<r>
-				\begin{itemize}
-					\item Affiche les caractères saisis à l'écran
-					\item Affiche des étoiles à la place des caractère lorsque l'affichage est protégé
-				\end{itemize}
-			</r>
-		</icar>
+	<icar>
+		<i>Saisir des informations utilisateur</i>
+		<c>
+			\begin{itemize}
+			\item txt-identifiant
+			\item txt-password
+			\end{enumerate}
+		</c>
+		<a>Saisie clavier</a>
+		<r>
+			\begin{itemize}
+			\item Affiche les caractères saisis à l'écran
+			\item Affiche des étoiles à la place des caractère lorsque l'affichage est protégé
+			\end{itemize}
+		</r>
+	</icar>
 
-		<icar>
-			<i>Connecter l'utilisateur à l'interface de gestion ou de simulation</i>
-			<controls><c>btn-connexion</c></controls>
-			<a>Clic</a>
-			<r>
-				\begin{itemize}
-				\item Valide la saisie utilisateur
-					\item Lance la procédure d'identification (interrogation de la base de donnée)
-				\end{itemize}
-			</r>
-		</icar>
+	<icar>
+		<i>Connecter l'utilisateur à l'interface de configuration ou de simulation</i>
+		<controls><c>btn-connexion</c></controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Lance la procédure d'identification (interrogation de la base de donnée).\\ 
+			Si valide : Affiche l'interfacte de configuration ou de simulation.\\ 
+			Sinon : Affiche "Identifiant/Mot de passe incorrect. Réesayez."
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Déconnecter l'utilisateur</i>
+		<controls><c>btn-deconnexion</c></controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Déconnecte l'utilisateur
+			\item Affiche la fenêtre de connexion
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Créer une nouvelle configuration</i>
+		<controls>
+			<c>btn-creer-config</c>
+			<c>tab-config</c>
+		</controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ajoute une ligne modifiable dans le tableau des configurations
+			\item Propose la saisie du nom de la nouvelle configuration
+			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
+			\item Dégrise le bouton Valider
+			\end{itemize}
+		</r>
+	</icar>
 
 
+	<icar>
+		<i>Supprimer une configuration existante</i>
+		<controls>
+			<c>btn-suppr-config</c>
+			<c>tab-config</c>
+		</controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
+			\item Dégrise le bouton Valider
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Renommer une configuration existante</i>
+		<controls>
+			<c>btn-renom-config</c>
+			<c>tab-config</c>
+		</controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Propose la saisie du nom de la configuration sélectionnée
+			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
+			\item Dégrise le bouton Valider
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Dupliquer une configuration existante</i>
+		<controls>
+			<c>btn-dupliq-config</c>
+			<c>tab-config</c>
+		</controls>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ajoute une nouvelle configuration au tableau
+			\item Propose la saisie du nom de la configuration ajoutée
+			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
+			\item Dégrise le bouton Valider
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Valider un renommage, une création, une suppression ou une duplication<i>
+				<controls>
+					<c>btn-valider</c>
+					<c>tab-config</c>
+				</controls>
+				<a>Clic</a>
+				<r>
+					\begin{itemize}
+					\item Si création : Effectue et enregistre la création
+					\item Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée
+					\item Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée
+					\item Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée
+					\item Grise le bouton Valider
+					\item Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer
+					\end{itemize{
+				</r>
+			</icar>
+		</ticar>
 </ticar>
