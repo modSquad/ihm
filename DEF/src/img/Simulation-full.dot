@@ -1,14 +1,14 @@
 digraph {
 	
-	fontname = "Bitstream Vera Sans"
+	fontname = "Nimbus Sans L"
 	
 	node [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 		shape = "record"
 	]
 	
 	edge [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 	]
 
 	subgraph clusterSimulation {

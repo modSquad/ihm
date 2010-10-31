@@ -1,18 +1,18 @@
 digraph {
 	
-	fontname = "Bitstream Vera Sans"
+	fontname = "Nimbus Sans L"
 	
 	node [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 		shape = "record"
 	]
 	
 	edge [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 	]
 
 	subgraph clusterSuperviseur {
-		label = "G/Superviseur : Graphe pour le Supervisuer (U7)"
+		label = "G/Superviseur : Graphe pour le Superviseur (U7)"
 		
 		begin [
 			label = ""

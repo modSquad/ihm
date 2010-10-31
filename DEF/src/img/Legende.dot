@@ -1,18 +1,18 @@
 digraph {
 	
-	fontname = "Bitstream Vera Sans"
+	fontname = "Nimbus Sans L"
 	
 	node [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 		shape = "record"
 	]
 	
 	edge [
-		fontname = "Bitstream Vera Sans"
+		fontname = "Nimbus Sans L"
 	]
 
 	subgraph clusterLegende {
-	label = "légende"
+	label = "Légende"
 	
 		Elementaire[
 			label = "Noeud\nélémentaire"
@@ -23,5 +23,4 @@ digraph {
 			penwidth = 2.0
 		]
 	}
-	
 }
