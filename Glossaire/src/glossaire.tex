@@ -18,7 +18,7 @@
 \plex{Débarquement}{Phase qui débute lorsqu'un avion arrive, et qui se termine lorsque le processus de déchargement est terminé. Elle consiste à transporter les bagages de l'avion au carrousel.}
 \plex{Embarquement}{ \begin{enumerate} \item Il débute après l'enregistrement des bagages et se termine lorsque les passsagers sont dans l'avion.  \item Processus de transport des bagages de la zone d'enregistrement à la soute de l'avion en partance.  \item Zone d'{\raise.30ex\hbox{$\scriptstyle\mathtt{\sim}$}} : Endroit où les voyageurs embarquent dans l'avion.  \end{enumerate} }
 \plex{GPU}{Graphe des profils utilisateur.}
-\plex{Guichet d'enregistrement}{Lieu où le voyageur enregistre son bagage.  Le bagage est étiqueté et pris en charge par le système à partir de ce point.}
+\plex{Guichet d'enregistrement\label{logfile}}{Lieu où le voyageur enregistre son bagage.  Le bagage est étiqueté et pris en charge par le système à partir de ce point.}
 \plex{Journaux de l'application}{Aussi et souvent appelé \emph{log file}, fichier texte, le plus souvent daté, qui permet de rendre compte du fonctionnement de l'application.  Permet notamment de savoir la cause de certaines erreurs qui se produisent éventuellement dans le système.  Un contrôle de niveau permet de régler le niveau de détails souhaité, en fonction du contexte : \begin{itemize} \item Phase de test \item Mise en production \item \textsl{etc.} \end{itemize} }
 \plex{Login}{De l'anglais «~to log in~», action de s'identifier au près d'un système, souvent informatique. Ce terme peut aussi être l'identifiant, qui, souvent associé à un mot de passe, permet de s'authentifier au près du système.}
 \plex{MU}{Modèle des utilisateurs.}
@@ -27,6 +27,8 @@
 \plex{Pilotage automatique}{Système qui permet de connaitre l'état du système à chaque instant.  Par un système de capteurs placés à des points de contrôles, les bagages sont routés à travers le système.  Le pilotage automatique peut être contrôlé ponctuellement par des commandes manuelles.}
 \plex{Plateau élévateur}{Dispositif mécanique permettant de déplacer les containers des wagonnets vers les soutes de l'avion dans lequel les bagages doivent être chargés.}
 \plex{Profil utilisateurs}{Catégorisation des utilisateurs selon l'utilisation qu'ils vont faire du système.}
+\plex{SESSID}{De l'anglais «~\textbf{Sess}ion \textbf{Id}entifier~» : Identifiant de la session de travail. Permet d'identifier une session, c'est à dire un utilisateur authentifié, associé à une période de temps.}
+\plex{Session}{Association d'un couple login/password à une période temporelle, afin de repérer une période où un utilisateur était en train d'agir avec le système. Notamment utile dans les journaux de l'application (voir page \pageref{logfile}). }
 \plex{SGBag}{Le nom de l'application de gestion de bagage pour aéroport dont l'interface graphique est spécifiée par l'ensemble des documents fournis avec ce glossaire}
 \plex{SI}{Pour Système Informatique, décrit l'ensemble des équipements matériels informatiques et logiciels.}
 \plex{Simulation}{Mode de fonctionnement du l'application SGBag, pour tester le système, où les problématiques matérielles sont remplacées par du logiciel, pour tester certains cas.}
