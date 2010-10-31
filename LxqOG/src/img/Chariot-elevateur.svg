@@ -1,12 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
-<g>
-	<polyline fill="none" stroke="#000000" stroke-width="10" points="427.084,241.1 427.084,511.085 28.104,511.085 28.104,241.1 	"/>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   width="408.98001"
+   height="473.98502"
+   viewBox="0 0 408.97999 473.98501"
+   enable-background="new 0 0 595.28 841.89"
+   xml:space="preserve"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="Chariot-elevateur.svg"><metadata
+   id="metadata3098"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs3096" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview3094"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.32308258"
+   inkscape:cx="274.536"
+   inkscape:cy="289.14003"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Calque_1" />
+<g
+   id="g3084"
+   transform="translate(-23.104009,-236.1)">
+	<polyline
+   points="427.084,241.1 427.084,511.085 28.104,511.085 28.104,241.1  "
+   id="polyline3086"
+   style="fill:none;stroke:#000000;stroke-width:10" />
 </g>
-<polyline fill="none" stroke="#000000" stroke-width="10" points="395.77,511.085 59.419,608.085 395.77,705.085 "/>
-<polyline fill="none" stroke="#000000" stroke-width="10" points="59.419,705.085 395.77,608.085 59.418,511.085 "/>
-<line fill="none" stroke="#000000" stroke-width="10" x1="427.084" y1="705.085" x2="28.104" y2="705.085"/>
+<polyline
+   points="395.77,511.085 59.419,608.085 395.77,705.085 "
+   id="polyline3088"
+   style="fill:none;stroke:#000000;stroke-width:10"
+   transform="translate(-23.104009,-236.1)" />
+<polyline
+   points="59.419,705.085 395.77,608.085 59.418,511.085 "
+   id="polyline3090"
+   style="fill:none;stroke:#000000;stroke-width:10"
+   transform="translate(-23.104009,-236.1)" />
+<line
+   x1="403.98001"
+   y1="468.98502"
+   x2="4.9999905"
+   y2="468.98502"
+   id="line3092"
+   style="fill:none;stroke:#000000;stroke-width:10" />
 </svg>

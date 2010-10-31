@@ -1,0 +1,30 @@
+\newcommand{\grouptwo}[2] {
+    \begin{center}
+    \begin{minipage}{\linewidth}
+	\begin{minipage}[b]{0.5\linewidth}
+	#1
+	\end{minipage}
+	\hspace{0.5cm}
+	\begin{minipage}[b]{0.5\linewidth}
+	#2
+	\end{minipage}
+    \end{minipage}
+    \end{center}
+    \vspace{2cm}
+}
+
+
+\newcommand{\image}[2]{%
+    \begin{center}
+	    \includegraphics[width=4cm]{#1}\\
+	    #2
+    \end{center}
+}
+
+\hspace{-1cm} \grouptwo{\image{img/avion.pdf}{Un avion}}{\image{img/bagages.pdf}{Un bagage}}
+\grouptwo{\image{img/caroussel.pdf}{Un caroussel}}{\image{img/Chariot-elevateur.pdf}{Un chariot élévateur}}
+\grouptwo{\image{img/chariot.pdf}{Un chariot}}{\image{img/Hall.pdf}{Le hall 1}}
+\grouptwo{\image{img/rechargement-batterie.pdf}{Une station de rechargement pour chariot}}{\image{img/Reparation-chariot.pdf}{Une station de réparation pour chariot}}
+\grouptwo{\image{img/tapis-roulant.pdf}{Un tapis roulant}}{\image{img/Terminal.pdf}{Le terminal 1}}
+\grouptwo{\image{img/train.pdf}{Un train}}{\image{img/wagonnet.pdf}{Un wagonnet}} 
+

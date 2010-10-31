@@ -1,10 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="595.28px" height="841.89px" viewBox="0 0 595.28 841.89" enable-background="new 0 0 595.28 841.89" xml:space="preserve">
-<circle cx="88.851" cy="545.584" r="20.249"/>
-<circle cx="447.333" cy="545.584" r="20.249"/>
-<path fill="none" stroke="#000000" stroke-width="10" d="M447.332,577.832c17.811,0,32.249-14.438,32.249-32.248
-	s-14.438-32.248-32.249-32.248H88.851c-17.81,0-32.248,14.438-32.248,32.248s14.438,32.248,32.248,32.248H447.332z"/>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Calque_1"
+   x="0px"
+   y="0px"
+   width="432.978"
+   height="74.496002"
+   viewBox="0 0 432.97798 74.496001"
+   enable-background="new 0 0 595.28 841.89"
+   xml:space="preserve"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="tapis-roulant.svg"><metadata
+   id="metadata3191"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs3189" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview3187"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.32308258"
+   inkscape:cx="246.037"
+   inkscape:cy="161.887"
+   inkscape:window-x="0"
+   inkscape:window-y="24"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Calque_1" />
+<circle
+   cx="88.850998"
+   cy="545.58398"
+   r="20.249001"
+   id="circle3181"
+   sodipodi:cx="88.850998"
+   sodipodi:cy="545.58398"
+   sodipodi:rx="20.249001"
+   sodipodi:ry="20.249001"
+   transform="translate(-51.603009,-508.336)" />
+<circle
+   cx="447.33301"
+   cy="545.58398"
+   r="20.249001"
+   id="circle3183"
+   sodipodi:cx="447.33301"
+   sodipodi:cy="545.58398"
+   sodipodi:rx="20.249001"
+   sodipodi:ry="20.249001"
+   transform="translate(-51.603009,-508.336)" />
+<path
+   d="m 395.72899,69.496 c 17.811,0 32.249,-14.438 32.249,-32.248 0,-17.81 -14.438,-32.248 -32.249,-32.248 H 37.247991 c -17.81,0 -32.2480005,14.438 -32.2480005,32.248 0,17.81 14.4380005,32.248 32.2480005,32.248 H 395.72899 z"
+   id="path3185"
+   inkscape:connector-curvature="0"
+   style="fill:none;stroke:#000000;stroke-width:10" />
 </svg>
