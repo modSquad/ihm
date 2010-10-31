@@ -1,0 +1,32 @@
+<ticar>
+		<icar>
+			<i>Saisir des informations utilisateur</i>
+			<c>
+				\begin{itemize}
+					\item txt-identifiant
+					\item txt-password
+				\end{enumerate}
+			</c>
+			<a>Saisie clavier</a>
+			<r>
+				\begin{itemize}
+					\item Affiche les caractères saisis à l'écran
+					\item Affiche des étoiles à la place des caractère lorsque l'affichage est protégé
+				\end{itemize}
+			</r>
+		</icar>
+
+		<icar>
+			<i>Connecter l'utilisateur à l'interface de gestion ou de simulation</i>
+			<controls><c>btn-connexion</c></controls>
+			<a>Clic</a>
+			<r>
+				\begin{itemize}
+				\item Valide la saisie utilisateur
+					\item Lance la procédure d'identification (interrogation de la base de donnée)
+				\end{itemize}
+			</r>
+		</icar>
+
+
+</ticar>
