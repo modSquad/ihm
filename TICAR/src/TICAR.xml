@@ -166,7 +166,7 @@
 		<a>Clic</c>
 		<r>
 			\begin{itemize}
-			\item Enregistre la configuration courrante
+			\item Enregistre la configuration courante
 			\end{itemize}
 		</r>
 	</icar>
@@ -182,12 +182,88 @@
 		<r>
 			\begin{itemize}
 			\item Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier
-			\item Enregistre la configuration courrante dans le fichier sélectionné
+			\item Enregistre la configuration courante dans le fichier sélectionné
 			\end{itemize}
 		</r>
 	</icar>
 
+	<icar>
+		<i>Zommer dans l'affichage des éléments</i>
+		<c>
+			\begin{enumerate}
+				\item btn-zoom
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Zoom dans l'affichage des éléments
+			\end{itemize}
+		</r>
+	</icar>
 
+	<icar>
+		<i>Dézommer dans l'affichage des éléments</i>
+		<c>
+			\begin{enumerate}
+				\item btn-dezoom
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Dézoom dans l'affichage des éléments
+			\end{itemize}
+		</r>
+	</icar>
 
+	<icar>
+		<i>Séléctionner un élément<i>
+		<c>
+			\begin{enumerate}
+			\item pannel-elements
+			\item img-element
+			\end{itemize}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Affiche les paramètres de l'éléments dans le panneau "Élément"
+			\item Encadre l'élément sélectionné
+			\end{itemize}
+		</r>
+	</icar>
 
+	<icar>
+		<i>Tourner un élément dans le sens des aiguilles d'une montre</i>
+		<c>
+			\begin{enumerate}
+			\item btn-rotation-indirect
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Tourne la représentation graphique de l'élement
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Tourner un élément dans le sens inverse des aiguilles d'une montre</i>
+		<c>
+			\begin{enumerate}
+			\item btn-rotation-direct
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Tourne la représentation graphique de l'élement
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Ajout un élément à la configutation courante
 </ticar>
