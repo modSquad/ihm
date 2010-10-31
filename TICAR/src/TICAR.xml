@@ -125,4 +125,69 @@
 			\end{itemize{
 		</r>
 	</icar>
+
+	<icar>
+		<i>Choisir une nouvelle configuration</i>
+		<c>
+			\begin{enumerate}
+				\item btn-choix-config
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+				\item Ferme la fenêtre de configuration
+				\item Affiche la fenêtre de choix des configurations
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Lancer la simulation</i>
+		<c>\begin{enumerate}
+				\item btn-simuler
+			\end{enumerate}
+		</c>
+		<a>Clic<a>
+		<r>
+			\begin{itemize}
+			\item Lance la simulation (A PRECISER)
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Enregistrer une configuration</i>
+		<c>
+			\begin{enumerate}
+				\item btn-enreg
+			\end{enumerate}
+		</c>
+		<a>Clic</c>
+		<r>
+			\begin{itemize}
+			\item Enregistre la configuration courrante
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Enregistrer-sous une configuration</i>
+		<c>
+			\begin{enumerate}
+				\item btn-enreg
+			\end{enumerate}
+		</c>
+		<a>Clic</c>
+		<r>
+			\begin{itemize}
+			\item Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier
+			\item Enregistre la configuration courrante dans le fichier sélectionné
+			\end{itemize}
+		</r>
+	</icar>
+
+
+
+
 </ticar>
