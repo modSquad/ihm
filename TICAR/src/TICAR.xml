@@ -265,5 +265,54 @@
 	</icar>
 
 	<icar>
-		<i>Ajout un élément à la configutation courante
+		<i>Ajout un élément à la configutation courante</i>
+		<c>
+			\begin{enumerate}
+			\item btn-ajouter
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ajoute un élément à la configuration
+			\item Ajoute la représentation de l'élément à la vue
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Valider les paramètres d'un élément</i>
+		<c>
+			\begin{enumerate}
+			\item btn-valid-element
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Valide les paramètres
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Supprimer un élément</i>
+		<c>
+			\begin{enumerate}
+			\item btn-suppr-element
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Supprime l'élément sélectionné 
+			\item Supprime la représentation graphique de la vue
+			\end{itemize}
+		</r>
+	</icar>
+			\end{itemize}
+		</r>
+	</icar>
+
+
 </ticar>
