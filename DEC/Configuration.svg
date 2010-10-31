@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="390.99609"
+   version="1.1"
+   width="654.66406"
+   id="svg2"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="Configuration.svg"
+   inkscape:export-filename="/home/paul/workspace/ihm/DEC/Configuration.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata126">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs124" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     id="namedview122"
+     showgrid="false"
+     inkscape:zoom="0.8592503"
+     inkscape:cx="492.73907"
+     inkscape:cy="270.56196"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <ellipse
+     cx="22"
+     cy="33"
+     rx="8"
+     ry="8"
+     id="ellipse4"
+     sodipodi:cx="22"
+     sodipodi:cy="33"
+     sodipodi:rx="8"
+     sodipodi:ry="8"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="120"
+     x="96.5"
+     y="0.5"
+     id="rect6"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="120"
+     x="96.5"
+     y="0.5"
+     id="rect8"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="136.617"
+     x="96.5"
+     y="0.5"
+     id="rect10"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="112.45052"
+     y="16.145868"
+     id="text12"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Choix Configuration</text>
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     d="m 96.5,24.5 136.42106,0"
+     id="line14"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <rect
+     fill="#00ff"
+     height="72"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="128"
+     x="272.5"
+     y="192.5"
+     id="rect16"
+     style="stroke-width:1" />
+  <rect
+     height="72"
+     rx="16"
+     ry="16"
+     width="128"
+     x="272.5"
+     y="192.5"
+     id="rect18"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="68.967743"
+     rx="16"
+     ry="16"
+     width="139.37097"
+     x="272.5"
+     y="192.5"
+     id="rect20"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="287.9343"
+     y="208.24571"
+     id="text22"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Configuration Active</text>
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     d="m 272.5,216.5 139.32875,0"
+     id="line24"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="165"
+     x="16.5"
+     y="328.5"
+     id="rect26"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="165"
+     x="16.5"
+     y="328.5"
+     id="rect28"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="178.40082"
+     x="16.5"
+     y="328.5"
+     id="rect30"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="31.810442"
+     y="344.55734"
+     id="text32"
+     style="font-size:12px;font-family:Dialog">
+    <tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+       id="tspan3050">Configuration en Simulation</tspan>
+  </text>
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     d="m 16.5,352.5 178.20486,0"
+     id="line34"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="180"
+     x="455.62946"
+     y="328.5"
+     id="rect36"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="180"
+     x="455.62946"
+     y="328.5"
+     id="rect38"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="44.927937"
+     rx="16"
+     ry="16"
+     width="195.00891"
+     x="455.62946"
+     y="328.5"
+     id="rect40"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="470.93991"
+     y="344.2457"
+     id="text42"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Choix Fichier d'Enregistrement</text>
+  <path
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     d="m 455.62947,352.5 195.08098,0"
+     id="line44"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <ellipse
+     cx="562"
+     cy="259"
+     rx="12"
+     ry="12"
+     id="ellipse46"
+     sodipodi:cx="562"
+     sodipodi:cy="259"
+     sodipodi:rx="12"
+     sodipodi:ry="12"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <ellipse
+     cx="562"
+     cy="259"
+     rx="11"
+     ry="11"
+     id="ellipse48"
+     sodipodi:cx="562"
+     sodipodi:cy="259"
+     sodipodi:rx="11"
+     sodipodi:ry="11"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <ellipse
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     transform="translate(-12.5,-15.5)"
+     sodipodi:ry="7.5"
+     sodipodi:rx="7.5"
+     sodipodi:cy="258"
+     sodipodi:cx="561"
+     id="ellipse3117"
+     ry="7.5"
+     rx="7.5"
+     cy="258"
+     cx="561" />
+  <polyline
+     points="30,33 110,33"
+     id="polyline52"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <line
+     x1="84.5"
+     x2="96.5"
+     y1="23.5"
+     y2="16.5"
+     id="line54"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="84.5"
+     x2="96.5"
+     y1="9.5"
+     y2="16.5"
+     id="line56"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 233.53846,16.974194 82.32316,0.550197 -0.0837,173.478609"
+     id="polyline58"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     font-size="12"
+     x="243.5"
+     y="105.5"
+     id="text64"
+     style="font-size:12px;font-family:Dialog" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 360.5,192.5 0,-47 132.66781,0 -0.41147,63.17707 L 412.0247,209.5"
+     id="polyline66"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <g
+     id="g3111"
+     transform="translate(-2.377324,-16.5)">
+    <g
+       id="g3108">
+      <line
+         x1="426"
+         x2="414"
+         y1="219"
+         y2="226"
+         id="line68"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <line
+       id="line70"
+       y2="226"
+       y1="233"
+       x2="414"
+       x1="426"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+  </g>
+  <text
+     font-size="12"
+     x="370.41772"
+     y="141.78329"
+     id="text72"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Éditer la configuration</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 412.0247,241.5 124.4753,0"
+     id="polyline74"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <line
+     x1="524.5"
+     x2="536.5"
+     y1="248.5"
+     y2="241.5"
+     id="line76"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="524.5"
+     x2="536.5"
+     y1="234.5"
+     y2="241.5"
+     id="line78"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="458.79678"
+     y="238.28076"
+     id="text80"
+     style="font-size:12px;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Quitter</text>
+  <polyline
+     points="286,241 94,241 94,345"
+     id="polyline82"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <line
+     x1="73.5"
+     x2="80.5"
+     y1="316.5"
+     y2="328.5"
+     id="line84"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="87.5"
+     x2="80.5"
+     y1="316.5"
+     y2="328.5"
+     id="line86"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="79.427498"
+     y="219.5"
+     id="text88"
+     style="font-size:12px;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Simuler la configuration</text>
+  <polyline
+     points="134,345 134,265 286,265"
+     id="polyline90"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,-16.5)" />
+  <line
+     x1="260.5"
+     x2="272.5"
+     y1="255.5"
+     y2="248.5"
+     id="line92"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="260.5"
+     x2="272.5"
+     y1="241.5"
+     y2="248.5"
+     id="line94"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="121.31311"
+     y="243.6973"
+     id="text96"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Revenir à la configuration</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 336.5,262.08785 0,106.41215 121.26216,0"
+     id="polyline98"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <line
+     x1="447.60928"
+     x2="459.60928"
+     y1="375.5"
+     y2="368.5"
+     id="line100"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="447.60928"
+     x2="459.60928"
+     y1="361.5"
+     y2="368.5"
+     id="line102"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="339.84479"
+     y="363.47818"
+     id="text104"
+     style="font-size:12px;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Enregistrer sous</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 455.33852,344.5 -86.83852,0 0,-82.74716"
+     id="polyline106"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     font-size="12"
+     x="373.70047"
+     y="341.28467"
+     id="text112"
+     style="font-size:12px;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Fichier choisi</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 280.5,259.94372 0,108.55628 39.22429,0 0,-106.68016"
+     id="polyline114"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccc" />
+  <g
+     id="g3099">
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line116"
+       y2="261.22958"
+       y1="273.22958"
+       x2="319.7243"
+       x1="326.7243" />
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line118"
+       y2="261.22958"
+       y1="273.22958"
+       x2="319.7243"
+       x1="312.7243" />
+  </g>
+  <text
+     font-size="12"
+     x="270.64664"
+     y="383.5"
+     id="text120"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L">Enregistrer</text>
+  <line
+     x1="375.56451"
+     x2="368.56451"
+     y1="273.67944"
+     y2="261.67944"
+     id="line116-6"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="361.56451"
+     x2="368.56451"
+     y1="273.67944"
+     y2="261.67944"
+     id="line118-6"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3073"
+     style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+     transform="translate(56.260289,-8.7285389)"><flowRegion
+       id="flowRegion3075"><rect
+         id="rect3077"
+         width="187.21761"
+         height="15.635755"
+         x="262.10464"
+         y="25.613146"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L" /></flowRegion><flowPara
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+       id="flowPara3049">Ouvrir une configuration existante / </flowPara></flowRoot>  <g
+     transform="matrix(-1,0,0,-1,635.57336,453.16704)"
+     id="g3099-0">
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line116-2"
+       y2="261.22958"
+       y1="273.22958"
+       x2="319.7243"
+       x1="326.7243" />
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line118-9"
+       y2="261.22958"
+       y1="273.22958"
+       x2="319.7243"
+       x1="312.7243" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+     x="319.16956"
+     y="41.107704"
+     id="text3057"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3059"
+       x="319.16956"
+       y="41.107704">créer une nouvelle configuration</tspan></text>
+</svg>

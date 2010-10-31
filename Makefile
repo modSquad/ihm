@@ -14,3 +14,8 @@ all:
 	cd DEF/ && make && cd ..
 	cd DCOM/ && make && cd ..
 	cd TC-U_TU-C/ && make && cd ..
+	cd LxqVT && make && cd ..
+	cd TCUM && make && cd ..
+	cd FDFen && make && cd ..
+	cd DesFen && make && cd ..
+	cd TICAR && make && cd ..

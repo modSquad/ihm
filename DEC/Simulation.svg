@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="562.297"
+   version="1.1"
+   width="801"
+   id="svg2"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="Simulation.svg"
+   inkscape:export-filename="/home/paul/workspace/ihm/DEC/DEC-Simulation.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <metadata
+     id="metadata212">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs210" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     id="namedview208"
+     showgrid="false"
+     inkscape:zoom="0.97491039"
+     inkscape:cx="418.75116"
+     inkscape:cy="193.48994"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <ellipse
+     cx="79"
+     cy="39"
+     rx="8"
+     ry="8"
+     id="ellipse4"
+     sodipodi:cx="79"
+     sodipodi:cy="39"
+     sodipodi:rx="8"
+     sodipodi:ry="8"
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="105"
+     x="127.5"
+     y="44.79697"
+     id="rect6"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="105"
+     x="127.5"
+     y="44.79697"
+     id="rect8"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="105"
+     x="127.5"
+     y="44.79697"
+     id="rect10"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="134.95061"
+     y="60.247578"
+     id="text12"
+     style="font-size:12px;font-family:Nimbus Sans L">Choix Simulation</text>
+  <line
+     x1="127.5"
+     x2="231.5"
+     y1="68.796967"
+     y2="68.796967"
+     id="line14"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="179"
+     x="438.5"
+     y="55.79697"
+     id="rect16"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="179"
+     x="438.5"
+     y="55.79697"
+     id="rect18"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="179"
+     x="438.5"
+     y="55.79697"
+     id="rect20"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="449.57712"
+     y="70.52227"
+     id="text22"
+     style="font-size:12px;font-family:Nimbus Sans L">Paramétrage de la Simulation</text>
+  <line
+     x1="438.5"
+     x2="616.5"
+     y1="79.796967"
+     y2="79.796967"
+     id="line24"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="180"
+     x="16.5"
+     y="481.79697"
+     id="rect26"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="180"
+     x="16.5"
+     y="481.79697"
+     id="rect28"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="180"
+     x="16.5"
+     y="481.79697"
+     id="rect30"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="24.675915"
+     y="497.24759"
+     id="text32"
+     style="font-size:12px;font-family:Nimbus Sans L">Choix Fichier d'Enregistrement</text>
+  <line
+     x1="16.5"
+     x2="195.5"
+     y1="505.79697"
+     y2="505.79697"
+     id="line34"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="169"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="143"
+     x="345.5"
+     y="230.79697"
+     id="rect36"
+     style="stroke-width:1" />
+  <rect
+     height="169"
+     rx="16"
+     ry="16"
+     width="143"
+     x="345.5"
+     y="230.79697"
+     id="rect38"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="169"
+     rx="16"
+     ry="16"
+     width="143"
+     x="345.5"
+     y="230.79697"
+     id="rect40"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="370.5"
+     y="244.79697"
+     id="text42"
+     style="font-size:12px;font-family:Nimbus Sans L">Simulation Active</text>
+  <line
+     x1="345.5"
+     x2="487.5"
+     y1="254.79697"
+     y2="254.79697"
+     id="line44"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="56"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="128"
+     x="672.5"
+     y="504.79697"
+     id="rect46"
+     style="stroke-width:1" />
+  <rect
+     height="56"
+     rx="16"
+     ry="16"
+     width="128"
+     x="672.5"
+     y="504.79697"
+     id="rect48"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="56"
+     rx="16"
+     ry="16"
+     width="128"
+     x="672.5"
+     y="504.79697"
+     id="rect50"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="683.62866"
+     y="520.84845"
+     id="text52"
+     style="font-size:12px;font-family:Nimbus Sans L">Simulation en pause</text>
+  <line
+     x1="672.5"
+     x2="799.5"
+     y1="528.797"
+     y2="528.797"
+     id="line54"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="56"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="115"
+     x="342.90732"
+     y="505.79697"
+     id="rect56"
+     style="stroke-width:1" />
+  <rect
+     height="56"
+     rx="16"
+     ry="16"
+     width="115"
+     x="342.90732"
+     y="505.79697"
+     id="rect58"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="56"
+     rx="16"
+     ry="16"
+     width="115"
+     x="342.90732"
+     y="505.79697"
+     id="rect60"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="351.08322"
+     y="521.9729"
+     id="text62"
+     style="font-size:12px;font-family:Nimbus Sans L">Simulation Lancée</text>
+  <line
+     x1="342.90732"
+     x2="456.90732"
+     y1="529.797"
+     y2="529.797"
+     id="line64"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <rect
+     fill="#00ff"
+     height="46"
+     rx="16"
+     ry="16"
+     stroke="#00ff"
+     width="117"
+     x="0.5"
+     y="247.79697"
+     id="rect66"
+     style="stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="117"
+     x="0.5"
+     y="247.79697"
+     id="rect68"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <rect
+     height="46"
+     rx="16"
+     ry="16"
+     width="117"
+     x="0.5"
+     y="247.79697"
+     id="rect70"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="8.5514698"
+     y="264.87418"
+     id="text72"
+     style="font-size:12px;font-family:Nimbus Sans L">Analyse Simulation</text>
+  <line
+     x1="0.5"
+     x2="116.5"
+     y1="271.79697"
+     y2="271.79697"
+     id="line74"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <polyline
+     points="87,39 141,39"
+     id="polyline76"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <line
+     x1="115.5"
+     x2="127.5"
+     y1="67.796967"
+     y2="60.79697"
+     id="line78"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="115.5"
+     x2="127.5"
+     y1="53.79697"
+     y2="60.79697"
+     id="line80"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 232.5,57.796969 171.77532,0 0,-44.878208 128.28821,0.181326 0.0907,42.24898"
+     id="polyline82"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccc" />
+  <text
+     font-size="12"
+     x="391.37787"
+     y="8.8920002"
+     id="text88"
+     style="font-size:12px;font-family:Nimbus Sans L">Créer une nouvelle simulation</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 232.5,75.923807 131.44487,0.0692 -0.11675,154.803963"
+     id="polyline90"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     font-size="12"
+     x="238.9127"
+     y="71.244881"
+     id="text96"
+     style="font-size:12px;font-family:Nimbus Sans L">Ouvrir une simulation existante</text>
+  <polyline
+     points="502,80 502,209"
+     id="polyline98"
+     transform="translate(-43.600132,21.796969)"
+     style="fill:none;stroke:#000000;stroke-width:1" />
+  <line
+     x1="451.39987"
+     x2="458.39987"
+     y1="218.79697"
+     y2="230.79697"
+     id="line100"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="465.39987"
+     x2="458.39987"
+     y1="218.79697"
+     y2="230.79697"
+     id="line102"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="462.20596"
+     y="165.50737"
+     id="text104"
+     style="font-size:12px;font-family:Nimbus Sans L">Finir paramétrage</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 488.5,265.79697 122.98346,0 0,-162.4614"
+     id="polyline106"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <line
+     x1="617.97058"
+     x2="610.97058"
+     y1="115.84843"
+     y2="103.84843"
+     id="line108"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="603.97058"
+     x2="610.97058"
+     y1="115.84843"
+     y2="103.84843"
+     id="line110"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="614.99634"
+     y="166.07822"
+     id="text112"
+     style="font-size:12px;font-family:Nimbus Sans L">Paramétrer la simulation</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 344.04939,275.95123 -226.54939,0"
+     id="polyline114"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <g
+     id="g3225"
+     transform="translate(-13.5,32.313883)">
+    <line
+       id="line116"
+       y2="244"
+       y1="237"
+       x2="131"
+       x1="143"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+    <line
+       id="line118"
+       y2="244"
+       y1="251"
+       x2="131"
+       x1="143"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+  </g>
+  <text
+     font-size="12"
+     x="135.62204"
+     y="271.90561"
+     id="text120"
+     style="font-size:12px;font-family:Nimbus Sans L">Analyser les résultats de la simulation</text>
+  <polyline
+     points="70,226 70,172 214,172 214,228 359,228"
+     id="polyline122"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <g
+     id="g3196"
+     transform="translate(-13.5,21.796969)">
+    <line
+       id="line124"
+       y2="228"
+       y1="235"
+       x2="359"
+       x1="347"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+    <line
+       id="line126"
+       y2="228"
+       y1="221"
+       x2="359"
+       x1="347"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+  </g>
+  <text
+     font-size="12"
+     x="57.160347"
+     y="187.17592"
+     id="text128"
+     style="font-size:12px;font-family:Nimbus Sans L">Finir analyse</text>
+  <ellipse
+     cx="626"
+     cy="342"
+     rx="12"
+     ry="12"
+     id="ellipse130"
+     sodipodi:cx="626"
+     sodipodi:cy="342"
+     sodipodi:rx="12"
+     sodipodi:ry="12"
+     transform="translate(-13.5,-10.116424)"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <ellipse
+     cx="626"
+     cy="342"
+     rx="11"
+     ry="11"
+     id="ellipse132"
+     sodipodi:cx="626"
+     sodipodi:cy="342"
+     sodipodi:rx="11"
+     sodipodi:ry="11"
+     transform="translate(-13.5,-10.116424)"
+     style="fill:#ffffff;stroke:#ffffff;stroke-width:1" />
+  <ellipse
+     cx="625"
+     cy="341"
+     rx="7.5"
+     ry="7.5"
+     id="ellipse134"
+     sodipodi:cx="625"
+     sodipodi:cy="341"
+     sodipodi:rx="7.5"
+     sodipodi:ry="7.5"
+     transform="translate(-12.5,-9.1164238)"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <polyline
+     points="502,341 614,341"
+     id="polyline136"
+     transform="translate(-13.5,-10.116424)"
+     style="fill:none;stroke:#000000;stroke-width:1" />
+  <line
+     x1="588.5"
+     x2="600.5"
+     y1="337.88358"
+     y2="330.88358"
+     id="line138"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="588.5"
+     x2="600.5"
+     y1="323.88358"
+     y2="330.88358"
+     id="line140"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="527.24152"
+     y="328.11362"
+     id="text142"
+     style="font-size:12px;font-family:Nimbus Sans L">Quitter</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 345.5,361.35584 -195.93604,-0.38947 0.51656,119.37999"
+     id="polyline144"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     font-size="12"
+     x="150.48782"
+     y="355.28821"
+     id="text150"
+     style="font-size:12px;font-family:Nimbus Sans L">Enregistrer sous</text>
+  <polyline
+     points="94,460 94,308 359,308"
+     id="polyline152"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <line
+     x1="333.5"
+     x2="345.5"
+     y1="336.79697"
+     y2="329.79697"
+     id="line154"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="333.5"
+     x2="345.5"
+     y1="322.79697"
+     y2="329.79697"
+     id="line156"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="82.916779"
+     y="325.52228"
+     id="text158"
+     style="font-size:12px;font-family:Nimbus Sans L">Fichier choisi</text>
+  <polyline
+     points="373,378 373,484"
+     id="polyline160"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <line
+     x1="352.72626"
+     x2="359.72626"
+     y1="493.79697"
+     y2="505.79697"
+     id="line162"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="366.72626"
+     x2="359.72626"
+     y1="493.79697"
+     y2="505.79697"
+     id="line164"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <polyline
+     points="398,484 398,378"
+     id="polyline168"
+     transform="translate(45.686499,21.796969)"
+     style="fill:none;stroke:#000000;stroke-width:1" />
+  <line
+     x1="450.8367"
+     x2="443.8367"
+     y1="411.79697"
+     y2="399.79697"
+     id="line170"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="436.8367"
+     x2="443.8367"
+     y1="411.79697"
+     y2="399.79697"
+     id="line172"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 457.90731,546.79697 214.59269,0"
+     id="polyline176"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <line
+     x1="660.5"
+     x2="672.5"
+     y1="553.797"
+     y2="546.797"
+     id="line178"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="660.5"
+     x2="672.5"
+     y1="539.797"
+     y2="546.797"
+     id="line180"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="484.6759"
+     y="542.93909"
+     id="text182"
+     style="font-size:12px;font-family:Nimbus Sans L">Mettre simulation en pause</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 672.5,523.79697 -214.23004,0"
+     id="polyline184"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <line
+     x1="469.90732"
+     x2="457.90732"
+     y1="516.797"
+     y2="523.797"
+     id="line186"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="469.90732"
+     x2="457.90732"
+     y1="530.797"
+     y2="523.797"
+     id="line188"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="505.57715"
+     y="518.797"
+     id="text190"
+     style="font-size:12px;font-family:Nimbus Sans L">Continuer simulation</text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 733.42557,504.43432 0.70222,-134.97666 -245.44646,-0.3048"
+     id="polyline192"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccc" />
+  <text
+     font-size="12"
+     x="639.49115"
+     y="366.29233"
+     id="text198"
+     style="font-size:12px;font-family:Nimbus Sans L">Arrêter simulation</text>
+  <polyline
+     points="502,260 670,260 670,284 502,284"
+     id="polyline200"
+     style="fill:none;stroke:#000000;stroke-width:1"
+     transform="translate(-13.5,21.796969)" />
+  <line
+     x1="500.5"
+     x2="488.5"
+     y1="298.79697"
+     y2="305.79697"
+     id="line202"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <line
+     x1="500.5"
+     x2="488.5"
+     y1="312.79697"
+     y2="305.79697"
+     id="line204"
+     style="fill:#000000;stroke:#000000;stroke-width:1" />
+  <text
+     font-size="12"
+     x="658.5"
+     y="298.79697"
+     id="text206"
+     style="font-size:12px;font-family:Nimbus Sans L">Enregistrer</text>
+  <g
+     transform="matrix(0,1,-1,0,591.81348,-128.23566)"
+     id="g3196-6">
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line124-6"
+       y2="228"
+       y1="235"
+       x2="359"
+       x1="347" />
+    <line
+       style="fill:#000000;stroke:#000000;stroke-width:1"
+       id="line126-4"
+       y2="228"
+       y1="221"
+       x2="359"
+       x1="347" />
+  </g>
+  <g
+     id="g3251"
+     transform="matrix(-1,0,0,-1,1041.546,700.98244)">
+    <line
+       id="line154-4"
+       y2="331.70505"
+       y1="338.70505"
+       x2="553.24219"
+       x1="541.24219"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+    <line
+       id="line156-4"
+       y2="331.70505"
+       y1="324.70505"
+       x2="553.24219"
+       x1="541.24219"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+  </g>
+  <line
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     x1="143.13588"
+     x2="150.13588"
+     y1="469.47772"
+     y2="481.47772"
+     id="line154-2" />
+  <line
+     style="fill:#000000;stroke:#000000;stroke-width:1"
+     x1="157.13588"
+     x2="150.13588"
+     y1="469.47772"
+     y2="481.47772"
+     id="line156-1" />
+  <g
+     id="g3299"
+     transform="translate(31.151551,21.796969)">
+    <line
+       id="line100-1"
+       y2="33.439842"
+       y1="21.439842"
+       x2="501.50266"
+       x1="494.50266"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+    <line
+       id="line102-0"
+       y2="33.439842"
+       y1="21.439842"
+       x2="501.50266"
+       x1="508.50266"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
+  </g>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3308"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     transform="translate(-13.5,21.796969)"><flowRegion
+       id="flowRegion3310"><rect
+         id="rect3312"
+         width="66.672791"
+         height="53.081802"
+         x="381.57352"
+         y="388.24081" /></flowRegion><flowPara
+       id="flowPara3314" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3325"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     transform="translate(-25.55239,54.876932)"><flowRegion
+       id="flowRegion3327"><rect
+         id="rect3329"
+         width="39.49081"
+         height="14.103861"
+         x="386.95865"
+         y="384.39429"
+         style="font-size:12px" /></flowRegion><flowPara
+       id="flowPara3331">Lancer </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3335"
+     style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     transform="translate(-32.344112,63.870341)"><flowRegion
+       id="flowRegion3337"><rect
+         id="rect3339"
+         width="35.900738"
+         height="12.821692"
+         x="483.12134"
+         y="375.67554"
+         style="font-size:12px" /></flowRegion><flowPara
+       id="flowPara3341">Arrêter</flowPara></flowRoot>  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     x="361.31525"
+     y="462.80069"
+     id="text3098"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3100"
+       x="361.31525"
+       y="462.80069"
+       style="font-size:12px">simulation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:FreeSans;-inkscape-font-specification:FreeSans"
+     x="450.55423"
+     y="463.03137"
+     id="text3106"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3108"
+       x="450.55423"
+       y="463.03137"
+       style="font-size:12px">simulation</tspan></text>
+</svg>
