@@ -17,7 +17,7 @@
 	</icar>
 
 	<icar>
-		<i>Connecter l'utilisateur à l'interface de configuration ou de simulation</i>
+		<i>Connecter l'utilisateur à l'interface de choix des configurations</i>
 		<c>
 			\begin{enumerate}
 			\item btn-connexion
@@ -63,7 +63,6 @@
 			\item Ajoute une ligne modifiable dans le tableau des configurations
 			\item Propose la saisie du nom de la nouvelle configuration
 			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\item Dégrise le bouton Valider
 			\end{itemize}
 		</r>
 	</icar>
@@ -80,7 +79,6 @@
 		<r>
 			\begin{itemize}
 			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\item Dégrise le bouton Valider
 			\end{itemize}
 		</r>
 	</icar>
@@ -98,7 +96,6 @@
 			\begin{itemize}
 			\item Propose la saisie du nom de la configuration sélectionnée
 			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\item Dégrise le bouton Valider
 			\end{itemize}
 		</r>
 	</icar>
@@ -117,7 +114,6 @@
 			\item Ajoute une nouvelle configuration au tableau
 			\item Propose la saisie du nom de la configuration ajoutée
 			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\item Dégrise le bouton Valider
 			\end{itemize}
 		</r>
 	</icar>
@@ -137,11 +133,47 @@
 			\item Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée
 			\item Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée
 			\item Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée
-			\item Grise le bouton Valider
 			\item Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer
 			\end{itemize{
 		</r>
 	</icar>
+
+	<icar>
+		<i>Ouvrir une configuration en mode simulation</i>
+		<c>
+			\begin{enumarate}
+			\item tab-config
+			\item btn-valider
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item En mode simulation dans la fenêtre de choix des configuration :
+			\item Ferme la fenêtre de choix des configuration
+			\item Ouvre la fenêtre dfe simulation avec la configuration sélectionnée dans la liste \textsl{tab-config}
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Ouvrir une configuration en mode Configuration</i>
+		<c>
+			\begin{enumarate}
+			\item tab-config
+			\item btn-valider
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item En mode simulation dans la fenêtre de choix des configuration :
+			\item Ferme la fenêtre de choix des configuration
+			\item Ouvre la fenêtre de configuration avec la configuration sélectionnée dans la liste \textsl{tab-config}
+			\end{itemize}
+		</r>
+	</icar>
+
 
 	<icar>
 		<i>Choisir une nouvelle configuration</i>
@@ -362,4 +394,53 @@
 			\end{itemize}
 		</r>
 	</icar>
+
+	<icar>
+		<i>Accéder à l'interface de Paramètrage<i>
+		<c>
+			\begin{enumerate}
+			\item btn-parametrage
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés)
+			\item Ouvre la fenêtre de paramètrage
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Accéder à l'interface d'Analyse<i>
+		<c>
+			\begin{enumerate}
+			\item btn-analyse
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés)
+			\item Ouvre la fenêtre d'analyse
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Activer ou désactiver un événement</i>
+		<c>
+			\begin{enumerate}
+			\item tab-evenement
+			\end{enumerate}
+		</c>
+		<a>Clic (Cochage/ Décochage)</a>
+		<r>
+			\begin{itemize}
+			\item Si l'évènement est coché : Il sera décoché et désactivé
+			\item Si l'évènement est décoché : Il sera coché et activé
+
+			\end{itemize}
+		</r>
+
 </ticar>
