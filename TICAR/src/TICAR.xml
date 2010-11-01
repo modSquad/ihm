@@ -2,7 +2,7 @@
 	<icar>
 		<i>Saisir des informations utilisateur</i>
 		<c>
-			\begin{itemize}
+			\begin{enumerate}
 			\item txt-identifiant
 			\item txt-password
 			\end{enumerate}
@@ -18,7 +18,11 @@
 
 	<icar>
 		<i>Connecter l'utilisateur à l'interface de configuration ou de simulation</i>
-		<controls><c>btn-connexion</c></controls>
+		<c>
+			\begin{enumerate}
+			\item btn-connexion
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -31,7 +35,11 @@
 
 	<icar>
 		<i>Déconnecter l'utilisateur</i>
-		<controls><c>btn-deconnexion</c></controls>
+		<c>
+			\begion{enumerate}
+			\item btn-deconnexion
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -43,10 +51,11 @@
 
 	<icar>
 		<i>Créer une nouvelle configuration</i>
-		<controls>
-			<c>btn-creer-config</c>
-			<c>tab-config</c>
-		</controls>
+		<c>
+			\begin{enumerate}
+			\item btn-creer-config
+			\item tab-config
+			\end{enumerate}
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -61,10 +70,12 @@
 
 	<icar>
 		<i>Supprimer une configuration existante</i>
-		<controls>
-			<c>btn-suppr-config</c>
-			<c>tab-config</c>
-		</controls>
+		<c>
+			\begin{enumerate}
+			\item btn-suppr-config
+			\item tab-config
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -76,10 +87,12 @@
 
 	<icar>
 		<i>Renommer une configuration existante</i>
-		<controls>
-			<c>btn-renom-config</c>
-			<c>tab-config</c>
-		</controls>
+		<c>
+			\begin{enumerate}
+			\item btn-renom-config
+			\item tab-config
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -92,10 +105,12 @@
 
 	<icar>
 		<i>Dupliquer une configuration existante</i>
-		<controls>
-			<c>btn-dupliq-config</c>
-			<c>tab-config</c>
-		</controls>
+		<c>
+			\begin{enumerate}
+			\item btn-dupliq-config
+			\item tab-config
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -109,10 +124,12 @@
 
 	<icar>
 		<i>Valider un renommage, une création, une suppression ou une duplication</i>
-		<controls>
-			<c>btn-valider</c>
-			<c>tab-config</c>
-		</controls>
+		<c>
+			\begin{enumerare}
+			\item btn-valider
+			\item tab-config
+			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
