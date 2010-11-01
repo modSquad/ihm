@@ -331,4 +331,18 @@
 		</r>
 	</icar>
 
+	<icar>
+		<i>Modifier le type d'élément</i>
+		<c>
+			\begin{enumerate}
+			\item ddlist-type-élément
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Sélectione le nouveau type de l'élément sélectionné ou du nouvel élément
+			\end{itemize}
+		</r>
+	</icar>
 </ticar>
