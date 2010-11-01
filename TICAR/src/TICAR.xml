@@ -310,9 +310,25 @@
 			\end{itemize}
 		</r>
 	</icar>
+
+	<icar>
+		<i>Modifier les paramètre textuels d'un élément</i>
+		<c>
+			\begin{enumerate}
+			\item txt-nom
+			\item txt-vitesse
+			\item txt-nombre-wagon
+			\item txt-taux-chargement
+			\item txt-longueur
+			\item txt-largeur
+			\end{itemize}
+		</c>
+		<a>Saisie clavier</a>
+		<r>
+			\begin{itemize}
+			\item Affiche les caractères saisis à l'écran
 			\end{itemize}
 		</r>
 	</icar>
-
 
 </ticar>
