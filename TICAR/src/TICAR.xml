@@ -56,6 +56,7 @@
 			\item btn-creer-config
 			\item tab-config
 			\end{enumerate}
+		</c>
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
@@ -66,7 +67,6 @@
 			\end{itemize}
 		</r>
 	</icar>
-
 
 	<icar>
 		<i>Supprimer une configuration existante</i>
@@ -165,7 +165,7 @@
 				\item btn-simuler
 			\end{enumerate}
 		</c>
-		<a>Clic<a>
+		<a>Clic</a>
 		<r>
 			\begin{itemize}
 			\item Lance la simulation (A PRECISER)
@@ -180,7 +180,7 @@
 				\item btn-enreg
 			\end{enumerate}
 		</c>
-		<a>Clic</c>
+		<a>Clic</a>
 		<r>
 			\begin{itemize}
 			\item Enregistre la configuration courante
@@ -195,7 +195,7 @@
 				\item btn-enreg
 			\end{enumerate}
 		</c>
-		<a>Clic</c>
+		<a>Clic</a>
 		<r>
 			\begin{itemize}
 			\item Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier
@@ -235,7 +235,7 @@
 	</icar>
 
 	<icar>
-		<i>Séléctionner un élément<i>
+		<i>Séléctionner un élément</i>
 		<c>
 			\begin{enumerate}
 			\item pannel-elements
