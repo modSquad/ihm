@@ -390,7 +390,7 @@
 		<a>Clic</a>
 		<r>
 			\begin{itemize}
-			\item Sélectione le nouveau type de l'élément sélectionné ou du nouvel élément
+			\item Sélectionne le nouveau type d'élément
 			\end{itemize}
 		</r>
 	</icar>
@@ -442,5 +442,142 @@
 
 			\end{itemize}
 		</r>
+	</icar>
 
+	<icar>
+		<i>Changer le mode de pilotage<i>
+			<c>
+				\begin{enumerate}
+				\item btn-mode-pilotage
+				\end{enumerate}
+			</c>
+			<a>Clic</a>
+			<r>
+				\begin{itemize}
+				\item Si \og Pilotage Manuel\fg : Passe en pilotage automatique et change le label du bouton en \og Pilotage Manuel\fg
+				\item Si \og Pilotage automatique \fg : Passe en pilotage manuel et change le label du bouton en \og Pilotage Automatique\fg
+			</r>
+	</icar>
+
+	<icar>
+		<i>Lancer ou reprendre la simulation</i>
+		<c>
+			\begin{enumerate}
+			\item btn-reprendre-simulation
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Reprend la simulation si elle était arrêtée
+			\item La démarre si elle n'avais jamais commencé
+			\end{itemize}
+		</r>
+	</icar>
+
+
+	<icar>
+		<i>Créer un évènement de simulation</i>
+		<c>
+			\begin{enumerate}
+			\item btn-creer-evenement
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ouvre la fenêtre de création d'événement
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Modifier un évènement de simulation</i>
+		<c>
+			\begin{enumerate}
+			\item btn-modif-evenement
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ouvre la fenêtre de modification d'événement
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Supprimer un évènement de simulation</i>
+		<c>
+			\begin{enumerate}
+			\item btn-suppr-evenement
+			\end{enumerate}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemize}
+			\item Ouvre la fenêtre de suppression d'événement
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Diriger un chariot vers le haut</i>
+		<c>
+			\begin{itemize}
+			\item btn-haut
+			\end{itemize}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemizw}
+			\item Dirige le charriot sélectionné vers le haut à la prochaine intersection
+			\end{itemize}
+		</r>
+	</icar>
+	
+	<icar>
+		<i>Diriger un chariot vers le bas</i>
+		<c>
+			\begin{itemize}
+			\item btn-bas
+			\end{itemize}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemizw}
+			\item Dirige le charriot sélectionné vers le bas à la prochaine intersection
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Diriger un chariot vers la droite</i>
+		<c>
+			\begin{itemize}
+			\item btn-droite
+			\end{itemize}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemizw}
+			\item Dirige le charriot sélectionné vers la droite à la prochaine intersection
+			\end{itemize}
+		</r>
+	</icar>
+
+	<icar>
+		<i>Diriger un chariot vers la gauche</i>
+		<c>
+			\begin{itemize}
+			\item btn-gauche
+			\end{itemize}
+		</c>
+		<a>Clic</a>
+		<r>
+			\begin{itemizw}
+			\item Dirige le charriot sélectionné vers la gauche à la prochaine intersection
+			\end{itemize}
+		</r>
+	</icar>
 </ticar>
