@@ -2,582 +2,402 @@
 	<icar>
 		<i>Saisir des informations utilisateur</i>
 		<c>
-			\begin{enumerate}
-			\item txt-identifiant
-			\item txt-password
-			\end{enumerate}
+			txt-identifiant.
+			txt-password.
 		</c>
 		<a>Saisie clavier</a>
 		<r>
-			\begin{itemize}
-			\item Affiche les caractères saisis à l'écran
-			\item Affiche des étoiles à la place des caractère lorsque l'affichage est protégé
-			\end{itemize}
+			Affiche les caractères saisis à l'écran.
+			Affiche des étoiles à la place des caractère lorsque l'affichage est protégé.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Connecter l'utilisateur à l'interface de choix des configurations</i>
 		<c>
-			\begin{enumerate}
-			\item btn-connexion
-			\end{enumerate}
+			btn-connexion.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Lance la procédure d'identification (interrogation de la base de donnée).\\ 
-			Si valide : Affiche l'interface de sélection des configurations.\\ 
+			Lance la procédure d'identification (interrogation de la base de donnée).
+			Si valide : Affiche l'interface de sélection des configurations.
 			Sinon : Affiche "Identifiant/Mot de passe incorrect. Réesayez."
-			\end{itemize}
 		</r>
 	</icar>
-
 	<icar>
 		<i>Déconnecter l'utilisateur</i>
 		<c>
-			\begion{enumerate}
-			\item btn-deconnexion
-			\end{enumerate}
+			btn-deconnexion.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Déconnecte l'utilisateur
-			\item Affiche la fenêtre de connexion
-			\end{itemize}
+			Déconnecte l'utilisateur.
+			Affiche la fenêtre de connexion.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Créer une nouvelle configuration</i>
 		<c>
-			\begin{enumerate}
-			\item btn-creer-config
-			\item tab-config
-			\end{enumerate}
+			btn-creer-config.
+			tab-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ajoute une ligne modifiable dans le tableau des configurations
-			\item Propose la saisie du nom de la nouvelle configuration
-			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\end{itemize}
+			Ajoute une ligne modifiable dans le tableau des configurations.
+			Propose la saisie du nom de la nouvelle configuration.
+			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Supprimer une configuration existante</i>
 		<c>
-			\begin{enumerate}
-			\item btn-suppr-config
-			\item tab-config
-			\end{enumerate}
+			btn-suppr-config.
+			tab-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\end{itemize}
+			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Renommer une configuration existante</i>
 		<c>
-			\begin{enumerate}
-			\item btn-renom-config
-			\item tab-config
-			\end{enumerate}
+			btn-renom-config.
+			tab-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Propose la saisie du nom de la configuration sélectionnée
-			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\end{itemize}
+			Propose la saisie du nom de la configuration sélectionnée.
+			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Dupliquer une configuration existante</i>
 		<c>
-			\begin{enumerate}
-			\item btn-dupliq-config
-			\item tab-config
-			\end{enumerate}
+			btn-dupliq-config.
+			tab-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ajoute une nouvelle configuration au tableau
-			\item Propose la saisie du nom de la configuration ajoutée
-			\item Grise les boutons : Créer, Supprimer, Renommer, Dupliquer
-			\end{itemize}
+			Ajoute une nouvelle configuration au tableau.
+			Propose la saisie du nom de la configuration ajoutée.
+			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Valider un renommage, une création, une suppression ou une duplication</i>
 		<c>
-			\begin{enumerare}
-			\item btn-valider
-			\item tab-config
-			\end{enumerate}
+			btn-valider.
+			tab-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Si création : Effectue et enregistre la création
-			\item Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée
-			\item Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée
-			\item Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée
-			\item Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer
-			\end{itemize{
+			Si création : Effectue et enregistre la création.
+			Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée.
+			Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée.
+			Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée.
+			Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Ouvrir une configuration en mode simulation</i>
 		<c>
-			\begin{enumarate}
-			\item tab-config
-			\item btn-valider
-			\end{enumerate}
+			tab-config.
+			btn-valider.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item En mode simulation dans la fenêtre de choix des configuration :
-			\item Ferme la fenêtre de choix des configuration
-			\item Ouvre la fenêtre dfe simulation avec la configuration sélectionnée dans la liste \textsl{tab-config}
-			\end{itemize}
+			En mode simulation dans la fenêtre de choix des configuration :.
+			Ferme la fenêtre de choix des configuration.
+			Ouvre la fenêtre dfe simulation avec la configuration sélectionnée dans la liste \textsl{tab-config}.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Ouvrir une configuration en mode Configuration</i>
 		<c>
-			\begin{enumarate}
-			\item tab-config
-			\item btn-valider
-			\end{enumerate}
+			tab-config.
+			btn-valider.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item En mode simulation dans la fenêtre de choix des configuration :
-			\item Ferme la fenêtre de choix des configuration
-			\item Ouvre la fenêtre de configuration avec la configuration sélectionnée dans la liste \textsl{tab-config}
-			\end{itemize}
+			En mode simulation dans la fenêtre de choix des configuration :.
+			Ferme la fenêtre de choix des configuration.
+			Ouvre la fenêtre de configuration avec la configuration sélectionnée dans la liste \textsl{tab-config}.
 		</r>
 	</icar>
-
-
 	<icar>
 		<i>Choisir une nouvelle configuration</i>
 		<c>
-			\begin{enumerate}
-				\item btn-choix-config
-			\end{enumerate}
+				btn-choix-config.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-				\item Ferme la fenêtre de configuration
-				\item Affiche la fenêtre de choix des configurations
-			\end{itemize}
+				Ferme la fenêtre de configuration.
+				Affiche la fenêtre de choix des configurations.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Lancer la simulation</i>
-		<c>\begin{enumerate}
-				\item btn-simuler
-			\end{enumerate}
+		<c>
+				btn-simuler.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Lance la simulation (A PRECISER)
-			\end{itemize}
+			Lance la simulation (A PRECISER).
 		</r>
 	</icar>
-
 	<icar>
 		<i>Enregistrer une configuration</i>
 		<c>
-			\begin{enumerate}
-				\item btn-enreg
-			\end{enumerate}
+				btn-enreg.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Enregistre la configuration courante
-			\end{itemize}
+			Enregistre la configuration courante.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Enregistrer-sous une configuration</i>
 		<c>
-			\begin{enumerate}
-				\item btn-enreg
-			\end{enumerate}
+				btn-enreg.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier
-			\item Enregistre la configuration courante dans le fichier sélectionné
-			\end{itemize}
+			Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier.
+			Enregistre la configuration courante dans le fichier sélectionné.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Zommer dans l'affichage des éléments</i>
 		<c>
-			\begin{enumerate}
-				\item btn-zoom
-			\end{enumerate}
+				btn-zoom.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Zoom dans l'affichage des éléments
-			\end{itemize}
+			Zoom dans l'affichage des éléments.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Dézommer dans l'affichage des éléments</i>
 		<c>
-			\begin{enumerate}
-				\item btn-dezoom
-			\end{enumerate}
+				btn-dezoom.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Dézoom dans l'affichage des éléments
-			\end{itemize}
+			Dézoom dans l'affichage des éléments.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Séléctionner un élément</i>
 		<c>
-			\begin{enumerate}
-			\item pannel-elements
-			\item img-element
-			\end{itemize}
+			pannel-elements.
+			img-element.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Affiche les paramètres de l'éléments dans le panneau "Élément"
-			\item Encadre l'élément sélectionné
-			\end{itemize}
+			Affiche les paramètres de l'éléments dans le panneau "Élément".
+			Encadre l'élément sélectionné.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Tourner un élément dans le sens des aiguilles d'une montre</i>
 		<c>
-			\begin{enumerate}
-			\item btn-rotation-indirect
-			\end{enumerate}
+			btn-rotation-indirect.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Tourne la représentation graphique de l'élement
-			\end{itemize}
+			Tourne la représentation graphique de l'élement.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Tourner un élément dans le sens inverse des aiguilles d'une montre</i>
 		<c>
-			\begin{enumerate}
-			\item btn-rotation-direct
-			\end{enumerate}
+			btn-rotation-direct.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Tourne la représentation graphique de l'élement
-			\end{itemize}
+			Tourne la représentation graphique de l'élement.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Ajout un élément à la configutation courante</i>
 		<c>
-			\begin{enumerate}
-			\item btn-ajouter
-			\end{enumerate}
+			btn-ajouter.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ajoute un élément à la configuration
-			\item Ajoute la représentation de l'élément à la vue
-			\end{itemize}
+			Ajoute un élément à la configuration.
+			Ajoute la représentation de l'élément à la vue.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Valider les paramètres d'un élément</i>
 		<c>
-			\begin{enumerate}
-			\item btn-valid-element
-			\end{enumerate}
+			btn-valid-element.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Valide les paramètres
-			\end{itemize}
+			Valide les paramètres.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Supprimer un élément</i>
 		<c>
-			\begin{enumerate}
-			\item btn-suppr-element
-			\end{enumerate}
+			btn-suppr-element.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Supprime l'élément sélectionné 
-			\item Supprime la représentation graphique de la vue
-			\end{itemize}
+			Supprime l'élément sélectionné.
+			Supprime la représentation graphique de la vue.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Modifier les paramètre textuels d'un élément</i>
 		<c>
-			\begin{enumerate}
-			\item txt-nom
-			\item txt-vitesse
-			\item txt-nombre-wagon
-			\item txt-taux-chargement
-			\item txt-longueur
-			\item txt-largeur
-			\end{itemize}
+			txt-nom.
+			txt-vitesse.
+			txt-nombre-wagon.
+			txt-taux-chargement.
+			txt-longueur.
+			txt-largeur.
 		</c>
 		<a>Saisie clavier</a>
 		<r>
-			\begin{itemize}
-			\item Affiche les caractères saisis à l'écran
-			\end{itemize}
+			Affiche les caractères saisis à l'écran.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Modifier le type d'élément</i>
 		<c>
-			\begin{enumerate}
-			\item ddlist-type-élément
-			\end{enumerate}
+			ddlist-type-élément.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Sélectionne le nouveau type d'élément
-			\end{itemize}
+			Sélectionne le nouveau type d'élément.
 		</r>
 	</icar>
-
 	<icar>
-		<i>Accéder à l'interface de Paramètrage<i>
+		<i>Accéder à l'interface de Paramètrage</i>
 		<c>
-			\begin{enumerate}
-			\item btn-parametrage
-			\end{enumerate}
+			btn-parametrage.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés)
-			\item Ouvre la fenêtre de paramètrage
-			\end{itemize}
+			Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés).
+			Ouvre la fenêtre de paramètrage.
 		</r>
 	</icar>
-
 	<icar>
-		<i>Accéder à l'interface d'Analyse<i>
+		<i>Accéder à l'interface d'Analyse</i>
 		<c>
-			\begin{enumerate}
-			\item btn-analyse
-			\end{enumerate}
+			btn-analyse.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés)
-			\item Ouvre la fenêtre d'analyse
-			\end{itemize}
+			Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés).
+			Ouvre la fenêtre d'analyse.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Activer ou désactiver un événement</i>
 		<c>
-			\begin{enumerate}
-			\item tab-evenement
-			\end{enumerate}
+			tab-evenement.
 		</c>
 		<a>Clic (Cochage/ Décochage)</a>
 		<r>
-			\begin{itemize}
-			\item Si l'évènement est coché : Il sera décoché et désactivé
-			\item Si l'évènement est décoché : Il sera coché et activé
-
-			\end{itemize}
+			Si l'évènement est coché : Il sera décoché et désactivé.
+			Si l'évènement est décoché : Il sera coché et activé.
 		</r>
 	</icar>
-
 	<icar>
-		<i>Changer le mode de pilotage<i>
+		<i>Changer le mode de pilotage</i>
 			<c>
-				\begin{enumerate}
-				\item btn-mode-pilotage
-				\end{enumerate}
+				btn-mode-pilotage.
 			</c>
 			<a>Clic</a>
 			<r>
-				\begin{itemize}
-				\item Si \og Pilotage Manuel\fg : Passe en pilotage automatique et change le label du bouton en \og Pilotage Manuel\fg
-				\item Si \og Pilotage automatique \fg : Passe en pilotage manuel et change le label du bouton en \og Pilotage Automatique\fg
+				Si \og Pilotage Manuel\fg : Passe en pilotage automatique et change le label du bouton en \og Pilotage Manuel\fg.
+				Si \og Pilotage automatique \fg : Passe en pilotage manuel et change le label du bouton en \og Pilotage Automatique\fg.
 			</r>
 	</icar>
-
 	<icar>
 		<i>Lancer ou reprendre la simulation</i>
 		<c>
-			\begin{enumerate}
-			\item btn-reprendre-simulation
-			\end{enumerate}
+			btn-reprendre-simulation.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Reprend la simulation si elle était arrêtée
-			\item La démarre si elle n'avais jamais commencé
-			\end{itemize}
+			Reprend la simulation si elle était arrêtée.
+			La démarre si elle n'avais jamais commencé.
 		</r>
 	</icar>
-
-
 	<icar>
 		<i>Créer un évènement de simulation</i>
 		<c>
-			\begin{enumerate}
-			\item btn-creer-evenement
-			\end{enumerate}
+			btn-creer-evenement.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ouvre la fenêtre de création d'événement
-			\end{itemize}
+			Ouvre la fenêtre de création d'événement.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Modifier un évènement de simulation</i>
 		<c>
-			\begin{enumerate}
-			\item btn-modif-evenement
-			\end{enumerate}
+			btn-modif-evenement.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ouvre la fenêtre de modification d'événement
-			\end{itemize}
+			Ouvre la fenêtre de modification d'événement.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Supprimer un évènement de simulation</i>
 		<c>
-			\begin{enumerate}
-			\item btn-suppr-evenement
-			\end{enumerate}
+			btn-suppr-evenement.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemize}
-			\item Ouvre la fenêtre de suppression d'événement
-			\end{itemize}
+			Ouvre la fenêtre de suppression d'événement.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Diriger un chariot vers le haut</i>
 		<c>
-			\begin{itemize}
-			\item btn-haut
-			\end{itemize}
+			btn-haut.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemizw}
-			\item Dirige le charriot sélectionné vers le haut à la prochaine intersection
-			\end{itemize}
+			Dirige le charriot sélectionné vers le haut à la prochaine intersection.
 		</r>
 	</icar>
-	
 	<icar>
 		<i>Diriger un chariot vers le bas</i>
 		<c>
-			\begin{itemize}
-			\item btn-bas
-			\end{itemize}
+			btn-bas.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemizw}
-			\item Dirige le charriot sélectionné vers le bas à la prochaine intersection
-			\end{itemize}
+			Dirige le charriot sélectionné vers le bas à la prochaine intersection.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Diriger un chariot vers la droite</i>
 		<c>
-			\begin{itemize}
-			\item btn-droite
-			\end{itemize}
+			btn-droite.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemizw}
-			\item Dirige le charriot sélectionné vers la droite à la prochaine intersection
-			\end{itemize}
+			Dirige le charriot sélectionné vers la droite à la prochaine intersection.
 		</r>
 	</icar>
-
 	<icar>
 		<i>Diriger un chariot vers la gauche</i>
 		<c>
-			\begin{itemize}
-			\item btn-gauche
-			\end{itemize}
+			btn-gauche.
 		</c>
 		<a>Clic</a>
 		<r>
-			\begin{itemizw}
-			\item Dirige le charriot sélectionné vers la gauche à la prochaine intersection
-			\end{itemize}
+			Dirige le charriot sélectionné vers la gauche à la prochaine intersection.
 		</r>
 	</icar>
 </ticar>

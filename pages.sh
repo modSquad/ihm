@@ -8,7 +8,7 @@ countpdfpages()
     return `pdftk $1 dump_data output | grep -i NumberOfPages | cut -d ' ' -f2`
 }
 
-document=`find . -name "*.pdf"`
+document=`find . -maxdepth 2  -name "*.pdf"`
 acc=0
 for i in $document
 do

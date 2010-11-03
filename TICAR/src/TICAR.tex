@@ -1,0 +1,869 @@
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Saisir des informations utilisateur
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			txt-identifiant.\\
+			txt-password.\\
+		
+ \end{minipage} &
+Saisie clavier
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Affiche les caractères saisis à l'écran.~\\
+~--~			Affiche des étoiles à la place des caractère lorsque l'affichage est protégé.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Connecter l'utilisateur à l'interface de choix des configurations
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-connexion.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Lance la procédure d'identification (interrogation de la base de donnée).~\\
+~--~			Si valide : Affiche l'interface de sélection des configurations.~\\
+~--~			Sinon : Affiche "Identifiant/Mot de passe incorrect. Réesayez."
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Déconnecter l'utilisateur
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-deconnexion.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Déconnecte l'utilisateur.~\\
+~--~			Affiche la fenêtre de connexion.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Créer une nouvelle configuration
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-creer-config.\\
+			tab-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ajoute une ligne modifiable dans le tableau des configurations.~\\
+~--~			Propose la saisie du nom de la nouvelle configuration.~\\
+~--~			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Supprimer une configuration existante
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-suppr-config.\\
+			tab-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Renommer une configuration existante
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-renom-config.\\
+			tab-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Propose la saisie du nom de la configuration sélectionnée.~\\
+~--~			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Dupliquer une configuration existante
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-dupliq-config.\\
+			tab-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ajoute une nouvelle configuration au tableau.~\\
+~--~			Propose la saisie du nom de la configuration ajoutée.~\\
+~--~			Grise les boutons : Créer, Supprimer, Renommer, Dupliquer.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Valider un renommage, une création, une suppression ou une duplication
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-valider.\\
+			tab-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Si création : Effectue et enregistre la création.~\\
+~--~			Si suppression : Effectue et enregistre la suppression de la ligne sélectionnée.~\\
+~--~			Si renommage : Effectue et enregistre le renommage de la ligne sélectionnée.~\\
+~--~			Si duplication : Effectue et enregistre la duplication de la ligne sélectionnée.~\\
+~--~			Dégrise les boutons Créer, Supprimer, Renommer, Dupliquer.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Ouvrir une configuration en mode simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			tab-config.\\
+			btn-valider.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			En mode simulation dans la fenêtre de choix des configuration :.~\\
+~--~			Ferme la fenêtre de choix des configuration.~\\
+~--~			Ouvre la fenêtre dfe simulation avec la configuration sélectionnée dans la liste \textsl{tab-config}.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Ouvrir une configuration en mode Configuration
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			tab-config.\\
+			btn-valider.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			En mode simulation dans la fenêtre de choix des configuration :.~\\
+~--~			Ferme la fenêtre de choix des configuration.~\\
+~--~			Ouvre la fenêtre de configuration avec la configuration sélectionnée dans la liste \textsl{tab-config}.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Choisir une nouvelle configuration
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-choix-config.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~				Ferme la fenêtre de configuration.~\\
+~--~				Affiche la fenêtre de choix des configurations.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Lancer la simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-simuler.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Lance la simulation (A PRECISER).
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Enregistrer une configuration
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-enreg.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Enregistre la configuration courante.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Enregistrer-sous une configuration
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-enreg.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ouvre une fenêtre permettant de sélectionner le chemin du nouveau fichier.~\\
+~--~			Enregistre la configuration courante dans le fichier sélectionné.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Zommer dans l'affichage des éléments
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-zoom.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Zoom dans l'affichage des éléments.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Dézommer dans l'affichage des éléments
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-dezoom.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Dézoom dans l'affichage des éléments.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Séléctionner un élément
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			pannel-elements.\\
+			img-element.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Affiche les paramètres de l'éléments dans le panneau "Élément".~\\
+~--~			Encadre l'élément sélectionné.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Tourner un élément dans le sens des aiguilles d'une montre
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-rotation-indirect.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Tourne la représentation graphique de l'élement.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Tourner un élément dans le sens inverse des aiguilles d'une montre
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-rotation-direct.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Tourne la représentation graphique de l'élement.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Ajout un élément à la configutation courante
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-ajouter.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ajoute un élément à la configuration.~\\
+~--~			Ajoute la représentation de l'élément à la vue.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Valider les paramètres d'un élément
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-valid-element.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Valide les paramètres.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Supprimer un élément
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-suppr-element.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Supprime l'élément sélectionné.~\\
+~--~			Supprime la représentation graphique de la vue.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Modifier les paramètre textuels d'un élément
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			txt-nom.\\
+			txt-vitesse.\\
+			txt-nombre-wagon.\\
+			txt-taux-chargement.\\
+			txt-longueur.\\
+			txt-largeur.\\
+		
+ \end{minipage} &
+Saisie clavier
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Affiche les caractères saisis à l'écran.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Modifier le type d'élément
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			ddlist-type-élément.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Sélectionne le nouveau type d'élément.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Accéder à l'interface de Paramètrage
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-parametrage.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés).~\\
+~--~			Ouvre la fenêtre de paramètrage.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Accéder à l'interface d'Analyse
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-analyse.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ferme la fenêtre de simulation (sans pour autant perdre les changement non enregistrés).~\\
+~--~			Ouvre la fenêtre d'analyse.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Activer ou désactiver un événement
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			tab-evenement.\\
+		
+ \end{minipage} &
+Clic (Cochage/ Décochage)
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Si l'évènement est coché : Il sera décoché et désactivé.~\\
+~--~			Si l'évènement est décoché : Il sera coché et activé.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Changer le mode de pilotage
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+				btn-mode-pilotage.\\
+			
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~				Si \og Pilotage Manuel\fg : Passe en pilotage automatique et change le label du bouton en \og Pilotage Manuel\fg.~\\
+~--~				Si \og Pilotage automatique \fg : Passe en pilotage manuel et change le label du bouton en \og Pilotage Automatique\fg.~\\
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Lancer ou reprendre la simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-reprendre-simulation.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Reprend la simulation si elle était arrêtée.~\\
+~--~			La démarre si elle n'avais jamais commencé.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Créer un évènement de simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-creer-evenement.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ouvre la fenêtre de création d'événement.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Modifier un évènement de simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-modif-evenement.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ouvre la fenêtre de modification d'événement.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Supprimer un évènement de simulation
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-suppr-evenement.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Ouvre la fenêtre de suppression d'événement.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Diriger un chariot vers le haut
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-haut.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Dirige le charriot sélectionné vers le haut à la prochaine intersection.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Diriger un chariot vers le bas
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-bas.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Dirige le charriot sélectionné vers le bas à la prochaine intersection.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Diriger un chariot vers la droite
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-droite.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Dirige le charriot sélectionné vers la droite à la prochaine intersection.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|p{5cm}|p{4cm}|p{2cm}|p{6cm}|}
+	 \hline \textbf{Intention} & \textbf{Contrôle} & \textbf{Action} & \textbf{Réponse}\\\hline
+\begin{minipage}[t]{5cm}
+Diriger un chariot vers la gauche
+ \end{minipage} &
+\begin{minipage}[t]{5cm}
+			btn-gauche.\\
+		
+ \end{minipage} &
+Clic
+&
+\begin{minipage}[t]{6cm}
+\vspace{-1em}
+~\\
+~--~			Dirige le charriot sélectionné vers la gauche à la prochaine intersection.
+\vspace{0.5em}
+\end{minipage}
+\\ 
+ \hline
+\end{tabular}
+\end{center}
+
