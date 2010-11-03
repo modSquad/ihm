@@ -1,30 +1,68 @@
-\newcommand{\grouptwo}[2] {
-    \begin{center}
-    \begin{minipage}{\linewidth}
-	\begin{minipage}[b]{0.5\linewidth}
-	#1
-	\end{minipage}
-	\hspace{0.5cm}
-	\begin{minipage}[b]{0.5\linewidth}
-	#2
-	\end{minipage}
-    \end{minipage}
-    \end{center}
-    \vspace{2cm}
-}
+\begin {longtable} {| m{3cm} | m{9cm} | m{2.5cm} |}
+\hline
+Identificateur  & Descritption & image \\
+\hline
+Avion  & Schema représentant un avion & \includegraphics[width=2.5cm]{img/Avion.pdf} \\
+\hline
+bagages  & Schema représentant une valise & \includegraphics[width=2.5cm]{img/bagages.pdf} \\
+\hline
+Terminal  & La lettre T suivie du numéro du Terminal & \includegraphics[width=2.5cm]{img/Terminal.pdf} \\
+\hline
+Hall  & La lettre H suivie du numéro du Hall & \includegraphics[width=2.5cm]{img/Hall.pdf} \\
+\hline
+caroussel  & Schema représentant un caroussel & \includegraphics[width=2.5cm]{img/caroussel.pdf} \\
+\hline
+chariot  & Schema représentant un chariot & \includegraphics[width=2.5cm]{img/chariot.pdf} \\
+\hline
+rechargement-batterie  & Schema représentant un chariot munie d'une prise electrique & \includegraphics[width=2.5cm]{img/rechargement-batterie.pdf} \\
+\hline
+Reparation-chariot  & Un schema représentant un chariot surmonté de deux outils symbolisant la réparation  & \includegraphics[width=2.5cm]{img/Reparation-chariot.pdf} \\
+\hline
+Chariot-elevateur  & Schema représentant un chariot élévateur & \includegraphics[width=2.5cm]{img/Chariot-elevateur.pdf} \\
+\hline
+tapis-roulant  & Schema représentant un tapis roulant & \includegraphics[width=2.5cm]{img/tapis-roulant.pdf} \\
+\hline
+tapis-roulant-dessus  & Schema représentant un tapis roulant vue de dessus & \includegraphics[width=2.5cm]{img/Avion.pdf} \\
+\hline
+train  & Schema reprénsentant un train & \includegraphics[width=2.5cm]{img/train.pdf} \\
+\hline
+wagonnet  & Schema représentant un wagonnet & \includegraphics[width=2.5cm]{img/wagonnet.pdf} \\
+\hline
+train\_wagonnet & schema représentant un train suivi de wagonnets & \includegraphics[width=2.5cm]{img/train_wagonnets.png} \\
+\hline
 
 
-\newcommand{\image}[2]{%
-    \begin{center}
-	    \includegraphics[width=4cm]{#1}\\
-	    #2
-    \end{center}
-}
 
-\hspace{-1cm} \grouptwo{\image{img/avion.pdf}{Un avion}}{\image{img/bagages.pdf}{Un bagage}}
-\grouptwo{\image{img/caroussel.pdf}{Un caroussel}}{\image{img/Chariot-elevateur.pdf}{Un chariot élévateur}}
-\grouptwo{\image{img/chariot.pdf}{Un chariot}}{\image{img/Hall.pdf}{Le hall 1}}
-\grouptwo{\image{img/rechargement-batterie.pdf}{Une station de rechargement pour chariot}}{\image{img/Reparation-chariot.pdf}{Une station de réparation pour chariot}}
-\grouptwo{\image{img/tapis-roulant.pdf}{Un tapis roulant}}{\image{img/Terminal.pdf}{Le terminal 1}}
-\grouptwo{\image{img/train.pdf}{Un train}}{\image{img/wagonnet.pdf}{Un wagonnet}} 
+logo  & logo du logiciel SGBag & \includegraphics[width=2.5cm]{img/logo.png} \\
+\hline
+ok  & Symbole universel de validation & \includegraphics[width=2.5cm]{img/ok.png} \\
+\hline
+cancel  & croix de saint andré & \includegraphics[width=2.5cm]{img/cancel.png} \\
+\hline
+undo  & Schema indiquant l'annulation de la dernière action & \includegraphics[width=2.5cm]{img/undo.png} \\
+\hline
+redo  & Schema indiquand le retour de la dernière action annulé & \includegraphics[width=2.5cm]{img/redo.png} \\
+\hline
+play  & Schema universel de lecture & \includegraphics[width=2.5cm]{img/play.png} \\
+\hline
+pause  & Schema universel de pause & \includegraphics[width=2.5cm]{img/pause.png} \\
+\hline
+stop  & Schema universel de stop & \includegraphics[width=2.5cm]{img/stop.png} \\
+\hline
+save  & Schema de disquette indiquant la sauvegarde & \includegraphics[width=2.5cm]{img/save.png} \\
+\hline
+saveas  & Schema de disquette surmonté d'un crayon indiquant une nouvelle souvegarde & \includegraphics[width=2.5cm]{img/saveas.png} \\
+\hline
+open  & Schema de dossier ouvert & \includegraphics[width=2.5cm]{img/open.png} \\
+\hline
+loupe  & Schema d'une loupe avec un signe plus ou un signe moins au niveau du verre & \includegraphics[width=2.5cm]{img/loupe.png} \\
+\hline
+ajouter  & croix grecque & \includegraphics[width=2.5cm]{img/ajouter.png} \\
+\hline
+alert  & Panneau de signalisation indiquant un danger & \includegraphics[width=2.5cm]{img/alert.png} \\
+\hline
+logout  & Symbole universel de deconnection & \includegraphics[width=2.5cm]{img/logout.png} \\
+\hline
+
+\end {longtable}
 
